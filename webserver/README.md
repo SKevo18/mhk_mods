@@ -2,7 +2,9 @@
 
 This is the (very simple) FastAPI + Flask MHK mods webserver.
 
-You can access it live at [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac)
+You can access it live at [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac).
+
+API documentation is available at [https://mhk-mods.svit.ac/api/docs](https://mhk-mods.svit.ac/api/docs).
 
 ## Running it locally
 
