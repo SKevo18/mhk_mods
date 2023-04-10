@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ game.name }} Modded Data Files</h1>
+<ul x-data="{ mods: null }" x-init="mods = await get_mods()">
+    <template x-if="mods !== null && mods.length <= 0">
+        <p style="text-align: center; color: #aaa;">There are no mods available for '{{ game.name }}'</p>
+    </template>
+
+    <template x-if="mods !== null && mods.length > 0">
+        <template x-for="mod in mods" :key="'{{ game.id }}-' + mod.mod_id">
+            <li>
+                <h2 x-text="mod.meta.title"></h2>
+                <p x-text="mod.meta.description"></p>
+
+                <p><a x-bind:href="mod.source">GitHub Source</a></p>
+                <p><a x-bind:href="`/{{ game.id }}/${mod.mod_id}`">Mod page</a></p>
+                <p><a x-bind:href="mod.download_url">Download</a></p>
+            </li>
+        </template>
+    </template>
+</ul>
+
+<script type="text/javascript">
+    async function get_mods() {
+        let mods_data = []
+
+        game_request = await fetch("/api/{{ game.id }}")
+        if (game_request.status == 404) { return [] }
+
+        mod_ids = await game_request.json()
+        for (const mod_id of mod_ids) {
+            let mod_request = await fetch(`/api/{{ game.id }}/${mod_id}`)
+            if (mod_request.status == 404) { continue }
+
+            let mod_data = await (mod_request).json()
+            mods_data.push(mod_data)
+        }
+
+        return mods_data
+    }
+</script>
+{% endblock content %}

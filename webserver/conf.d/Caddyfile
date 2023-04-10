@@ -1,0 +1,15 @@
+# Update with your paths
+mhk-mods.svit.ac {
+    encode zstd gzip
+    root * ./webserver
+
+    handle_path /api* {
+        reverse_proxy unix/mhk_mods_fastapi.sock
+    }
+
+    reverse_proxy unix/mhk_mods_flask.sock
+
+    file_server browse {
+        hide .*
+    }
+}

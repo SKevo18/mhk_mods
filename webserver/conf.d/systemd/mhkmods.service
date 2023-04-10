@@ -1,0 +1,20 @@
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=MHK Mods daemon
+After=network.target
+
+[Service]
+Type=simple
+
+# Update with your path:
+ExecStart=ExecStart=./webserver/start.sh
+
+Restart=on-failure
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target
+

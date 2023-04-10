@@ -33,6 +33,7 @@ QUICKBMS_SCRIPTS_ROOT = QUICKBMS_ROOT / 'bms_scripts'
 @dataclass
 class MHK_GAME:
     id: str
+    name: str
     data_filename: str
 
 
@@ -44,15 +45,19 @@ class MHK_GAME:
     def bms_script_path(self) -> Path:
         return QUICKBMS_SCRIPTS_ROOT / (self.id + '.bms')
 
-    def mod_root_path(self, mod_id: str) -> Path:
-        return MODS_ROOT / self.id / mod_id
+    def mod_root_path(self, mod_id: t.Optional[str]=None) -> Path:
+        path = MODS_ROOT / self.id
+        if mod_id is not None:
+            path = path / mod_id
+
+        return path
 
 
 MHK_GAMES = {
-    'mhk_extra': MHK_GAME(id='mhk_extra', data_filename='mhke.dat'),
-    'mhk_2_en': MHK_GAME(id='mhk_2_en', data_filename='mhk2-00.dat'),
-    'mhk_2_de': MHK_GAME(id='mhk_2_de', data_filename='mhk2-00.dat'),
-    'mhk_3': MHK_GAME(id='mhk_3', data_filename='data.sar')
+    'mhk_extra': MHK_GAME(id='mhk_extra', name="Moorhuhn Kart: Extra", data_filename='mhke.dat'),
+    'mhk_2_en': MHK_GAME(id='mhk_2_en', name="Moorhuhn Kart 2 (en)", data_filename='mhk2-00.dat'),
+    'mhk_2_de': MHK_GAME(id='mhk_2_de', name="Moorhuhn Kart 2 (de)", data_filename='mhk2-00.dat'),
+    'mhk_3': MHK_GAME(id='mhk_3', name="Moorhuhn Kart 3", data_filename='data.sar')
 }
 
 

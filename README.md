@@ -15,13 +15,14 @@ The workflow is a bit tricky due to limitations on how the game archives work (e
 
 The script is compatible with Python 3.6+ (latest version is always recommended due to performance improvements). You can download Python from their [official website](https://www.python.org/).
 
-### To compile mods:
+### To compile mods
 
-Because of the big file size of data files, the modded ones are not included in the repository's source code. I plan to create a website that hosts modded data files from this repository, but you have to compile them by yourself for now:
+Because of the big file size of data files, the modded ones are not included in the repository's source code. You can visit [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac), or compile them locally by yourself:
 
-1. Run `python cli.py compile-all` to compile all mods, or just mods for a specific game (`python cli.py compile-all <game_id>`. To compile a specific mod, use `python cli.py compile <game_id> <mod_id>`
+1. Run `python cli.py compile-all` to compile all mods, or just mods for a specific game (`python cli.py compile-all <game_id>`.
+    - **Note:** To compile a specific mod, use `python cli.py compile <game_id> <mod_id>`
 
-### To create new mods:
+### To create new mods
 
 0. Decompile a MHK `.dat`/`.sar` file. Because there weren't any new updates for the original MHK games in ages, this repository already includes the decompiled assets in the `./sources/decompiled` directory. Therefore, it is safe to skip this step.
 1. Create a directory structure for the new mod (`python cli.py new <ID of MHK game> <mod ID>`).

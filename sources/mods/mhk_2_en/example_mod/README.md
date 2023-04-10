@@ -1,4 +1,6 @@
-# example_mod for mhk_2_en
+# Example Mod
+
+> An example Moorhuhn Kart 2 mod that replaces some text with meme language.
 
 ## Installation
 
