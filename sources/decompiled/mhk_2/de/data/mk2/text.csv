@@ -1,0 +1,459 @@
+HUD;
+100;<scale 0.75>Runde %d/3</scale>
+101;<scale 0.75>Position %d</scale>
+102;<scale 0.5>Zeit</scale>
+103;<scale 0.5>Runde</scale>
+104;<scale 0.5>Bestzeit</scale>
+
+110;<scale 1.5>Falsche Richtung!</scale>
+
+
+120;<font countdown>GO</font>
+121;<font countdown>1</font>
+122;<font countdown>2</font>
+123;<font countdown>3</font>
+
+130;<font 30px_redoutline>Pause</font>
+131;<font 30px_redoutline>Lautstärke Musik</font>
+132;%d %%
+133;<font 30px_redoutline>Lautstärke Effekte</font>
+134;%d %%
+135;Rennen fortsetzen
+136;Neustart
+137;Rennen beenden
+
+140;<scale 2>Du bist Erster geworden!</scale>
+141;<scale 2>Du bist Zweiter geworden!</scale>
+142;<scale 2>Du bist Dritter geworden!</scale>
+143;<scale 2>Du bist Vierter geworden!</scale>
+144;<scale 2>Du bist Fünfter geworden!</scale>
+145;<scale 2>Du bist Sechster geworden!</scale>
+146;<scale 2>Du bist Siebter geworden!</scale>
+147;<scale 2>Gewinner!!!</scale>
+
+
+
+Menu;
+200;<font 30px_redoutline>Hauptmenü</font>
+201;Rennmodus
+202;Bestzeiten
+203;Einstellungen
+204;Credits
+205;Beenden
+
+Options;
+210;<font 30px_redoutline>Einstellungen</font>
+211;<font 30px_redoutline>Lautstärke Musik</font>
+212;%d %%
+213;<font 30px_redoutline>Lautstärke Effekte</font>
+214;%d %%
+215;Auflösung wählen
+216;<font 30px_redoutline>Qualität</font>
+217;Zurück
+218;Niedrig
+219;Mittel
+220;Hoch
+
+Exit;
+230;<font 30px_redoutline>Spiel wirklich beenden?</font>
+231;Na klar!
+232;Auf keinen Fall!
+
+
+Credits;
+270;"<font 30px_redoutline><scale 1.5>&lt; Moorhuhn Kart 2 &gt;</scale></font>"
+270;
+270;
+270;
+270;
+270;<font 30px_redoutline>PUBLISHING</font>
+270;Phenomedia AG
+270;
+270;<font 30px_redoutline><scale 0.8>SPIELIDEE</scale></font>
+270;<scale 0.8>Frank Ziemlinski</scale>"
+270;
+270;<font 30px_redoutline><scale 0.8>KONZEPT</scale></font>
+270;<scale 0.8>Michael Bohne</scale>
+270;<scale 0.8>Frank Ziemlinski</scale>
+270;<scale 0.8>Michael Zoll</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>PROJEKTLEITER</scale></font>
+270;<scale 0.8>Michael Zoll</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>SOUND DEPARTMENT</scale></font>
+270;<scale 0.8>Nils Fritze</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>QA</scale></font>
+270;<scale 0.8>Thorsten Stranegger</scale>
+270;<scale 0.8>Yuro Kataoka</scale>
+270;<scale 0.8>Marc Bethke</scale>
+270;<scale 0.8>Florian Bützler</scale>
+270;<scale 0.8>David Hopmann</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>ONLINE PROGRAMMIERUNG</scale></font>
+270;<scale 0.8>Dirk Schiemann</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>WEB DESIGN</scale></font>
+270;<scale 0.8>Thomas Schuer</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>COVER DESIGN</scale></font>
+270;<scale 0.8>Ernst Weber</scale>
+270;<scale 0.8>Thomas Schuer</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>HANDBUCH</scale></font>
+270;<scale 0.8>Götz Neuhaus</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>DTP</scale></font>
+270;<scale 0.8>Erhard Thüringer</scale>
+270;
+270;
+270;<font 30px_redoutline>DEVELOPMENT</font>
+270;Sproing Interactive
+270;
+270;<font 30px_redoutline><scale 0.8>PROGRAMMING</scale></font>
+270;"<scale 0.8>Gerhard ""3am.exe"" Seiler</scale>"
+270;
+270;<font 30px_redoutline><scale 0.8>LEVEL GRAPHICS</scale></font>
+270;<scale 0.8>Johannes Graf</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>CHARACTER MODELLING AND LEVEL GRAPHICS</scale></font>
+270;<scale 0.8>Mason Doran</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>CHARACTER ANIMATION</scale></font>
+270;<scale 0.8>Tim Meredith</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>GAME AND LEVEL DESIGN</scale></font>
+270;<scale 0.8>Harald Riegler</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>LEVEL DESIGN</scale></font>
+270;<scale 0.8>Georg Heinz</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>PROJECT MANAGEMENT</scale></font>
+270;<scale 0.8>Johanna Schober</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>BETA TESTING</scale></font>
+270;<scale 0.8>Wolfgang Breyha</scale>
+270;<scale 0.8>Reinhard Franz</scale>
+270;<scale 0.8>Manfred Blazek</scale>
+270;"<scale 0.8>Gerd ""Antonio"" Singer</scale>"
+270;"<scale 0.8>Stefan ""Sani"" Wagner</scale>"
+270;
+270;
+270;<font logos>A</logos>
+270;
+270;
+270;
+270;<font 30px_redoutline>INSTALLER UND MASTERING</font>
+270;<scale 0.8>TecGam, Lutz Hebel</scale>
+270;
+270;
+270;<font 30px_redoutline>SCHAUSPIELER </font>
+270;<scale 0.8>(in der Reihenfolge ihres Auftritts)</scale>
+270;
+270;<scale 0.8>Moorhuhn</scale>
+270;<scale 0.8>Lesshuhn</scale>
+270;<scale 0.8>Moorfrosch</scale>
+270;<scale 0.8>Pumpkin</scale>
+270;<scale 0.8>Schneemann</scale>
+270;<scale 0.8>Kröt</scale>
+270;<scale 0.8>Hank</scale>
+270;
+270;
+270;<font 30px_redoutline>CREW</font>
+270;
+270;<font 30px_redoutline><scale 0.8>Maniküre Moorhuhn</scale></font>
+270;<scale 0.8>Edward mit den Messerhänden</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Hairstyling Lesshuhn</scale></font>
+270;<scale 0.8>Salon Merkel</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Terrarium Moorfrosch</scale></font>
+270;<scale 0.8>Survivals Inc.</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Modeberatung Mr. Pumpkin</scale></font>
+270;<scale 0.8>Georgio Brmani</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Makeup Schneemann</scale></font>
+270;<scale 0.8>Frostriese</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Boxenluder Mr. Kröt</scale></font>
+270;<scale 0.8>Blutjunge Morla</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Modeberatung Mr. Hank</scale></font>
+270;<scale 0.8>Georgio Crmani</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Catering</scale></font>
+270;<scale 0.8>Fritten Schmiede</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Special Effects</scale></font>
+270;<scale 0.8>Cpt. BLAM</scale>
+270;
+270;<font 30px_redoutline><scale 0.8>Medizinische Versorgung</scale></font>
+270;<scale 0.8>Mr. Medic</scale>
+270;
+270;
+270;
+270;
+270;<scale 0.8>Alle Stunts wurden von den original Schauspielern unter Anleitung von professionellen Rennfahrern durchgeführt.</scale>
+270;
+270;
+270;<scale 0.8>Bei der Herstellung dieses Spiel ist kein Programmierer, Grafiker, Projektleiter oder Gamedesigner zu Schaden gekommen.</scale>
+270;
+270;
+270;<scale 0.8>Wer uns etwas anderes nachweisen kann, gewinnt einen Büschel schwebendes Gras</scale>
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;<scale 0.8>Und was wurde aus...</scale>
+270;
+270;
+270;
+270;
+270;<scale 0.8>Moorhuhn zieht in den Wilden Westen und rüstet auf...</scale>
+270;
+270;
+270;
+270;<scale 0.8>Lesshuhn übersiedelt in den Südafrikanischen Dschungel und macht eine Hühnerfarm auf, verbüßt aber derzeit eine mehrjährige Haftstrafe wegen Sklaverei.</scale>
+270;
+270;
+270;
+270;
+270;<scale 0.8>Moorfrosch arbeitet beim deutschen meterologischen Zentralamt und sagt das Wetter voraus. Manchmal auch richtig.</scale>
+270;
+270;
+270;
+270;
+270;<scale 0.8>Pumpkin verdingt sich in verschiedenen Hollywood Produktionen als Laiendarsteller und strebt derzeit eine Karriere als Politiker an.</scale>
+270;
+270;
+270;
+270;
+270;<scale 0.8>Schneemann wird zum letzten Mal bei einer Expedition in der Wüste Gobi gesehen.</scale>
+270;
+270;
+270;
+270;<scale 0.8>Kröt besucht seinen Cousin in der ostaustralischen Strömung. Yo dude!</scale>
+270;
+270;
+270;
+270;<scale 0.8>Hank ist Undercover Agent für namhafte Geheimdienste - nach einer steilen, aber kurzen Laufbahn wird er gefeuert, weil man herausgefunden hat, dass er ein Maulwurf ist.</scale>
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+270;
+
+
+Select Mode;
+280;<font 30px_redoutline>Rennmodus</font>
+281;<font 30px_redoutline>Ein Spieler</font>
+282;Zeitfahren
+283;lets go bitches
+284;<font 30px_redoutline>Zwei Spieler</font>
+285;Duell
+286;Meisterschaft
+287;Zurück
+
+Select Resolution;
+290;<font 30px_redoutline>Bildschirm-<br>Auflösung</font>
+291;Zurück
+292;%d x %d
+
+
+Select Character 1 Player;
+300;<font 30px_redoutline>Charakter wählen</font>
+301;<font 30px_redoutline>Spieler 1</font>
+302;<font 30px_redoutline>Spieler 2</font>
+303;Ok
+304;Zurück
+
+
+
+Characters;
+310;Moorhuhn
+311;Lesshuhn
+312;Moorfrosch
+313;Pumpkin
+314;Schneemann
+315;Kröt
+316;Hank
+
+Select Track;
+320;<font 30px_redoutline>Strecke wählen</font>
+321;Bestzeiten
+322;Rennen starten
+323;Zurück
+
+Tracks;
+400;Moorhuhn X
+401;Winter 
+402;Insel
+403;Ägypten
+404;Fabrik
+405;Bergwerk
+406;Burg
+407;Sumpf
+
+
+
+
+Championships;
+480;Benutzerdefiniert
+481;Zufall
+482;Meisterschaft 1
+483;Meisterschaft 2
+
+
+
+Engine;
+330;<font 30px_redoutline>Leistungsklasse</font>
+331;<font 30px_redoutline>Leistungsklasse wählen</font>
+332;50 cc
+333;100 cc
+334;150 cc
+335;Zurück
+336;<font 30px_redoutline><scale 0.5>Bevor Du eine höhere Leistungsklasse wählen kannst,<br>musst Du zuerst beide Meisterschaften gewinnen!</scale></font>
+
+
+Game Finished;
+340;MUSTER
+341;Zurück
+
+
+Select Championship;
+350;<font 30px_redoutline>Meisterschaft wählen</font>
+351;<font 30px_redoutline>%s</font>
+352;%s
+353;Starte Meisterschaft
+354;Zurück
+
+race result;
+358;<font 30px_redoutline>Spieler 1</font>
+359;<font 30px_redoutline>Spieler 2</font>
+360;<font 30px_redoutline>Ergebnis</font>
+361;Runde 1: %s
+362;Runde 2: %s
+363;Runde 3: %s
+364;Gesamt: %s
+367;Weiter
+368;Sieger
+369;
+
+
+Highscore timetrial;
+370;<font 30px_redoutline>Highscore</font>
+371;<font 30px_redoutline><scale 0.5>Spieler</scale></font>
+372;<font 30px_redoutline><scale 0.5>Gesamt</scale></font>
+373;<font 30px_redoutline><scale 0.5>Charakter</scale></font>
+374;<font 30px_redoutline><scale 0.5>Phantom Kart</scale></font>
+375;<font 30px_redoutline><scale 0.5>NEU</scale></font>
+376;Rennen wiederholen
+377;Phantom Kart übertragen
+378;Hauptmenü
+379;<font 30px_redoutline><scale 0.5>Beste Runde</scale></font>
+380;<font 30px_redoutline><scale 0.5>Rang</scale></font>
+381;<font 30px_redoutline><scale 0.5>%s</scale></font>
+382;PHANTOM KART
+383;NEU
+
+Championship result;
+390;<font 30px_redoutline>Streckenergebnis</font>
+391;Rennen wiederholen
+392;Weiter
+393;<font 30px_redoutline><scale 0.5>%s</scale></font>
+394;<font 30px_redoutline><scale 0.5>Beste Runde</scale></font>
+
+
+Championship intermediate/end;
+500;<font 30px_redoutline>Zwischenergebnis</font>
+501;<font 30px_redoutline>Endergebnis</font>
+502;Nächste Strecke
+503;Hauptmenü
+504;Weiter
+
+
+New Highscore;
+510;<font 30px_redoutline>Neue Highscore</font>
+511;Das ist eine neue Bestzeit!<br>Gib Deinen Namen ein!
+512;Das ist eine neue Bestzeit!<br>Spieler 1: Gib Deinen Namen ein!
+513;Das ist eine neue Bestzeit!<br>Spieler 2: Gib Deinen Namen ein!
+514;Weiter
+
+
+Highscore;
+520;<font 30px_redoutline>Highscore</font>
+521;<font 30px_redoutline>Wähle eine Highscore</font>
+522;Zeitfahren
+523;Meisterschaft
+524;Zurück
+
+Track Highscores;
+530;<font 30px_redoutline>Highscore<br>Zeitfahren</font>
+531;Lade Phantom Kart
+532;Zurück
+533;<font 30px_redoutline><scale 0.5>Punkte</scale></font>
+534;<font 30px_redoutline>Highscore<br>Meisterschaft</font>
+
+
+
+540;Keine Verbindung zum Server
+541;<html><body><center><font size=+2>Keine Verbindung zum Server</font></center></body></html>
+542;Keine Antwort vom Server
+543;<html><body><center><font size=+2>Keine Antwort vom Server</font></center></body></html>
+544;Willkommen!
+545;<html><body><center><font size=+2>Willkommen!</font></center></body></html>
+546;http://redirect.phenomedia.com/moorhuhn/mhk2/de/xxl-uplb-startup_redirect.php?from=MHK2_XXL-Ver1.0DE-US
+
+
+
+550;Online-Highscore
+551;http://redirect.phenomedia.com/moorhuhn/mhk2/de/xxl-uplb-high_redirect.php?from=MHK2_XXL-Ver1.0DE-UH
+552;Hilfe
+553;http://redirect.phenomedia.com/moorhuhn/mhk2/de/xxl-uplb-help_redirect.php?from=MHK2_XXL-Ver1.0DE-UF
+554;Registrieren
+555;http://redirect.phenomedia.com/moorhuhn/mhk2/de/xxl-uplb-reg_redirect.php?from=MHK2_XXL-Ver1.0DE-UR
+556;http://redirect.phenomedia.com/moorhuhn/mhk2/de/xxl-phdown_redirect.php?from=MHK2_XXL-Ver1.0DE-DP&track=%d&engine=%d
+
+560;<font 30px_redoutline><scale 2.0>Du belegst den ersten Platz!</scale></font>
+561;<font 30px_redoutline><scale 2.0>Du belegst den zweiten Platz!</scale></font>
+562;<font 30px_redoutline><scale 2.0>Du belegst den dritten Platz!</scale></font>
+563;<font 30px_redoutline><scale 2.0>Du belegst den vierten Platz!</scale></font>
+564;<font 30px_redoutline><scale 2.0>Du belegst den fünften Platz!</scale></font>
+565;<font 30px_redoutline><scale 2.0>Du belegst den sechsten Platz!</scale></font>
+566;<font 30px_redoutline><scale 2.0>Du belegst den siebten Platz!</scale></font>
+567;<font 30px_redoutline>Du hast die 100 cc Klasse freigeschaltet!</font>
+568;<font 30px_redoutline>Du hast die 150 cc Klasse freigeschaltet!</font>
+569;Weiter
+570;Du bist der Meister aller Karts!
+571;Imponierendes Ergebnis!
+572;Klasse!
+573;Nicht schlecht!
+574;Das kannst Du besser!
+575;Ist das alles, was Du drauf hast?
+576;Kein Kommentar...
+
+580;Du hast die zweite Meisterschaft<br>in der 50cc-Klasse freigeschaltet!
+581;Du hast die zweite Meisterschaft<br>in der 100cc-Klasse freigeschaltet!
+582;Du hast die zweite Meisterschaft<br>in der 150cc-Klasse freigeschaltet!
+583;
+584;Du hast die erste Meisterschaft<br>in der 100cc-Klasse freigeschaltet!
+585;Du hast die erste Meisterschaft<br>in der 150cc-Klasse freigeschaltet!
+
+
+590;440 410 310 70
+591;680 520 115 75
+592;http://www.moorhuhn.de

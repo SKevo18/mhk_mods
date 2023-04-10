@@ -1,0 +1,8 @@
+__pycache__/
+env/
+
+*.dat
+*.sar
+
+!sources/decompiled/**
+!sources/original/**

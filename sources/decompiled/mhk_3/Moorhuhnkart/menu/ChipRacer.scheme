@@ -1,0 +1,35 @@
+<?xml version = "1.0" ?>
+<GUIScheme Name = "ChipRacer">
+	<Imageset Name = "ChipRacer" Filename = "ChipRacer.imageset" />
+	<LookNFeel Filename = "ChipRacer.looknfeel" />
+	<WindowSet Filename = "CEGUIFalagardBase" />
+	<FalagardMapping WindowType = "ChipRacer/FakeWindow" TargetType = "Falagard/StaticImage" LookNFeel = "ChipRacer/FakeWindow" />
+	<FalagardMapping WindowType = "ChipRacer/BlackWindow" TargetType = "Falagard/StaticImage" LookNFeel = "ChipRacer/BlackWindow" />
+	<FalagardMapping WindowType = "ChipRacer/StaticImage" TargetType = "Falagard/StaticImage" LookNFeel = "ChipRacer/StaticImage" />
+	<FalagardMapping WindowType = "ChipRacer/StaticText" TargetType = "Falagard/StaticText" LookNFeel = "ChipRacer/StaticText" />
+	<FalagardMapping WindowType = "ChipRacer/Button" TargetType = "Falagard/Button" LookNFeel = "ChipRacer/Button" />
+	<FalagardMapping WindowType = "ChipRacer/ImageButton" TargetType = "Falagard/Button" LookNFeel = "ChipRacer/ImageButton" />
+	<FalagardMapping WindowType = "ChipRacer/RadioButton" TargetType = "Falagard/RadioButton" LookNFeel = "ChipRacer/RadioButton" />
+	<FalagardMapping WindowType = "ChipRacer/RadioButtonSpecial" TargetType = "Falagard/RadioButton" LookNFeel = "ChipRacer/RadioButtonSpecial" />
+	<FalagardMapping WindowType = "ChipRacer/BigRadioButton" TargetType = "Falagard/RadioButton" LookNFeel = "ChipRacer/BigRadioButton" />
+	<FalagardMapping WindowType = "ChipRacer/Checkbox" TargetType = "Falagard/Checkbox" LookNFeel = "ChipRacer/CheckboxHook" />
+	<FalagardMapping WindowType = "ChipRacer/ButtonArrowUp" TargetType = "Falagard/Button" LookNFeel = "ChipRacer/ButtonArrowUp" />
+	<FalagardMapping WindowType = "ChipRacer/ButtonArrowDown" TargetType = "Falagard/Button" LookNFeel = "ChipRacer/ButtonArrowDown" />
+	<FalagardMapping WindowType = "ChipRacer/Slider" TargetType = "Falagard/Slider" LookNFeel = "ChipRacer/Slider" />
+	<FalagardMapping WindowType = "ChipRacer/SliderThumb" TargetType = "Falagard/Thumb" LookNFeel = "ChipRacer/SliderThumb" />
+	<FalagardMapping WindowType = "ChipRacer/VerticalScrollbar" TargetType = "Falagard/Scrollbar" LookNFeel = "ChipRacer/VerticalScrollbar" />
+	<FalagardMapping WindowType = "ChipRacer/VerticalScrollbarThumb" TargetType = "Falagard/Thumb" LookNFeel = "ChipRacer/VerticalScrollbarThumb" />
+	<FalagardMapping WindowType = "ChipRacer/HorizontalScrollbar" TargetType = "Falagard/Scrollbar" LookNFeel = "ChipRacer/HorizontalScrollbar" />
+	<FalagardMapping WindowType = "ChipRacer/HorizontalScrollbarThumb" TargetType = "Falagard/Thumb" LookNFeel = "ChipRacer/HorizontalScrollbarThumb" />
+	<FalagardMapping WindowType = "ChipRacer/ScrollablePane" TargetType="Falagard/ScrollablePane" LookNFeel="ChipRacer/ScrollablePane" />
+	<FalagardMapping WindowType = "ChipRacer/Listbox" TargetType = "Falagard/Listbox" LookNFeel = "ChipRacer/Listbox" />	
+	<FalagardMapping WindowType = "ChipRacer/Editbox" TargetType = "Falagard/Editbox" LookNFeel = "ChipRacer/Editbox" />
+	<FalagardMapping WindowType = "ChipRacer/ComboDropList" TargetType = "Falagard/ComboDropList" LookNFeel = "ChipRacer/ComboDropList" />	
+	<FalagardMapping WindowType = "ChipRacer/Combobox" TargetType = "Falagard/Combobox" LookNFeel = "ChipRacer/Combobox" />
+	<FalagardMapping WindowType = "ChipRacer/Titlebar" TargetType = "Falagard/Titlebar" LookNFeel = "ChipRacer/Titlebar" />
+	<FalagardMapping WindowType = "ChipRacer/SystemButton" TargetType = "Falagard/SystemButton" LookNFeel = "ChipRacer/Button" />
+	<FalagardMapping WindowType = "ChipRacer/FrameWindow" TargetType = "Falagard/FrameWindow" LookNFeel = "ChipRacer/FrameWindow" />
+	<FalagardMapping WindowType = "ChipRacer/ListHeader" TargetType = "Falagard/ListHeader" LookNFeel = "ChipRacer/ListHeader" />
+	<FalagardMapping WindowType = "ChipRacer/ListHeaderSegment" TargetType = "Falagard/ListHeaderSegment" LookNFeel = "ChipRacer/ListHeaderSegment" />
+	<FalagardMapping WindowType = "ChipRacer/MultiColumnList" TargetType = "Falagard/MultiColumnList" LookNFeel = "ChipRacer/MultiColumnList" />
+</GUIScheme>

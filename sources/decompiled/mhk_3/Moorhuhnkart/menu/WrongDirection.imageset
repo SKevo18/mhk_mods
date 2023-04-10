@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<Imageset Name="WrongDirection" Imagefile="WrongDirection.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+   <Image Name="FullImage" XPos="0"  YPos="0" Width="256" Height="256" />
+</Imageset>

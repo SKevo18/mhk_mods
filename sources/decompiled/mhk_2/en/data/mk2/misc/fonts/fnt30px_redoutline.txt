@@ -1,0 +1,48 @@
+
+charset ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!$%&/()?+'-.,;:"הצüִײÜßוֵיטפגחֹ־אךכמןשûüÿסתםף¡°ב
+
+spacingX -3
+spacingY 0
+
+
+SECTION kerning
+	WA -5
+	AW -5
+	He +1
+	en +1
+	nn +2
+	ne +1
+	nd +1
+	de +1
+	10 +1
+	15 +1
+	Re -1
+	it +1
+	nm +2
+	ns +1
+	lu +1
+	ng +1
+	ge +1
+	Ei +2
+	Hi +1
+	lf +1
+	di +1
+	Sp +1
+	le +1
+	el +1
+	ha +1
+	Zw -1
+	ue +1
+	Ha +1
+	tl +1
+	nt +1
+	St +1
+	ti +1
+	ls +1
+	ch +1
+	he +1
+	g! +1
+ENDSECTION
+
+
+

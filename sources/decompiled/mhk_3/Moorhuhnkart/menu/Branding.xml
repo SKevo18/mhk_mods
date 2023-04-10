@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<Branding>
+	<!-- Deutsch -->
+	
+	<Screen Lang="De" Show="True" Imageset="BrandingScreenDE">
+		<!-- Pheno Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=431" XPos="0" YPos="536" Width="512"
+			Height="64" Imageset="BrandingButtonsDE" NormalImage="Button01Normal" HoverImage="Button01Hover" />
+		<!-- Amazon Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=432" XPos="62" YPos="306"
+			Width="256" Height="128" Imageset="BrandingButtonsDE" NormalImage="Button02Normal" HoverImage="Button02Hover" />
+		<!-- Aktion Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=433" XPos="288" YPos="471"
+			Width="512" Height="64" Imageset="BrandingButtonsDE" NormalImage="Button03Normal" HoverImage="Button03Hover" />
+	</Screen>
+	
+	<Screen Lang="En" Show="False" Imageset="BrandingScreenDE">
+		<!-- Pheno Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=431" XPos="0" YPos="536" Width="512"
+			Height="64" Imageset="BrandingButtonsDE" NormalImage="Button01Normal" HoverImage="Button01Hover" />
+		<!-- Amazon Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=432" XPos="62" YPos="306"
+			Width="256" Height="128" Imageset="BrandingButtonsDE" NormalImage="Button02Normal" HoverImage="Button02Hover" />
+		<!-- Aktion Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=433" XPos="288" YPos="471"
+			Width="512" Height="64" Imageset="BrandingButtonsDE" NormalImage="Button03Normal" HoverImage="Button03Hover" />
+	</Screen>
+
+	<Screen Lang="Fr" Show="False" Imageset="BrandingScreenDE">
+		<!-- Pheno Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=431" XPos="0" YPos="536" Width="512"
+			Height="64" Imageset="BrandingButtonsDE" NormalImage="Button01Normal" HoverImage="Button01Hover" />
+		<!-- Amazon Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=432" XPos="62" YPos="306"
+			Width="256" Height="128" Imageset="BrandingButtonsDE" NormalImage="Button02Normal" HoverImage="Button02Hover" />
+		<!-- Aktion Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=433" XPos="288" YPos="471"
+			Width="512" Height="64" Imageset="BrandingButtonsDE" NormalImage="Button03Normal" HoverImage="Button03Hover" />
+	</Screen>
+
+	<Screen Lang="Sp" Show="False" Imageset="BrandingScreenDE">
+		<!-- Pheno Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=431" XPos="0" YPos="536" Width="512"
+			Height="64" Imageset="BrandingButtonsDE" NormalImage="Button01Normal" HoverImage="Button01Hover" />
+		<!-- Amazon Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=432" XPos="62" YPos="306"
+			Width="256" Height="128" Imageset="BrandingButtonsDE" NormalImage="Button02Normal" HoverImage="Button02Hover" />
+		<!-- Aktion Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=433" XPos="288" YPos="471"
+			Width="512" Height="64" Imageset="BrandingButtonsDE" NormalImage="Button03Normal" HoverImage="Button03Hover" />
+	</Screen>
+
+	<Screen Lang="It" Show="False" Imageset="BrandingScreenDE">
+		<!-- Pheno Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=431" XPos="0" YPos="536" Width="512"
+			Height="64" Imageset="BrandingButtonsDE" NormalImage="Button01Normal" HoverImage="Button01Hover" />
+		<!-- Amazon Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=432" XPos="62" YPos="306"
+			Width="256" Height="128" Imageset="BrandingButtonsDE" NormalImage="Button02Normal" HoverImage="Button02Hover" />
+		<!-- Aktion Button -->
+		<Button URL="http://redirect.phenomedia.com/redirectMe.php?id=433" XPos="288" YPos="471"
+			Width="512" Height="64" Imageset="BrandingButtonsDE" NormalImage="Button03Normal" HoverImage="Button03Hover" />
+	</Screen>
+
+</Branding>

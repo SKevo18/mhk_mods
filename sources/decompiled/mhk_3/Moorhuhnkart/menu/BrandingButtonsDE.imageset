@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<Imageset Name="BrandingButtonsDE" Imagefile="BrandingButtonsDE.png" NativeHorzRes="800" NativeVertRes="600" AutoScaled="true">
+
+<!-- Pheno -->
+<Image Name="Button01Normal" XPos="0" YPos="0"  Width="512" Height="64" />
+<Image Name="Button01Hover"  XPos="0" YPos="64" Width="512" Height="64" />
+
+<!-- Amazon -->
+<Image Name="Button02Normal" XPos="0"   YPos="128" Width="256" Height="128" />
+<Image Name="Button02Hover"  XPos="256" YPos="128" Width="256" Height="128" />
+
+<!-- Umfrage -->
+<Image Name="Button03Normal" XPos="0" YPos="256" Width="512" Height="64" />
+<Image Name="Button03Hover"  XPos="0" YPos="320" Width="512" Height="64" />
+
+</Imageset>

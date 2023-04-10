@@ -1,0 +1,128 @@
+*- The Core Team -
+
+!Head of Development
+Michael Zoll
+
+!Project Lead
+Yuro Olivier
+
+!Game Design
+Tim Schmidt
+Yuro Olivier
+
+!Lead Artist
+Florian Schmoldt
+
+!Concept Artwork
+Cüneyt Sürme
+Florian Schmoldt
+
+!2D Artwork
+Stefan Wurzer
+
+!Quality Assurance Manager
+Thorsten Stranegger
+
+!QA / Game Tester
+Till Boos
+Benjamin Körner
+David Hopmann
+Dominik Porten
+
+!Mastering / Installer
+Florian Wegner
+
+*- Phenomedia Administration, Sales & Marketing - 
+
+!Managing Directors
+Helge Borgarts
+Klaus Forch
+
+!Head of Sales
+Kay Lembke
+
+!Head of Marketing
+Martina Putzki
+
+!Marketing
+Corinna Kalthoff
+Patrick Verlinden
+
+!Marketing/ DTP and Web
+Erhard Thüringer
+Philipp Scholl
+
+!Special Thanks
+#With love to our wives, husbands, partners and kids, who sacrificed a lot to get us this title done.
+
+!Additional Thanks
+#Pauline Otto, Elena Müser, Sonja Lüttenberg, Johanna Michels, Isabella Piertzak, 
+#Jendrik Poesche, Micha Maifeld, Steffen Istel, Tim Berger, Lutz Falke and Robin Wilhelm.
+
+#Moorhuhn is a registered trademark of phenomedia publishing gmbh, Bochum, © phenomedia publishing gmbh. 
+#The character of the Moorhuhn is based on a graphical work of Ingo Mesche from the year 1998.
+
+#(C) phenomedia publishing gmbh
+
+
+
+
+
+
+
+
+
+
+*- Developement -
+
+!Visual Imagination Software
+!(VIS Games and Entertainment)
+
+!Project Management
+Andre Bürger
+
+!Programming
+Tobias Schlegel
+Alexander Schumacher
+
+!2D-Grafix
+Martin Hosemann 
+Daniel Peters
+
+!Additional 2D-Grafix
+Martin Schlierkamp
+
+!Animations
+Martin Hosemann
+
+!3D-Grafix
+Andre Bürger
+Daniel Peters
+
+!Music and Soundeffects
+Haiko Ruttmann
+
+!Additional Work
+Stefan Meyer
+
+!3D Engine
+Starforce 3D by Visual Imagination Software
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+# Moorhuhn Kart Mods
+
+A CLI tool for decompiling assets of Moorhuhn Kart games and reinjecting them back.
+
+Supports MHK: Extra, MHK 2 and MHK 3.
+
+## How does it work?
+
+The game assets (not source code!) are de-compiled by [QuickBMS](http://aluigi.altervista.org/quickbms.htm), then re-injected back
+with modified source.
+
+The workflow is a bit tricky due to limitations on how the game archives work (e. g.: a re-injected file can't be larger in bytes than its original counterpart), but this repository aims to simplify the process by providing a CLI tool.
+
+## Tutorial
+
+The script is compatible with Python 3.6+ (latest version is always recommended due to performance improvements). You can download Python from their [official website](https://www.python.org/).
+
+### To compile mods:
+
+Because of the big file size of data files, the modded ones are not included in the repository's source code. I plan to create a website that hosts modded data files from this repository, but you have to compile them by yourself for now:
+
+1. Run `python cli.py compile-all` to compile all mods, or just mods for a specific game (`python cli.py compile-all <game_id>`. To compile a specific mod, use `python cli.py compile <game_id> <mod_id>`
+
+### To create new mods:
+
+0. Decompile a MHK `.dat`/`.sar` file. Because there weren't any new updates for the original MHK games in ages, this repository already includes the decompiled assets in the `./sources/decompiled` directory. Therefore, it is safe to skip this step.
+1. Create a directory structure for the new mod (`python cli.py new <ID of MHK game> <mod ID>`).
+2. Add modified files to `./sources/mods/<ID of MHK game>/<mod ID>/sources`.
+3. `python cli.py compile <ID of MHK game> <mod ID>`.
+
+## Questions and Answers
+
+### Where is MHK 4 (Moorhuhn Kart: Thunder)?
+
+As of right now (1st April 2023), there is no known script (at least I haven't found any?) that decompiles MHK 4 assets.
+If you are aware of any, please create a PR (add the script to `./quickbms/bms_scripts`).
+
+### Is this tool compatible with Linux?
+
+Yes, the tool will automatically determine if you're running on Windows or other machine (useful in cases where you, for example, use this tool for an automated webserver that serves the modded data files). The Linux `quickbms` executable can be found in the `quickbms/` directory in this repo (as well as the Windows version).
+
+### Which QuickBMS version is used in this repository?
+
+0.12.0, downloaded from [QuickBMS's website](http://aluigi.altervista.org/quickbms.htm)
+
+### I encountered an error while (de/re)compiling the game or the modified game doesn't start/crashes, what do I do?
+
+Modifying the game in this way is like breaking your computer apart and then trying to put it back together and praying that it works.
+
+Since MHK games do not have an official modding tool, this repository is more of an experiment rather than a fully-fleshed out mod manager.
+Please, be aware that oopsies and ouchies may happen. If you have no idea what you are doing, then it is a better idea to try out the existing mods instead.

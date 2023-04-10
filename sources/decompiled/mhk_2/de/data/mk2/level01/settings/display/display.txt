@@ -1,0 +1,121 @@
+# ------------------------------------------------ RenderWare
+OBJECT START
+class type: "class RwGraphicsSettings"
+[RenderWare Settings] "RenderWare"
+{
+    "near clip" 0.100000
+    "far clip low" 1000.000000
+    "far clip medium" 1000.000000
+    "far clip high" 1000.000000
+    "view x" 0.800000
+    "view y" 0.800000
+}
+
+# ------------------------------------------------ Ambient Light
+OBJECT START
+class type: "class AmbientLight"
+[Ambient Light] "Ambient Light"
+{
+    "Enabled" 1
+    "Static Lighting" 0
+    "Dynamic Lighting" 1
+    "Light World" 1
+    "Light Atomics" 1
+    "Color" 0.925490 0.823529 0.474510 1.000000
+    "Intensity" 0.180000
+}
+
+# ------------------------------------------------ Directional Light
+OBJECT START
+class type: "class DirectionalLight"
+[Directional Light] "Directional Light"
+{
+    "Enabled" 1
+    "Static Lighting" 0
+    "Dynamic Lighting" 1
+    "Light World" 1
+    "Light Atomics" 1
+    "Color" 0.878431 0.721569 0.396078 1.000000
+    "Intensity" 0.820000
+    "Orientation" 0.662935 -0.663899 0.344807 -0.029221
+}
+
+# ------------------------------------------------ Directional Light Objects
+OBJECT START
+class type: "class DirectionalLight"
+[Directional Light] "Directional Light Objects"
+{
+    "Enabled" 1
+    "Static Lighting" 0
+    "Dynamic Lighting" 1
+    "Light World" 0
+    "Light Atomics" 1
+    "Color" 1.000000 1.000000 1.000000 1.000000
+    "Intensity" 1.000000
+    "Orientation" 1.000000 0.000000 0.000000 0.000000
+}
+
+# ------------------------------------------------ Fog
+OBJECT START
+class type: "class Fog"
+[Fog] "Fog"
+{
+    "enable" 1
+    "type" 1
+    "color" 0.505882 0.674510 0.847059 1.000000
+    "density" 0.001300
+    "distance" 0.000000
+}
+
+# ------------------------------------------------ Skydome
+OBJECT START
+class type: "class Skydome"
+[Skydome Emitter] "Skydome"
+{
+    class type: "class Fog"
+    [Fog] "Fog"
+    {
+        "enable" 0
+        "type" 0
+        "color" 1.000000 1.000000 1.000000 1.000000
+        "density" 0.000000
+        "distance" 0.000000
+    }
+
+    class type: "class AmbientLight"
+    [Ambient Light] "Light"
+    {
+        "Enabled" 0
+        "Static Lighting" 0
+        "Dynamic Lighting" 1
+        "Light World" 1
+        "Light Atomics" 1
+        "Color" 1.000000 1.000000 1.000000 1.000000
+        "Intensity" 1.000000
+    }
+
+}
+
+# ------------------------------------------------ Lensflares
+OBJECT START
+class type: "class Lensflares"
+[Lensflares] "Lensflares"
+{
+    "Light Position" 260.000000 150.000000 32.500000
+    "count" 0
+}
+
+# ------------------------------------------------ Ambient Light Trees
+OBJECT START
+class type: "class AmbientLight"
+[Ambient Light] "Ambient Light Trees"
+{
+    "Enabled" 1
+    "Static Lighting" 0
+    "Dynamic Lighting" 1
+    "Light World" 0
+    "Light Atomics" 1
+    "Color" 1.000000 1.000000 1.000000 1.000000
+    "Intensity" 1.000000
+}
+

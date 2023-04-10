@@ -1,0 +1,11 @@
+
+charset ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!$%&/()?+'-.,;:<>[]"הצüִײÜßוֵיטפגחֹ־אךכמןשûüÿסתם
+
+spacingX 0
+spacingY 0
+
+SECTION kerning
+ENDSECTION
+
+
+

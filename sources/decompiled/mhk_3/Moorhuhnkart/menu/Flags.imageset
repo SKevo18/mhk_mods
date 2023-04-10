@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<Imageset Name="Flags" Imagefile="Flags.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="false">
+
+   <Image Name="FlagDE_Normal" XPos="128" YPos="0"   Width="120" Height="90" />
+   <Image Name="FlagDE_Hover"  XPos="384" YPos="128" Width="120" Height="90" />
+   
+   <Image Name="FlagEN_Normal" XPos="0"   YPos="0"   Width="120" Height="90" />
+   <Image Name="FlagEN_Hover"  XPos="256" YPos="128" Width="120" Height="90" />
+   
+   <Image Name="FlagFR_Normal" XPos="128" YPos="128" Width="120" Height="90" />
+   <Image Name="FlagFR_Hover"  XPos="384" YPos="256" Width="120" Height="90" />
+   
+   <Image Name="FlagSP_Normal" XPos="0"   YPos="128" Width="120" Height="90" />
+   <Image Name="FlagSP_Hover"  XPos="256" YPos="256" Width="120" Height="90" />
+   
+   <Image Name="FlagIT_Normal" XPos="256" YPos="0"   Width="120" Height="90" />
+   <Image Name="FlagIT_Hover"  XPos="0"   YPos="256" Width="120" Height="90" />
+   
+   <Image Name="FlagRU_Normal" XPos="384" YPos="0"   Width="120" Height="90" />
+   <Image Name="FlagRU_Hover"  XPos="128" YPos="256" Width="120" Height="90" />
+   
+</Imageset>
+
+

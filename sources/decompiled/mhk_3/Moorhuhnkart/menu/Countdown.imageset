@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<Imageset Name="Countdown" Imagefile="Countdown.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+   <Image Name="Count1" XPos="0"   YPos="0"   Width="512" Height="512" />
+   <Image Name="Count2" XPos="512" YPos="0"   Width="512" Height="512" />
+   <Image Name="Count3" XPos="0"   YPos="512" Width="512" Height="512" />
+   <Image Name="Count4" XPos="512" YPos="512" Width="512" Height="512" />
+</Imageset>

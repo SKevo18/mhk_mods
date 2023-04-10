@@ -1,0 +1,2 @@
+sources/original/** filter=lfs diff=lfs merge=lfs -text
+sources/decompiled/mhk_extra/mhke.zip filter=lfs diff=lfs merge=lfs -text

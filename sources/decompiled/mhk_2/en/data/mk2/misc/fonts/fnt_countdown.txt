@@ -1,0 +1,12 @@
+
+charset 321GO!
+
+spacingX 0
+spacingY 0
+
+
+SECTION kerning
+ENDSECTION
+
+
+

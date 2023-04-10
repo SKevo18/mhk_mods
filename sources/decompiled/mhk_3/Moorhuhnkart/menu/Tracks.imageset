@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Imageset Name="Tracks" Imagefile="Tracks.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">   
+   <Image Name="Track1"        XPos="4"   YPos="10"  Width="332" Height="237" />
+   <Image Name="Track2"        XPos="346" YPos="10"  Width="332" Height="237" />
+   <Image Name="Track3"        XPos="688" YPos="10"  Width="332" Height="237" />   
+   <Image Name="Track4"        XPos="4"   YPos="257" Width="332" Height="237" />
+   <Image Name="Track5"        XPos="346" YPos="257" Width="332" Height="237" />
+   <Image Name="Track6"        XPos="688" YPos="257" Width="332" Height="237" />
+   <Image Name="Track7"        XPos="4"   YPos="505" Width="332" Height="237" />
+   <Image Name="Track8"		   XPos="346" YPos="505" Width="332" Height="237" />
+   <Image Name="Championship1" XPos="688" YPos="505" Width="332" Height="237" />
+   <Image Name="Championship2" XPos="4"   YPos="752" Width="332" Height="237" />
+</Imageset>

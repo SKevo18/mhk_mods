@@ -1,0 +1,5564 @@
+<?xml version="1.0" ?>
+<Falagard> 
+
+	<!--
+	***************************************************
+	MHK/StaticImage
+	***************************************************
+	-->
+	
+	<WidgetLook name="ChipRacer/StaticImage">
+		<Property name="FrameEnabled" value="False" />
+		<Property name="BackgroundEnabled" value="False" />		
+		
+		<NamedArea name="WithFrameImageRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameImageRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		
+		<ImagerySection name="bg">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="Background" imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>		
+		
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+		<StateImagery name="EnabledFrame" />
+		<StateImagery name="DisabledFrame" />
+		
+		<StateImagery name="EnabledBackground" >
+			<Layer>
+				<Section section="bg">
+				</Section>
+			</Layer>
+		</StateImagery>
+		
+		<StateImagery name="DisabledBackground" >
+			<Layer>
+				<Section section="bg">
+				</Section>
+			</Layer>
+		</StateImagery>
+		
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	MHK/StaticText
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/StaticText">
+		<Property name="FrameEnabled" value="False" />
+		<Property name="BackgroundEnabled" value="False" />
+		<NamedArea name="TextRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="0" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="0" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextRenderAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="5" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextRenderAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="5" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextRenderAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" offset="-15" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="15" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child type="ChipRacer/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="30" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" offset="-15" type="Height" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		
+		<ImagerySection name="bg">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="Background" imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="GenericBrush" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="GenericBrush" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="GenericBrush" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="GenericBrush" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="GenericBrush" />
+				<Image type="TopEdge" imageset="ChipRacer" image="GenericBrush" />
+				<Image type="RightEdge" imageset="ChipRacer" image="GenericBrush" />
+ 				<Image type="BottomEdge" imageset="ChipRacer" image="GenericBrush" />
+				<Image type="Background" imageset="ChipRacer" image="TransparentBrush" />			
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		
+		<StateImagery name="Enabled" >
+		</StateImagery>
+		
+		<StateImagery name="Disabled" >
+		</StateImagery>
+		
+		<StateImagery name="EnabledFrame" >
+			<Layer>
+				<Section section="frame">
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		
+		<StateImagery name="EnabledBackground" >
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="7F00007F" topRight="7FFFFFFF" bottomLeft="7F0000FF" bottomRight="7FFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		
+		<StateImagery name="DisabledFrame" />
+		<StateImagery name="DisabledBackground" />
+	</WidgetLook> 
+
+
+	<!--
+	***************************************************
+	MHK/Button
+	***************************************************
+	-->
+	
+	<WidgetLook name="ChipRacer/Button">
+	
+		<Property name="NormalTextColour" value="FFFFFFFF" />
+		<Property name="HoverTextColour" value="FFFFFFFF" />
+		<Property name="PushedTextColour" value="FFFFFFFF" />
+		<Property name="DisabledTextColour" value="FF555555" />
+		
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ChipRacer" image="ButtonLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ButtonRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ButtonTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ButtonBottomEdge" />
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ButtonTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ButtonTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ButtonBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ButtonBottomRightCorner" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="frame_hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ChipRacer" image="ButtonLeftEdgeHover" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ButtonRightEdgeHover" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ButtonTopEdgeHover" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ButtonBottomEdgeHover" />
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ButtonTopLeftCornerHover" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ButtonTopRightCornerHover" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ButtonBottomLeftCornerHover" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ButtonBottomRightCornerHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="frame_disabled">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ChipRacer" image="ButtonLeftEdgeDisabled" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ButtonRightEdgeDisabled" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ButtonTopEdgeDisabled" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ButtonBottomEdgeDisabled" />
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ButtonTopLeftCornerDisabled" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ButtonTopRightCornerDisabled" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ButtonBottomLeftCornerDisabled" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ButtonBottomRightCornerDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+
+		<ImagerySection name="bg">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ChipRacer" image="ButtonLeftEdge" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim imageset="ChipRacer" image="ButtonTopEdge" dimension="Height" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" >
+							<DimOperator op="Subtract" >
+								<ImageDim imageset="ChipRacer" image="ButtonLeftEdge" dimension="Width" >
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ButtonRightEdge" dimension="Width" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" >
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ChipRacer" image="ButtonTopEdge" dimension="Height" >
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ButtonBottomEdge" dimension="Height" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonInner" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="bg_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ChipRacer" image="ButtonLeftEdgeHover" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim imageset="ChipRacer" image="ButtonTopEdgeHover" dimension="Height" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" >
+							<DimOperator op="Subtract" >
+								<ImageDim imageset="ChipRacer" image="ButtonLeftEdgeHover" dimension="Width" >
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ButtonRightEdgeHover" dimension="Width" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" >
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ChipRacer" image="ButtonTopEdgeHover" dimension="Height" >
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ButtonBottomEdgeHover" dimension="Height" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonInnerHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+	
+		<ImagerySection name="bg_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ChipRacer" image="ButtonLeftEdgeDisabled" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim imageset="ChipRacer" image="ButtonTopEdgeDisabled" dimension="Height" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" >
+							<DimOperator op="Subtract" >
+								<ImageDim imageset="ChipRacer" image="ButtonLeftEdgeDisabled" dimension="Width" >
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ButtonRightEdgeDisabled" dimension="Width" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" >
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ChipRacer" image="ButtonTopEdgeDisabled" dimension="Height" >
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ButtonBottomEdgeDisabled" dimension="Height" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonInnerDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="bg" />
+				<Section section="frame" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="bg_hover" />
+				<Section section="frame_hover" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="bg_hover" />
+				<Section section="frame_hover" />
+				<Section section="label">
+					<ColourProperty name="PushedTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg_disabled" />
+				<Section section="frame_disabled" />
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+    ***************************************************
+	MHK/ImageButton
+    ***************************************************
+    -->
+    
+	<WidgetLook name="ChipRacer/ImageButton">
+		<Property name="NormalTextColour" value="FFFFFFFF" />
+		<Property name="HoverTextColour" value="FFFFFFFF" />
+		<Property name="PushedTextColour" value="FFFFFFFF" />
+		<Property name="DisabledTextColour" value="FF555555" />
+		<ImagerySection name="bg">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="bg" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="bg" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="bg" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="FF555555" topRight="FF555555" bottomLeft="FF555555" bottomRight="FF555555" />
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+
+	<!--
+	***************************************************
+	MHK/FrameWindow
+	***************************************************
+	-->
+	
+	<WidgetLook name="ChipRacer/FrameWindow">
+	
+		<Property name="NSSizingCursorImage" value="set:ChipRacer image:MouseArrow" />
+		<Property name="EWSizingCursorImage" value="set:ChipRacer image:MouseArrow" />
+		<Property name="NWSESizingCursorImage" value="set:ChipRacer image:MouseArrow" />
+		<Property name="NESWSizingCursorImage" value="set:ChipRacer image:MouseArrow" />
+		
+		<NamedArea name="ClientWithTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" offset="0" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		
+		<NamedArea name="ClientWithTitleNoFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<WidgetDim dimension="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		
+		<NamedArea name="ClientNoTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="1" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		
+		<NamedArea name="ClientNoTitleNoFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		
+		<Child type="ChipRacer/Titlebar" nameSuffix="__auto_titlebar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<FontDim type="LineSpacing" padding="0" />
+				</Dim>
+			</Area>
+			<Property name="AlwaysOnTop" value="True" />
+		</Child>
+
+		<Child type="ChipRacer/Button" nameSuffix="__auto_closebutton__">
+			<Area>
+				<Dim type="LeftEdge">
+					<UnifiedDim scale="1" type="LeftEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ChipRacer" image="SysAreaRight" dimension="Width">
+								<DimOperator op="Add">
+									<ImageDim imageset="ChipRacer" image="SysAreaMiddle" dimension="Width" />
+								</DimOperator>
+							</ImageDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0.5">
+						<DimOperator op="Multiply">
+							<WidgetDim widget="__auto_titlebar__" dimension="Height">
+								<DimOperator op="Subtract">
+									<ImageDim imageset="ChipRacer" image="CloseButtonNormal" dimension="Width" />
+								</DimOperator>
+							</WidgetDim>
+						</DimOperator>
+					</AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<ImageDim imageset="ChipRacer" image="CloseButtonNormal" dimension="Width" />
+				</Dim>
+				<Dim type="Height">
+					<ImageDim imageset="ChipRacer" image="CloseButtonNormal" dimension="Height" />
+				</Dim>
+			</Area>
+			<Property name="AlwaysOnTop" value="True" />
+			<Property name="UseStandardImagery" value="False" />
+			<Property name="NormalImage" value="set:ChipRacer image:CloseButtonNormal" />
+			<Property name="HoverImage" value="set:ChipRacer image:CloseButtonHover" />
+			<Property name="PushedImage" value="set:ChipRacer image:CloseButtonHover" />
+			<Property name="DisabledImage" value="set:ChipRacer image:CloseButtonDisabled" />
+		</Child>
+      
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ThinTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ThinTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ThinBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ThinBottomRightCorner" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="ThinLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ThinRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ThinTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ThinBottomEdge" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="clientarea">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge">
+							<DimOperator op="Add">
+								<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Width" />
+							</DimOperator>
+						</WidgetDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width">
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" >
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ThinRightEdge" dimension="Width" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height">
+							<DimOperator op="Subtract">
+								<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge">
+									<DimOperator op="Add" >
+										<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" >
+											<DimOperator op="Add" >
+												<ImageDim imageset="ChipRacer" image="ThinBottomEdge" dimension="Height" />
+											</DimOperator>
+										</ImageDim>
+									</DimOperator >
+								</WidgetDim>
+							</DimOperator>
+						</UnifiedDim>						
+					</Dim>
+				</Area>
+				<Image type="Background" imageset="ChipRacer" image="WindowBg" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		
+		<StateImagery name="ActiveWithTitleWithFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleWithFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledWithTitleWithFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveWithTitleNoFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleNoFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledWithTitleNoFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleWithFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleWithFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleWithFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleNoFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleNoFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleNoFrame">
+			<Layer>
+				<Section section="clientarea">
+					<Colours topLeft="C0FFFFFF" topRight="C0FFFFFF" bottomLeft="C0FFFFFF" bottomRight="C0FFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+
+	<!--
+	***************************************************
+	MHK/Editbox
+	***************************************************
+	-->
+	
+	<WidgetLook name="ChipRacer/Editbox">
+	
+		<Property name="NormalTextColour" value="FF000000" />
+		<Property name="SelectedTextColour" value="FF000000" />
+		<Property name="ActiveSelectionColour" value="00000000" />
+	
+		<Property name="MouseCursorImage" value="set:ChipRacer image:MouseArrow" />
+		
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" >
+						<DimOperator op="Add" >
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</ImageDim>
+				</Dim>					
+				<Dim type="TopEdge">
+					<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" />
+				</Dim>					
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" >
+						<DimOperator op="Subtract" >
+							<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" >
+								<DimOperator op="Add">
+									<ImageDim imageset="ChipRacer" image="ThinRightEdge" dimension="Width" >
+										<DimOperator op="Add" >
+											<AbsoluteDim value="20" />
+										</DimOperator>
+									</ImageDim>
+								</DimOperator>
+							</ImageDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>					
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" >
+						<DimOperator op="Subtract" >
+							<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" >
+								<DimOperator op="Add">
+									<ImageDim imageset="ChipRacer" image="ThinBottomEdge" dimension="Height" />
+								</DimOperator>
+							</ImageDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ChipRacer" image="ThinLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ThinRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ThinTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ThinBottomEdge" />
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ThinTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ThinTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ThinBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ThinBottomRightCorner" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="bg">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" />
+					</Dim>					
+					<Dim type="TopEdge">
+						<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" />
+					</Dim>					
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" >
+							<DimOperator op="Subtract" >
+								<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" >
+									<DimOperator op="Add">
+										<ImageDim imageset="ChipRacer" image="ThinRightEdge" dimension="Width" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>					
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" >
+							<DimOperator op="Subtract" >
+								<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" >
+									<DimOperator op="Add">
+										<ImageDim imageset="ChipRacer" image="ThinBottomEdge" dimension="Height" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</ImageryComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="selection">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="4" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1.0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" offset="-4" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="Carat">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="5" />
+					</Dim>
+					<Dim type="Width">
+						<AbsoluteDim value="3" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="-5" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="BlackBrush" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ReadOnly">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg" >
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveSelection">
+			<Layer>
+				<Section section="selection">
+					<ColourProperty name="ActiveSelectionColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveSelection">
+			<Layer>
+				<Section section="selection">
+					<ColourProperty name="InactiveSelectionColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+
+   
+   <!--
+    ***************************************************
+    MHK/RadioButton
+    ***************************************************
+    -->
+    
+	<WidgetLook name="ChipRacer/RadioButton">
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFFHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFFDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxHook" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxHookHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxHookDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="selected_normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="selected_hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="selected_disabled" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+	
+	
+   <!--
+    ***************************************************
+    MHK/BigRadioButton
+    ***************************************************
+    -->
+    
+	<WidgetLook name="ChipRacer/BigRadioButton">
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="BigRadioButtonOFF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="BigRadioButtonOFFHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="BigRadioButtonOFFDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="BigRadioButtonON" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="BigRadioButtonONHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="BigRadioButtonONDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="selected_normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="selected_hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="selected_disabled" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+		
+   <!--
+    ***************************************************
+    MHK/RadioButtonSpecial
+    ***************************************************
+    -->
+    
+	<WidgetLook name="ChipRacer/RadioButtonSpecial">
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="RadioButtonOFF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="RadioButtonOFFHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="RadioButtonOFFDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="RadioButtonON" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="RadioButtonONHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="RadioButtonONDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="selected_normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="selected_hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="selected_disabled" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>	
+
+	<!--
+	***************************************************
+	MHK/SliderThumb
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/SliderThumb">
+	
+		<Property name="VertFree" value="True" />
+		<Property name="HorzFree" value="True" />
+		
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="SliderThumb" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="SliderThumbHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="SliderThumbDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	MHK/Slider
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/Slider">
+	
+		<Property name="VerticalSlider" value="False" />
+		<Property name="MouseButtonDownAutoRepeat" value="True" />
+		<Property name="WantsMultiClickEvents" value="False" />
+		
+		<NamedArea name="ThumbTrackArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="9" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="Width" scale="1.0" offset="-10" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="Height" scale="1.0" offset="0" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/SliderThumb" nameSuffix="__auto_thumb__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="0.1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="0.8" offset="-7" type="Height" />
+				</Dim>
+			</Area>
+			<VertAlignment type="CentreAligned" />
+		</Child>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ChipRacer" image="ThinLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ThinRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ThinTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ThinBottomEdge" />
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ThinTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ThinTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ThinBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ThinBottomRightCorner" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="5" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="5" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="11" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="10" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" />
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	MHK/VerticalScrollbarThumb
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/VerticalScrollbarThumb">
+		<Property name="VertFree" value="True" />
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="SliderThumb" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="SliderThumb" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Width" scale="1" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="SliderThumb" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	MHK/HorizontalScrollbarThumb
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/HorizontalScrollbarThumb">
+		<Property name="HorzFree" value="True" />
+		<ImagerySection name="normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1.0" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1.0" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_hover" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="hover" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	MHK/VerticalScrollbar
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/VerticalScrollbar">
+		<Property name="VerticalScrollbar" value="True" />
+		<NamedArea name="ThumbTrackArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="3">
+						<DimOperator op="Add">
+							<WidgetDim widget="__auto_incbtn__" dimension="Height" />
+						</DimOperator>
+					</AbsoluteDim>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1" offset="-3">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_decbtn__" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/ButtonArrowDown" nameSuffix="__auto_incbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Width" scale="1" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+			<HorzAlignment type="CentreAligned" />
+		</Child>
+		<Child type="ChipRacer/ButtonArrowUp" nameSuffix="__auto_decbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Width" scale="1" />
+				</Dim>
+			</Area>
+			<VertAlignment type="TopAligned" />
+			<HorzAlignment type="CentreAligned" />
+		</Child>
+		<Child type="ChipRacer/VerticalScrollbarThumb" nameSuffix="__auto_thumb__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" offset="0" type="Width" />
+				</Dim>
+			</Area>
+		</Child>
+		
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="BlackTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="BlackTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="BlackBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="BlackBottomRightCorner" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="BlackLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="BlackRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="BlackTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="BlackBottomEdge" />
+				<Image type="Background" imageset="ChipRacer" image="BlackBackground" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+				
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" >
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame" >
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+
+			
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+
+	<!--
+	***************************************************
+	MHK/HorizontalScrollbar
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/HorizontalScrollbar">
+		<NamedArea name="ThumbTrackArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/Button" nameSuffix="__auto_incbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<Child type="ChipRacer/Button" nameSuffix="__auto_decbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</Child>
+		<Child type="ChipRacer/HorizontalScrollbarThumb" nameSuffix="__auto_thumb__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</Child>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonBackground" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+	
+	<!--
+	***************************************************
+	ChipRacer/ComboDropList
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ComboDropList">
+		<NamedArea name="ItemRenderingArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" offset="-20" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" offset="-20" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="10" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="10" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="0.9" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="20" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="0.9" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="0.9" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="0.1" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child type="ChipRacer/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0">
+						<DimOperator op="Subtract">
+							<UnifiedDim type="LeftEdge" scale="0.05" />
+						</DimOperator>
+					</AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="0.1" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="0.9" offset="-8" type="Height" />
+				</Dim>
+			</Area>
+			<VertAlignment type="CentreAligned" />
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ChipRacer" image="ThinLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ThinRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ThinTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ThinBottomEdge" />
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ThinTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ThinTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ThinBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ThinBottomRightCorner" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" />
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" >
+							<DimOperator op="Subtract" >
+								<ImageDim imageset="ChipRacer" image="ThinLeftEdge" dimension="Width" >
+									<DimOperator op="Add">
+										<ImageDim imageset="ChipRacer" image="ThinRightEdge" dimension="Width" >
+										</ImageDim>
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>					
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" >
+							<DimOperator op="Subtract" >
+								<ImageDim imageset="ChipRacer" image="ThinTopEdge" dimension="Height" >
+									<DimOperator op="Add">
+										<ImageDim imageset="ChipRacer" image="ThinBottomEdge" dimension="Height" />
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" >
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" >
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+
+	<!--
+	***************************************************
+	MHK/Combobox
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/Combobox">
+		<Child type="ChipRacer/Editbox" nameSuffix="__auto_editbox__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1.0" offset="-10" type="Width">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_button__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<FontDim type="LineSpacing" font="VerdanaMediumItalic" padding="8">
+						<DimOperator op="Multiply">
+							<AbsoluteDim value="1.5" />
+						</DimOperator>
+					</FontDim>
+				</Dim>
+			</Area>
+		</Child>
+		<Child type="ChipRacer/ComboDropList" nameSuffix="__auto_droplist__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_editbox__" dimension="BottomEdge">
+						<DimOperator op="Add">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</WidgetDim>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1.0" type="Width" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1.0" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</Child>
+		<Child type="ChipRacer/ButtonArrowDown" nameSuffix="__auto_button__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<WidgetDim widget="__auto_editbox__" dimension="Height">
+						<DimOperator op="Multiply">
+							<AbsoluteDim value="0.75" />
+						</DimOperator>
+					</WidgetDim>
+				</Dim>
+				<Dim type="Height">
+					<WidgetDim widget="__auto_editbox__" dimension="Height">
+						<DimOperator op="Multiply">
+							<AbsoluteDim value="0.75" />
+						</DimOperator>
+					</WidgetDim>
+				</Dim>
+			</Area>
+			<VertAlignment type="TopAligned" />
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+	</WidgetLook> 
+	
+<!--
+***************************************************
+ChipRacer/ScrollablePane
+***************************************************
+-->
+
+	<WidgetLook name="ChipRacer/ScrollablePane">
+		<NamedArea name="ViewableArea">
+            <Area>
+                <Dim type="LeftEdge" >
+					<AbsoluteDim value="0" />
+				</Dim>
+                <Dim type="TopEdge" >
+					<AbsoluteDim value="0" />
+                </Dim>
+                <Dim type="RightEdge" >
+                    <UnifiedDim scale="1" type="RightEdge" />
+                </Dim>
+                <Dim type="BottomEdge" >
+                    <UnifiedDim scale="1" type="BottomEdge" />
+                </Dim>
+                
+            </Area>
+		</NamedArea>
+		<NamedArea name="ViewableAreaVScroll">
+            <Area>
+                <Dim type="LeftEdge" >
+					<AbsoluteDim value="0" />
+                </Dim>
+                <Dim type="TopEdge" >
+					<AbsoluteDim value="0" />
+                </Dim>
+                <Dim type="RightEdge" >
+                    <UnifiedDim scale="1" type="RightEdge" />
+                </Dim>
+                <Dim type="BottomEdge" >
+                    <UnifiedDim scale="1" type="BottomEdge" />
+                </Dim>
+            </Area>
+		</NamedArea>
+		<NamedArea name="ViewableAreaHScroll">
+            <Area>
+                <Dim type="LeftEdge" >
+					<AbsoluteDim value="0" />
+                </Dim>
+                <Dim type="TopEdge" >
+					<AbsoluteDim value="0" />
+                </Dim>
+                <Dim type="RightEdge" >
+                    <UnifiedDim scale="1" type="RightEdge" />
+                </Dim>
+                <Dim type="BottomEdge" >
+                    <UnifiedDim scale="1" type="BottomEdge" />
+                </Dim>
+            </Area>
+		</NamedArea>
+		<NamedArea name="ViewableAreaHVScroll">
+            <Area>
+                <Dim type="LeftEdge" >
+					<AbsoluteDim value="0" />
+                </Dim>
+                <Dim type="TopEdge" >
+					<AbsoluteDim value="0" />
+                </Dim>
+                <Dim type="RightEdge" >
+                    <UnifiedDim scale="1" type="RightEdge" />
+                </Dim>
+                <Dim type="BottomEdge" >
+                    <UnifiedDim scale="1" type="BottomEdge" />
+                </Dim>
+            </Area>
+		</NamedArea>
+		<Child  type="ChipRacer/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge" ><AbsoluteDim value="10" /></Dim>
+				<Dim type="TopEdge" ><AbsoluteDim value="-10" /></Dim>
+				<Dim type="Width" ><UnifiedDim scale="1" offset="-20" type="Width" /></Dim>
+				<Dim type="Height" ><AbsoluteDim value="20" /></Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child  type="ChipRacer/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge" ><AbsoluteDim value="-10" /></Dim>
+				<Dim type="TopEdge" ><AbsoluteDim value="10" /></Dim>
+				<Dim type="Width" ><AbsoluteDim value="30" /></Dim>
+				<Dim type="Height" ><UnifiedDim scale="1" offset="-30" type="Height" /></Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+        <StateImagery name="Enabled">
+            <Layer>
+            </Layer>
+        </StateImagery>
+        <StateImagery name="Disabled">
+            <Layer>
+            </Layer>
+        </StateImagery>
+	</WidgetLook>
+	
+	<!--
+	***************************************************
+	ChipRacer/BlackWindow
+	***************************************************
+	-->
+	
+	<WidgetLook name="ChipRacer/BlackWindow">
+		<Property name="FrameEnabled" value="True" />
+		<Property name="BackgroundEnabled" value="True" />
+		<NamedArea name="WithFrameImageRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim imageset="ChipRacer" image="Border" dimension="Width" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="ChipRacer" image="Border" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameImageRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="WithFrameImageRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameImageRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="bg">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="BlackTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="BlackTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="BlackBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="BlackBottomRightCorner" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="BlackLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="BlackRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="BlackTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="BlackBottomEdge" />
+				<Image type="Background" imageset="ChipRacer" image="BlackBackground" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledBackground">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledBackground">
+			<Layer>
+				<Section section="bg">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+
+   
+   
+   
+	<!--
+    ***************************************************
+    ChipRacer/CheckboxCross
+    ***************************************************
+    -->
+	<WidgetLook name="ChipRacer/CheckboxCross">
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFFHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFFDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxCross" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxCrossHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxCrossDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="selected_normal" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="selected_hover" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="selected_disabled" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+    ***************************************************
+    ChipRacer/CheckboxHook
+    ***************************************************
+    -->
+	<WidgetLook name="ChipRacer/CheckboxHook">
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFF" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFFHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxOFFDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxHook" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxHookHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="selected_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="CheckboxHookDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="selected_normal" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="selected_hover" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="selected_disabled" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+
+	<!--
+	***************************************************
+	ChipRacer/ButtonArrowUp
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ButtonArrowUp">
+		<ImagerySection name="bg_normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="UpArrow" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="UpArrowHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="UpArrowDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="bg_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="bg_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="bg_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg_disabled" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/ButtonArrowDown
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ButtonArrowDown">
+		<ImagerySection name="bg_normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="DownArrow" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="DownArrowHover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="DownArrowDisabled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="bg_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="bg_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="bg_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg_disabled" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+	ChipRacer/Listbox
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/Listbox">
+		<NamedArea name="ItemRenderingArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="12" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="ChipRacer" image="ThinTopLeftCorner" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" offset="-10" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ChipRacer" image="ThinBottomLeftCorner" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="ChipRacer" image="Border" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height">
+								<DimOperator op="Add">
+									<ImageDim imageset="ChipRacer" image="Border" dimension="Height" />
+								</DimOperator>
+							</WidgetDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="ChipRacer" image="Border" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ChipRacer" image="Border" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="ChipRacer" image="Border" dimension="Height" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height">
+								<DimOperator op="Add">
+									<ImageDim imageset="ChipRacer" image="Border" dimension="Height" />
+								</DimOperator>
+							</WidgetDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" offset="-12" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="12" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child type="ChipRacer/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="12" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" offset="-12" type="Height" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ChipRacer" image="ThinLeftEdge" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ThinRightEdge" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ThinTopEdge" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ThinBottomEdge" />
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="ThinTopLeftCorner" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="ThinTopRightCorner" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ThinBottomLeftCorner" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ThinBottomRightCorner" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="6" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="5" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="11" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="10" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonBackground" />
+				<VertFormat type="Tiled" />
+				<HorzFormat type="Tiled" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main">
+					<Colours topLeft="FF7D95E4" topRight="FF7D95E4" bottomLeft="FF7D95E4" bottomRight="FF7D95E4" />
+				</Section>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" />
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+
+	
+	<!--
+	***************************************************
+	ChipRacer/Titlebar
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/Titlebar">
+		<Property name="CaptionColour" value="FFFFFFFF" />
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1.0" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="caption">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="13" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" offset="-75" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<ColourProperty name="CaptionColour" />
+				<VertFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Active">
+			<Layer>
+				<Section section="main">
+					<Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+				</Section>
+				<Section section="caption">
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Inactive">
+			<Layer>
+				<Section section="main">
+					<Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+				</Section>
+				<Section section="caption">
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main">
+					<Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+				</Section>
+				<Section section="caption">
+					<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	ChipRacer/ArrowButton
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ArrowButton">
+		<ImagerySection name="bg_normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hover_fill">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="bg_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="bg_hover_fill" />
+				<Section section="bg_hover" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="bg_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+	ChipRacer/MenuItem
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/MenuItem">
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="2" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="2" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="2" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="3" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="LeftAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_hover" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="popup_arrow_right">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="PopupMenuArrowRight" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="RightAligned" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="popup_arrow_left">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="PopupMenuArrowLeft" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="RightAligned" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="EnabledNormal">
+			<Layer>
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledHover">
+			<Layer>
+				<Section section="frame" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledPushed">
+			<Layer>
+				<Section section="frame" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledPopupOpen">
+			<Layer>
+				<Section section="frame" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNormal">
+			<Layer>
+				<Section section="label">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledHover">
+			<Layer>
+				<Section section="frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="label">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledPushed">
+			<Layer>
+				<Section section="frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="label">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledPopupOpen">
+			<Layer>
+				<Section section="frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="label">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PopupClosedIcon">
+			<Layer>
+				<Section section="popup_arrow_right" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PopupOpenIcon">
+			<Layer>
+				<Section section="popup_arrow_left" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	ChipRacer/Menubar
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/Menubar">
+		<NamedArea name="ItemRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="2" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="4" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="4" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_filled" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/PopupMenu
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/PopupMenu">
+		<NamedArea name="ItemRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_filled" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/TabButton
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/TabButton">
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="selected">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="ButtonBG_hover" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="ButtonBG_hover" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ButtonBG_hover" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_hover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal" />
+				<Section section="label">
+					<ColourProperty name="NormalTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="selected" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Selected">
+			<Layer>
+				<Section section="selected" />
+				<Section section="label">
+					<ColourProperty name="PushedTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/TabPane
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/TabPane">
+		<ImagerySection name="normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/TabControl
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/TabControl">
+		<Property name="TabButtonType" value="ChipRacer/TabButton" />
+		<Child type="ChipRacer/TabPane" nameSuffix="__auto_TabPane__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</Child>
+		<Child type="ChipRacer/LeftEdge" nameSuffix="__auto_TabPane__Buttons">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</Child>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/LeftEdge
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/LeftEdge">
+		<ImagerySection name="normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="TopEdge" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="normal" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	ChipRacer/MultiLineEditbox
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/MultiLineEditbox">
+		<Property name="NormalTextColour" value="FFFFFFFF" />
+		<Property name="DisabledTextColour" value="FF222222" />
+		<Property name="MouseCursorImage" value="set:ChipRacer image:MouseTextBar" />
+		<Property name="SelectionBrushImage" value="set:ChipRacer image:White" />
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="6" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="6" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="6" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="6" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="TextAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="6" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_vscrollbar__" dimension="Width" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<WidgetDim widget="__auto_hscrollbar__" dimension="Height" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" offset="-12" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="12" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child type="ChipRacer/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="12" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" offset="-12" type="Height" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<ImagerySection name="main">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="Carat">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<AbsoluteDim value="4" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1.0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="GenericBrush" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="LeftAligned" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ReadOnly">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	ChipRacer/ProgressBar
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ProgressBar">
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="progress_lights">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonBG_filled" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Tiled" />
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="frame" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledProgress">
+			<Layer>
+				<Section section="progress_lights" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+			<Layer>
+				<Section section="progress_lights">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/Tooltip
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/Tooltip">
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="4" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="4" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="5" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="5" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="main">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_filled" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="4" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="4" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="5" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="5" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Colours topLeft="FF000000" topRight="FF000000" bottomLeft="FF000000" bottomRight="FF000000" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+	ChipRacer/ButtonArrowLeft
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ButtonArrowLeft">
+		<ImagerySection name="bg_normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="PopupMenuArrowLeft" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="PopupMenuArrowLeft" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hoverfill">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_hover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="7" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="bg_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="bg_hoverfill" />
+				<Section section="bg_hover" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="bg_hoverfill" />
+				<Section section="bg_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg_normal">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/ButtonArrowRight
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ButtonArrowRight">
+		<ImagerySection name="bg_normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="PopupMenuArrowRight" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="PopupMenuArrowRight" />
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="bg_hoverfill">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge" />
+					</Dim>
+				</Area>
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_hover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" offset="0" type="RightEdge" />
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" offset="0" type="BottomEdge">
+							<DimOperator op="Subtract">
+								<AbsoluteDim value="7" />
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+				<HorzFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="bg_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="bg_hoverfill" />
+				<Section section="bg_hover" />
+				<Section section="label">
+					<ColourProperty name="HoverTextColour" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="bg_hoverfill" />
+				<Section section="bg_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="bg_normal">
+					<Colours topLeft="3FFFFFFF" topRight="3FFFFFFF" bottomLeft="3FFFFFFF" bottomRight="3FFFFFFF" />
+				</Section>
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+	</WidgetLook> <!--
+	***************************************************
+		ChipRacer/Spinner
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/Spinner">
+		<Child type="ChipRacer/Editbox" nameSuffix="__auto_editbox__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="12" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height" />
+				</Dim>
+			</Area>
+		</Child>
+		<Child type="ChipRacer/ButtonArrowUp" nameSuffix="__auto_incbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-3" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="12" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="0.5" type="Height" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<Child type="ChipRacer/ButtonArrowDown" nameSuffix="__auto_decbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="-3">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="0" />
+						</DimOperator>
+					</AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<UnifiedDim scale="0.5" type="TopEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="1" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="12" />
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="0.5" type="Height" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+	</WidgetLook> 
+	
+	
+	<!--
+	***************************************************
+	ChipRacer/ListHeaderSegment
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/ListHeaderSegment">
+		<!--
+		<Property name="SizingCursorImage" value="set:ChipRacer image:MouseEsWeCursor" />
+		<Property name="MovingCursorImage" value="set:ChipRacer image:MouseMoveCursor" />
+		-->
+		<ImagerySection name="segment_normal">
+			<Colours topLeft="FFDDDDDD" topRight="FFDDDDDD" bottomLeft="FFDDDDDD" bottomRight="FFDDDDDD" />
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<!--
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="ButtonBG_normal" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+				-->
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="segment_normal_withLeftEdge">
+			<Colours topLeft="FFDDDDDD" topRight="FFDDDDDD" bottomLeft="FFDDDDDD" bottomRight="FFDDDDDD" />
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<!--
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="Border" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_normal" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+				-->
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="segment_hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<!--
+				<Image type="TopLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="TopRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomLeftCorner" imageset="ChipRacer" image="Border" />
+				<Image type="BottomRightCorner" imageset="ChipRacer" image="Border" />
+				<Image type="LeftEdge" imageset="ChipRacer" image="ButtonBG_hover" />
+				<Image type="RightEdge" imageset="ChipRacer" image="Border" />
+				<Image type="TopEdge" imageset="ChipRacer" image="Border" />
+				<Image type="BottomEdge" imageset="ChipRacer" image="Border" />
+				<Image type="Background" imageset="ChipRacer" image="ButtonBG_hover" />
+				<VertFormat type="Stretched" />
+				<HorzFormat type="Stretched" />
+				-->
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="ascend_icon">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="3" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="3" />
+					</Dim>
+					<Dim type="Width">
+						<AbsoluteDim value="8" />
+					</Dim>
+					<Dim type="Height">
+						<AbsoluteDim value="8" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonArrowUp" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="descend_icon">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="3" />
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="3" />
+					</Dim>
+					<Dim type="Width">
+						<AbsoluteDim value="8" />
+					</Dim>
+					<Dim type="Height">
+						<AbsoluteDim value="8" />
+					</Dim>
+				</Area>
+				<Image imageset="ChipRacer" image="ButtonArrowDown" />
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="8">
+							<DimOperator op="Add">
+								<AbsoluteDim value="5" />
+							</DimOperator>
+						</AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0" />
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge" />
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height" />
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned" />
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="segment_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="segment_hover" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SplitterHover">
+			<Layer>
+				<Section section="segment_normal" />
+				<Section section="label" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DragGhost" clipped="false">
+			<Layer priority="1">
+				<Section section="segment_normal_withLeftEdge">
+					<Colours topLeft="90FFFFFF" topRight="90FFFFFF" bottomLeft="90FFFFFF" bottomRight="90FFFFFF" />
+				</Section>
+				<Section section="label">
+					<Colours topLeft="90FFFFFF" topRight="90FFFFFF" bottomLeft="90FFFFFF" bottomRight="90FFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="AscendingSortIcon">
+			<Layer>
+				<Section section="ascend_icon" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DescendingSortIcon">
+			<Layer>
+				<Section section="descend_icon" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="GhostAscendingSortIcon" clipped="false">
+			<Layer priority="1">
+				<Section section="ascend_icon">
+					<Colours topLeft="90FFFFFF" topRight="90FFFFFF" bottomLeft="90FFFFFF" bottomRight="90FFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="GhostDescendingSortIcon" clipped="false">
+			<Layer priority="1">
+				<Section section="descend_icon">
+					<Colours topLeft="90FFFFFF" topRight="90FFFFFF" bottomLeft="90FFFFFF" bottomRight="90FFFFFF" />
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="segment_normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="splitter_normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+				<Section section="label">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook> 
+	
+	<!--
+	***************************************************
+	ChipRacer/ListHeader
+	***************************************************	
+	-->
+	
+	<WidgetLook name="ChipRacer/ListHeader">
+		<Property name="SegmentWidgetType" value="ChipRacer/ListHeaderSegment" />
+		<StateImagery name="Enabled" />
+		<StateImagery name="Disabled" />
+	</WidgetLook>
+	
+
+	<!--
+	***************************************************
+		ChipRacer/MultiColumnList
+	***************************************************
+	-->
+	<WidgetLook name="ChipRacer/MultiColumnList">
+		<NamedArea name="ItemRenderingArea">
+			<Area>
+				<Dim type="LeftEdge">
+				  <AbsoluteDim value="20" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="20" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+				  <AbsoluteDim value="10" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+				  <AbsoluteDim value="10" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+				  <AbsoluteDim value="10" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<AbsoluteDim value="10" />
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ChipRacer/ListHeader" nameSuffix="__auto_listheader__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="10" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="30" />
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" offset="-0" type="RightEdge" />
+				</Dim>
+				<Dim type="Height">
+					<FontDim type="LineSpacing">
+						<DimOperator op="Multiply">
+							<AbsoluteDim value="1.5" />
+						</DimOperator>
+					</FontDim>
+				</Dim>
+			</Area>
+		</Child>
+		<Child type="ChipRacer/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" offset="-30" type="Width" />
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="12" />
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned" />
+		</Child>
+		<Child type="ChipRacer/VerticalScrollbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0" />
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_listheader__" dimension="BottomEdge" />
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="12" />
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" offset="-30" type="BottomEdge" />
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+		</Child>
+		<ImagerySection name="main">
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main" />
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+</Falagard>

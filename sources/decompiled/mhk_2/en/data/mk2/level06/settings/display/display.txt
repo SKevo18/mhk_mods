@@ -1,0 +1,145 @@
+# ------------------------------------------------ RenderWare
+OBJECT START
+class type: "class RwGraphicsSettings"
+[RenderWare Settings] "RenderWare"
+{
+    "near clip" 0.100000
+    "far clip low" 700.000000
+    "far clip medium" 700.000000
+    "far clip high" 700.000000
+    "view x" 0.800000
+    "view y" 0.800000
+}
+
+# ------------------------------------------------ Ambient Light
+OBJECT START
+class type: "class AmbientLight"
+[Ambient Light] "Ambient Light"
+{
+    "Enabled" 1
+    "Static Lighting" 0
+    "Dynamic Lighting" 1
+    "Light World" 1
+    "Light Atomics" 1
+    "Color" 0.458824 0.670588 0.784314 0.000000
+    "Intensity" 0.500000
+}
+
+# ------------------------------------------------ Directional Light
+OBJECT START
+class type: "class DirectionalLight"
+[Directional Light] "Directional Light"
+{
+    "Enabled" 1
+    "Static Lighting" 0
+    "Dynamic Lighting" 1
+    "Light World" 1
+    "Light Atomics" 1
+    "Color" 0.949020 0.862745 0.568627 1.000000
+    "Intensity" 0.700000
+    "Orientation" 0.092838 0.544689 -0.474807 0.685014
+}
+
+# ------------------------------------------------ Directional Light Objects
+OBJECT START
+class type: "class DirectionalLight"
+[Directional Light] "Directional Light Objects"
+{
+    "Enabled" 1
+    "Static Lighting" 0
+    "Dynamic Lighting" 1
+    "Light World" 1
+    "Light Atomics" 1
+    "Color" 0.705882 0.372549 0.580392 1.000000
+    "Intensity" 0.090000
+    "Orientation" -0.977212 0.098282 -0.017964 0.187261
+}
+
+# ------------------------------------------------ Fog
+OBJECT START
+class type: "class Fog"
+[Fog] "Fog"
+{
+    "enable" 1
+    "type" 2
+    "color" 0.800000 0.737255 0.611765 1.000000
+    "density" 0.003500
+    "distance" 1.000000
+}
+
+# ------------------------------------------------ Fog inside
+OBJECT START
+class type: "class Fog"
+[Fog] "Fog inside"
+{
+    "enable" 1
+    "type" 2
+    "color" 0.152941 0.141176 0.207843 1.000000
+    "density" 0.025000
+    "distance" 0.100000
+}
+
+# ------------------------------------------------ Fog outside
+OBJECT START
+class type: "class Fog"
+[Fog] "Fog outside"
+{
+    "enable" 1
+    "type" 2
+    "color" 0.800000 0.737255 0.611765 1.000000
+    "density" 0.003500
+    "distance" 1.000000
+}
+
+# ------------------------------------------------ Skydome
+OBJECT START
+class type: "class Skydome"
+[Skydome Emitter] "Skydome"
+{
+    class type: "class Fog"
+    [Fog] "Fog"
+    {
+        "enable" 0
+        "type" 0
+        "color" 0.745098 0.760784 0.839216 1.000000
+        "density" 0.000100
+        "distance" 0.000000
+    }
+
+    class type: "class AmbientLight"
+    [Ambient Light] "Light"
+    {
+        "Enabled" 0
+        "Static Lighting" 0
+        "Dynamic Lighting" 1
+        "Light World" 1
+        "Light Atomics" 1
+        "Color" 0.752941 0.984314 0.996078 1.000000
+        "Intensity" 2.000000
+    }
+
+}
+
+# ------------------------------------------------ Lensflares
+OBJECT START
+class type: "class Lensflares"
+[Lensflares] "Lensflares"
+{
+    "Light Position" 260.000000 150.000000 32.500000
+    "count" 0
+}
+
+# ------------------------------------------------ Ambient Light Trees
+OBJECT START
+class type: "class AmbientLight"
+[Ambient Light] "Ambient Light Trees"
+{
+    "Enabled" 1
+    "Static Lighting" 1
+    "Dynamic Lighting" 1
+    "Light World" 0
+    "Light Atomics" 1
+    "Color" 1.000000 1.000000 1.000000 0.000000
+    "Intensity" 0.800000
+}
+

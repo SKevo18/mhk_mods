@@ -1,0 +1,22 @@
+
+level 1
+
+sound 1
+
+Project			MK2Menu
+ProjectPath		data\MK2\
+TextureSet		Textures8Bit
+
+
+VersionType		XXL
+
+
+screenWidth 800
+screenHeight 600
+fullscreen 1
+
+fastLoading 0
+
+playerCharacter hank
+
+

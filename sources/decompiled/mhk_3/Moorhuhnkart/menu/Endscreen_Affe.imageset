@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<Imageset Name="Endscreen_Affe" Imagefile="Endscreen_Affe.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+   <Image Name="Background" XPos="0" YPos="0" Width="1024" Height="768" />
+</Imageset>

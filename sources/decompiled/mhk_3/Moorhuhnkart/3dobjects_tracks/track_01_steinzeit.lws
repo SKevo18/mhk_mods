@@ -1,0 +1,10191 @@
+LWSC
+3
+
+RenderRangeType 0
+FirstFrame 1
+LastFrame 1
+FrameStep 1
+RenderRangeArbitrary 1-1
+PreviewFirstFrame 0
+PreviewLastFrame 300
+PreviewFrameStep 1
+CurrentFrame 0
+FramesPerSecond 30
+Plugin MasterHandler 1 FinalVisionODEMaster
+{ ODEMaster
+  Gravity 0 -9.8100004 0
+  { Surface
+    Name "(default)"
+  }
+  { Space
+    Name "(default)"
+    Type 1
+  }
+  { Space
+    Name "1"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "2"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "3"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "4"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "5"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "6"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "7"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "8"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "9"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "10"
+    Type 0
+    Parent 0
+  }
+  { Space
+    Name "new space"
+    Type 0
+    Parent 0
+  }
+}
+EndPlugin
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/skydome.lwo
+ShowObject 6 3
+SchematicPosition 0.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.260279 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.58800042 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.58800042 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.58800042 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 0
+
+AddNullObject start
+ShowObject 6 0
+SchematicPosition 17.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -32.449066 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -13.254082 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject start
+ShowObject 6 0
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -29.946697 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -15.045917 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject start
+ShowObject 6 0
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -32.449104 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -17.270258 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject start
+ShowObject 6 0
+SchematicPosition 1.789700 -1.205150
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -30.070271 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -19.525505 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject start
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -32.387299 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -22.213253 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject start
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -30.626356 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -25.858707 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/colmesh_floor_fahrbahn.lwo
+ShowObject 6 0
+SchematicPosition 23.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 3
+  Surface 0
+  Space 1
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/colmesh.lwo
+ShowObject 6 0
+SchematicPosition 24.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 3
+  Surface 1
+  Space 2
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+AddNullObject startziel
+ShowObject 6 0
+SchematicPosition 25.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -31.037102 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 1.7923044 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -11.1006 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 17.690002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 5.8980012 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.3160012 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 19
+  Space 6
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+AddNullObject sound_bird_flyby
+// sound "D:\Moorhuhnkart\soundfx\bird_flyby01.wav"
+ShowObject 6 0
+SchematicPosition 26.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -120.79025 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 10.735085 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 45.5009 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_water
+// sound "D:\Moorhuhnkart\soundfx\water02.wav"
+ShowObject 6 0
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -17.643452 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 10.932628 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 175.66249 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_dino
+// sound "D:\Moorhuhnkart\soundfx\dino03.wav"
+ShowObject 6 0
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -98.379883 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 26.291271 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 144.68231 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_dino
+// sound "D:\Moorhuhnkart\soundfx\dino03.wav"
+ShowObject 6 0
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -129.17758 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 18.560253 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -21.451448 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_dino
+// sound "D:\Moorhuhnkart\soundfx\dino04.wav"
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -69.875427 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 10.145083 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -12.344333 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_dino
+// sound "D:\Moorhuhnkart\soundfx\bird04.wav"
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -136.01971 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 13.797881 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 150.32159 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_dino
+// sound "D:\Moorhuhnkart\soundfx\dino11.wav"
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 75.32962 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.015876 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 185.15926 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_bird
+// sound "D:\Moorhuhnkart\soundfx\bird05.wav"
+ShowObject 6 0
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 182.82573 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.015876 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 95.523026 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_dino_2
+// sound "D:\Moorhuhnkart\soundfx\dino01.wav"
+ShowObject 6 0
+SchematicPosition 4.800000 -3.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 64.448654 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 30.733198 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -67.686218 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_dino_2
+// sound "D:\Moorhuhnkart\soundfx\dino01.wav"
+ShowObject 6 0
+SchematicPosition 5.400000 -3.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 47.537659 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 30.733198 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -109.69096 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject sound_bird
+// sound "D:\Moorhuhnkart\soundfx\bird05.wav"
+ShowObject 6 0
+SchematicPosition 4.800000 -3.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -22.00403 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.015876 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -84.951973 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 15 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1000000 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/colmesh_ai.lwo
+ShowObject 6 0
+SchematicPosition 37.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 3
+  Surface 1
+  Space 8
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/colreset.lwo
+ShowObject 6 0
+SchematicPosition 38.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 3
+  Surface 7
+  Space 10
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -95.124863 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 5.6381574 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -15.239684 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -94.312637 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 5.6381574 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -15.930536 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -93.547104 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 5.6381574 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -16.602722 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -92.865585 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 5.6381574 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -17.237564 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -92.230736 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 5.6381574 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -17.835062 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -129.04031 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 19.257397 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 84.075226 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -129.017 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 19.257397 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 85.016724 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -129.01047 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 19.257397 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 85.92083 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -129.01318 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 19.257397 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 86.90715 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -129.00267 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 19.257397 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 87.957008 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 4.800000 -3.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -32.125835 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.901192 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 162.94701 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -31.848242 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.901192 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 163.8885 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -31.677179 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.901192 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 164.7926 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -31.515364 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.901192 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 165.77893 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -31.325361 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.901192 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 166.82878 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 4.800000 -3.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 124.2394 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 8.3641043 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 98.903999 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 124.41047 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 8.1644983 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 99.808105 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 124.57228 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 7.9648929 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 100.79443 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 124.76228 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 7.6654849 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 101.84428 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 5.400000 -3.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 123.96181 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 8.6635122 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 97.962502 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 5.400000 -3.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 60.798714 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.136982 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -101.605 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 4.800000 -3.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 61.655464 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.136982 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -101.08578 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 62.526348 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.136982 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -100.64021 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 63.580971 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.136982 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -100.08818 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_extras/extra_addon.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 64.627571 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 23.136982 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -99.521019 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 13
+  Space 6
+  Scale 0.60000002 0.60000002 0.60000002
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 84.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 47.400902 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 174.16585 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 61.069233 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 180.82121 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 78.395302 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 188.52167 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 155.15245 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 195.64455 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 166.1806 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 177.93352 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 161.97287 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 148.03926 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 100.56165 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 145.15158 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 93.026184 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 137.01108 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fackel_flamme.lwo
+ShowObject 6 3
+SchematicPosition 4.800000 -3.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 90.633553 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.815079 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 125.37788 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.4860003 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 93.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.043213 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 119.75127 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.043213 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 120.87289 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.043213 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 122.24375 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.043213 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 123.39652 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.074371 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 124.67393 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.074371 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 125.79556 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.136681 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 126.91719 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/fadeplane.lwo
+ShowObject 6 3
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 94.167831 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 11.765136 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 128.06998 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9600785 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 2.2119997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 3 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.7899997 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -47.632767 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 3.6859353 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 33.550652 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0.54454273 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_02_phy.lwo
+ShowObject 6 0
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -48.283562 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 3.6828454 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 34.580578 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -0.71034884 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_01_phy.lwo
+ShowObject 6 0
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -49.697792 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 3.7748609 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 34.33902 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 1.9111363 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -48.946709 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 3.8723819 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 35.518986 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 1.1571532 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -111.91167 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.948143 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 79.737411 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -1.6964605 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_02_phy.lwo
+ShowObject 6 0
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -112.56246 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 18.243942 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 80.569572 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.9513509 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_01_phy.lwo
+ShowObject 6 0
+SchematicPosition 1.800000 -1.200000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -113.63509 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 18.342543 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 80.52578 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -0.32986745 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -113.22561 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 18.342543 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 81.292236 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -1.0838498 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -113.22561 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 25.490585 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 157.44579 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.0525081 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_01_phy.lwo
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -113.83471 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 25.490585 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 156.11629 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -1.2985265 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_02_phy.lwo
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -112.39851 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 25.490585 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 156.44516 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -3.920007 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 2.400000 -1.600000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -111.66217 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 25.490585 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 155.61299 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.665117 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 0.60000002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 196.33556 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.582243 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 38.510227 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.665117 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_02_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 195.68478 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.582243 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 39.342403 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -3.920007 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_01_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.000000 -2.000000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 194.61215 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.582243 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 39.298611 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -1.2985265 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_03_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 195.02164 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.582243 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 40.065056 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -2.0525081 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_01_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 194.61215 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.582243 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 38.016903 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -0.67893445 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_02_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -18.002977 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.290533 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -99.317406 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -3.6756611 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_01_phy.lwo
+ShowObject 6 0
+SchematicPosition 3.600000 -2.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  2
+  Key -19.075609 0 0 0 0 0 0 0 0
+  Key -19.382153 0.033333335 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  2
+  Key 17.290533 0 0 0 0 0 0 0 0
+  Key 17.290533 0.033333335 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  2
+  Key -99.361198 0 0 0 0 0 0 0 0
+  Key -99.446709 0.033333335 0 0 0 0 -0.0070669632 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -1.2985265 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_physics/heuballen_01_phy.lwo
+ShowObject 6 0
+SchematicPosition 4.200000 -2.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -19.075609 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 17.290533 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -100.64291 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key -0.67893445 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  2
+  Key 0.40000001 0 0 0 0 0 0 0 0
+  Key 0.60000002 0.033333335 0 0 0 0 0.19834712 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 12
+  Space 5
+  Scale 1.1 1.1 1.9
+  Transform 0
+}
+EndPlugin
+Plugin CustomObjHandler 2 FinalVisionODEBody
+{ ODEBody
+  MassType 1
+  Mass 1
+  Scale 1 1 1
+  AutoDisable 1
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/stampfer_felsen.lwo
+ShowObject 6 0
+SchematicPosition 121.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  7
+  Key 59.801659 0 0 0 0 0 0 -21.23954 0
+  Key 38.557693 1.3333334 0 0 0 0 -17.039667 -8.5198336 0
+  Key 34.242157 2 0 0 0 0 -4.3953857 -7.691925 0
+  Key 26.470383 3.1666667 0 0 0 0 -7.7774005 -2.8887486 0
+  Key 23.576008 3.5999999 0 0 0 0 -2.8957026 -2.6729562 0
+  Key 20.901724 4 0 0 0 0 -2.6742241 -2.2285202 0
+  Key 18.673264 4.3333335 0 0 0 0 -2.2266047 0 0
+  Behaviors 1 2
+}
+Channel 1
+{ Envelope
+  7
+  Key 24.01758 0 0 0 0 0 0 8.8721123 0
+  Key 32.891541 1.3333334 0 0 0 0 -8.4111366 -6.3335757 0
+  Key 11.400875 2 5 -0.1345706 11.411829 0.25741088 8.9085522 -6.8949933 0
+  Key 17.515348 3.1666667 5 -0.38888499 5.270328 0.14113365 2.2523127 1.0042443 0
+  Key 15.108854 3.5999999 5 -0.048472054 2.2477057 0.04602379 3.0318139 -0.49152374 0
+  Key 16.781948 4 5 -0.034540344 0.52160901 0.0036524076 0.72588784 -3.2600892 0
+  Key 8.5462332 4.3333335 0 0 0 0 -8.228858 0 0
+  Behaviors 1 2
+}
+Channel 2
+{ Envelope
+  7
+  Key 180.59088 0 0 0 0 0 0 -12.679228 0
+  Key 167.90901 1.3333334 0 0 0 0 -10.806132 -5.4030662 0
+  Key 164.38168 2 0 0 0 0 -5.7338147 -10.034176 0
+  Key 152.14102 3.1666667 0 0 0 0 -12.395823 -4.6041627 0
+  Key 147.3817 3.5999999 0 0 0 0 -4.7962413 -4.4273 0
+  Key 142.91748 4 0 0 0 0 -4.4696712 -3.724726 0
+  Key 139.1873 4.3333335 0 0 0 0 -3.727073 0 0
+  Behaviors 1 2
+}
+Channel 3
+{ Envelope
+  6
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 1.3333334 0 0 0 0 0 0 0
+  Key 0 2 0 0 0 0 0 0 0
+  Key 0 3.5999999 0 0 0 0 0 0 0
+  Key 0 4 0 0 0 0 0 0 0
+  Key 0 4.3333335 0 0 0 0 0 0 0
+  Behaviors 1 2
+}
+Channel 4
+{ Envelope
+  6
+  Key 0 0 0 0 0 0 0 1.6059422 0
+  Key 1.6062769 1.3333334 0 0 0 0 0.83892179 0.41946089 0
+  Key 1.2583827 2 0 0 0 0 -2.0319028 -4.8765669 0
+  Key -5.3021927 3.5999999 0 0 0 0 -6.6307974 -1.6576993 0
+  Key -7.0301142 4 0 0 0 0 -1.7422194 -1.4518495 0
+  Key -8.4962616 4.3333335 0 0 0 0 -1.4649266 0 0
+  Behaviors 1 2
+}
+Channel 5
+{ Envelope
+  6
+  Key 0 0 0 0 0 0 0 1.5369403 0
+  Key 1.5372605 1.3333334 0 0 0 0 1.372992 0.68649602 0
+  Key 2.0594881 2 0 0 0 0 0.16168784 0.38805079 0
+  Key 2.0869992 3.5999999 0 0 0 0 0.012483215 0.0031208037 0
+  Key 2.0750921 4 0 0 0 0 -0.015006065 -0.012505054 0
+  Key 2.0594881 4.3333335 0 0 0 0 -0.015591026 0 0
+  Behaviors 1 2
+}
+Channel 6
+{ Envelope
+  6
+  Key 1 0 0 0 0 0 0 0 0
+  Key 1 1.3333334 0 0 0 0 0 0 0
+  Key 1 2 0 0 0 0 0 0 0
+  Key 1 3.5999999 0 0 0 0 0 0 0
+  Key 1 4 0 0 0 0 0 0 0
+  Key 1 4.3333335 0 0 0 0 0 0 0
+  Behaviors 1 2
+}
+Channel 7
+{ Envelope
+  6
+  Key 1 0 0 0 0 0 0 0 0
+  Key 1 1.3333334 0 0 0 0 0 0 0
+  Key 1 2 0 0 0 0 0 0 0
+  Key 1 3.5999999 0 0 0 0 0 0 0
+  Key 1 4 0 0 0 0 0 0 0
+  Key 1 4.3333335 0 0 0 0 0 0 0
+  Behaviors 1 2
+}
+Channel 8
+{ Envelope
+  6
+  Key 1 0 0 0 0 0 0 0 0
+  Key 1 1.3333334 0 0 0 0 0 0 0
+  Key 1 2 0 0 0 0 0 0 0
+  Key 1 3.5999999 0 0 0 0 0 0 0
+  Key 1 4 0 0 0 0 0 0 0
+  Key 1 4.3333335 0 0 0 0 0 0 0
+  Behaviors 1 2
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 16
+  Space 6
+  Scale 1.5 1.5 1.5
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/stampfer_felsen.lwo
+ShowObject 6 0
+SchematicPosition 122.500000 -0.250000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  6
+  Key 58.75526 0 0 1 0 0 0 0 0
+  Key 24.30102 2 0 0 0 0 -27.72216 -11.5509 0
+  Key 19.482199 2.8333333 0 0 0 0 -4.4222112 -4.4222112 0
+  Key 15.456597 3.6666667 0 0 0 0 -4.0011883 -1.6004753 0
+  Key 13.880535 4 0 1 0 0 0 0 0
+  Key 13.880535 4.6666665 0 1 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 1
+{ Envelope
+  6
+  Key 26.686232 0 0 1 0 0 0 8.061265 0
+  Key 14.852623 2 5 -0.068833545 41.320457 0.1463009 14.241897 -5.7352057 0
+  Key 17.346487 2.8333333 5 -0.21203795 4.438087 0.27777499 0.23990232 0.863657 0
+  Key 16.579937 3.6666667 0 0 0 0 -7.4277072 -2.9710829 0
+  Key 6.9476972 4 0 1 0 0 0 0 0
+  Key 6.9476972 4.6666665 0 1 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 2
+{ Envelope
+  6
+  Key 179.7063 0 0 1 0 0 0 0 0
+  Key 163.40462 2 0 0 0 0 -17.313614 -7.2140055 0
+  Key 155.17868 2.8333333 0 0 0 0 -8.4794388 -8.4794388 0
+  Key 146.44574 3.6666667 0 0 0 0 -8.747962 -3.4991848 0
+  Key 142.93153 4 0 1 0 0 0 0 0
+  Key 142.93153 4.6666665 0 1 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 3
+{ Envelope
+  7
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 2 0 0 0 0 0 0 0
+  Key 0 2.8 0 0 0 0 0 0 0
+  Key 0 2.8333333 0 0 0 0 0 0 0
+  Key 0 3.6666667 0 0 0 0 0 0 0
+  Key 0 4 0 0 0 0 0 0 0
+  Key 0 4.6666665 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 4
+{ Envelope
+  7
+  Key 0 0 0 0 0 0 0 -1.3908337 0
+  Key -1.3910269 2 0 0 0 0 0.035869051 0.01434762 0
+  Key 0.050216671 2.8 0 0 0 0 1.3353858 0.055641074 0
+  Key 0 2.8333333 0 0 0 0 -0.17377919 -4.34448 0
+  Key -4.4680424 3.6666667 0 0 0 0 -5.0489874 -2.0195949 0
+  Key -7.0685825 4 0 0 0 0 -0.86684674 -1.7336935 0
+  Key -7.0685825 4.6666665 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 5
+{ Envelope
+  7
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 2 0 0 0 0 2.3312612 0.93250448 0
+  Key 3.2637656 2.8 0 0 0 0 0 0 0
+  Key 0 2.8333333 0 0 0 0 -0.12552944 -3.138236 0
+  Key 0 3.6666667 0 0 0 0 0 0 0
+  Key 0 4 0 0 0 0 0 0 0
+  Key 0 4.6666665 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 6
+{ Envelope
+  6
+  Key 1 0 0 0 0 0 0 0 0
+  Key 1 2 0 0 0 0 0 0 0
+  Key 1 2.8333333 0 0 0 0 0 0 0
+  Key 1 3.6666667 0 0 0 0 0 0 0
+  Key 1 4 0 0 0 0 0 0 0
+  Key 1 4.6666665 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 7
+{ Envelope
+  6
+  Key 1 0 0 0 0 0 0 0 0
+  Key 1 2 0 0 0 0 0 0 0
+  Key 1 2.8333333 0 0 0 0 0 0 0
+  Key 1 3.6666667 0 0 0 0 0 0 0
+  Key 1 4 0 0 0 0 0 0 0
+  Key 1 4.6666665 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 8
+{ Envelope
+  6
+  Key 1 0 0 0 0 0 0 0 0
+  Key 1 2 0 0 0 0 0 0 0
+  Key 1 2.8333333 0 0 0 0 0 0 0
+  Key 1 3.6666667 0 0 0 0 0 0 0
+  Key 1 4 0 0 0 0 0 0 0
+  Key 1 4.6666665 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 16
+  Space 6
+  Scale 2.8 2.8 2.8
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/stampfer_felsen.lwo
+ShowObject 6 0
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  4
+  Key 57.878044 0 0 0 0 0 0 -27.081659 0
+  Key 30.792624 2 0 0 0 0 -18.960638 -15.800532 0
+  Key 23.116873 3.6666667 0 0 0 0 -6.8622832 -2.7449133 0
+  Key 21.185427 4.3333335 0 0 0 0 -1.9306417 -0.96572304 0
+  Behaviors 2 2
+}
+Channel 1
+{ Envelope
+  4
+  Key 21.152948 0 5 0.41553545 -15.96313 0.25112456 11.021729 -14.822291 0
+  Key 12.133373 2 5 -0.36931777 37.926128 0.44864303 -10.509121 -10.749671 0
+  Key 13.977057 3.6666667 0 0 0 0 -5.6743894 -2.2697558 0
+  Key 4.1892281 4.3333335 0 0 0 0 -9.7837524 -4.8939147 0
+  Behaviors 2 2
+}
+Channel 2
+{ Envelope
+  4
+  Key 179.76912 0 0 0 0 0 0 -20.262552 0
+  Key 159.50375 2 0 0 0 0 -21.364922 -17.8041 0
+  Key 140.6001 3.6666667 0 0 0 0 -17.427706 -6.9710822 0
+  Key 135.10497 4.3333335 0 0 0 0 -5.4928436 -2.7475662 0
+  Behaviors 2 2
+}
+Channel 3
+{ Envelope
+  4
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 2 0 0 0 0 0 0 0
+  Key 0 3.6666667 0 0 0 0 0 0 0
+  Key 0 4.3333335 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 4
+{ Envelope
+  4
+  Key -18.16888 0 0 0 0 0 0 -3.9718223 0
+  Key -22.141254 2 0 0 0 0 -7.7560315 -6.4633594 0
+  Key -32.388271 3.6666667 0 0 0 0 -9.5357265 -3.8142908 0
+  Key -35.491272 4.3333335 0 0 0 0 -3.1017082 -1.5515003 0
+  Behaviors 2 2
+}
+Channel 5
+{ Envelope
+  4
+  Key 0 0 0 0 0 0 0 0 0
+  Key 0 2 0 0 0 0 0 0 0
+  Key 0 3.6666667 0 0 0 0 0 0 0
+  Key 0 4.3333335 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 6
+{ Envelope
+  4
+  Key 0.5 0 0 0 0 0 0 0 0
+  Key 0.5 2 0 0 0 0 0 0 0
+  Key 0.5 3.6666667 0 0 0 0 0 0 0
+  Key 0.5 4.3333335 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 7
+{ Envelope
+  4
+  Key 0.5 0 0 0 0 0 0 0 0
+  Key 0.5 2 0 0 0 0 0 0 0
+  Key 0.5 3.6666667 0 0 0 0 0 0 0
+  Key 0.5 4.3333335 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+Channel 8
+{ Envelope
+  4
+  Key 0.5 0 0 0 0 0 0 0 0
+  Key 0.5 2 0 0 0 0 0 0 0
+  Key 0.5 3.6666667 0 0 0 0 0 0 0
+  Key 0.5 4.3333335 0 0 0 0 0 0 0
+  Behaviors 2 2
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 0
+  Surface 16
+  Space 6
+  Scale 1.5 1.5 1.5
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/colmesh_fall.lwo
+ShowObject 6 0
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 3
+  Surface 8
+  Space 11
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/additionals.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/additionals.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/additionals.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 4 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/additionals.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 5 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/additionals.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 6 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/additionals.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/boden.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/boden.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/boden.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 4 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/boden.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 5 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/boden.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 6 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/boden.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 7 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/boden.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/dinos.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/dinos.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/dinos.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 4 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 5 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 6 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 7 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 8 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 9 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 10 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsbrocken.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/knochen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/knochen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/knochen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/pflanzen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/pflanzen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/pflanzen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 4 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/pflanzen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 5 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/pflanzen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/tankstelle.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/zaun.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/zaun.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/zaun.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 4 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/zaun.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/CullingPlane.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/CullingPlane.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/CullingPlane.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 4 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/CullingPlane.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 2 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 3 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 4 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 5 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+LoadObjectLayer 6 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/felsen.lwo
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ShadowOptions 7
+
+AddNullObject SpeedUp
+ShowObject 6 3
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 158.59656 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 9.2178068 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 93.09816 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 1.8168879 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1.3679999 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.592 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.6920004 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+LockedChannels 48
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 15
+  Space 6
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+AddNullObject SpeedUp
+ShowObject 6 3
+SchematicPosition 0.600000 -0.400000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 29.444307 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 18.776304 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -145.57217 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 4.4854965 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1.3679999 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.592 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.6920004 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+LockedChannels 48
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 15
+  Space 6
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+AddNullObject SpeedUp
+ShowObject 6 3
+SchematicPosition 1.200000 -0.800000
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -35.2868 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 24.138618 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 164.66377 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 1.8151428 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1.3679999 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 2.592 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 2.6920004 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+LockedChannels 48
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 1
+  Surface 15
+  Space 6
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+LoadObjectLayer 1 D:Moorhuhnkart/3dobjects_tracks/track01_steinzeit/colmesh_floor_sand.lwo
+ShowObject 7 -1 0.376471 0.878431 0.941176
+ObjectMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+Plugin CustomObjHandler 1 FinalVisionODEGeom
+{ ODEGeom
+  Type 3
+  Surface 26
+  Space 1
+  Scale 1 1 1
+  Transform 0
+}
+EndPlugin
+ShadowOptions 7
+
+AmbientColor 1 1 1
+AmbientIntensity 0.135
+EnableRadiosity 1
+RadiosityType 1
+RadiosityIntensity 1.5
+RadiosityRays 48
+
+AddLight
+LightName Light
+ShowLight 1 5
+SchematicPosition -0.500000 0.267483
+LightMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key 158.15312 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 226.80002 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -181.73227 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 5.7665668 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key 0.80110687 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+LightColor 0.992157 0.870588 0.784314
+LightIntensity 1
+AffectCaustics 1
+LightType 0
+ShadowType 1
+ShadowColor 0 0 0
+
+AddLight
+LightName Light
+ShowLight 1 5
+SchematicPosition 0.100000 -0.132517
+LightMotion
+NumChannels 9
+Channel 0
+{ Envelope
+  1
+  Key -229.41867 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key -2.7749372 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key 284.10541 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 2.4888396 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key -0.40491575 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 6
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 7
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 8
+{ Envelope
+  1
+  Key 1 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+LightColor 0.843137 0.843137 1
+LightIntensity 1
+AffectCaustics 1
+LightType 0
+ShadowType 1
+ShadowColor 0 0 0
+
+AddCamera
+CameraName Camera
+ShowCamera 1 2
+SchematicPosition -0.500000 0.750000
+CameraMotion
+NumChannels 6
+Channel 0
+{ Envelope
+  1
+  Key -31.837166 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 1
+{ Envelope
+  1
+  Key 1.5828099 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 2
+{ Envelope
+  1
+  Key -17.066673 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 3
+{ Envelope
+  1
+  Key 6.3652167 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 4
+{ Envelope
+  1
+  Key -0.022689065 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+Channel 5
+{ Envelope
+  1
+  Key 0.034906603 0 0 0 0 0 0 0 0
+  Behaviors 1 1
+}
+
+ZoomFactor 2.07
+ResolutionMultiplier 1.0
+FrameSize 1024 768
+PixelAspect 1
+MaskPosition 0 0 1024 768
+MotionBlur 0
+FieldRendering 0
+
+ApertureHeight 0.015
+Antialiasing 0
+AntiAliasingLevel -1
+ReconstructionFilter 0
+AdaptiveSampling 0
+
+SolidBackdrop 1
+BackdropColor 0 0 0
+ZenithColor 0 0.1569 0.3137
+SkyColor 0.4706 0.7059 0.9412
+GroundColor 0.1961 0.1569 0.1176
+NadirColor 0.3922 0.3137 0.2353
+FogType 0
+DitherIntensity 1
+AnimatedDither 0
+
+RenderMode 2
+RayTraceEffects 1
+DepthBufferAA 0
+RayRecursionLimit 16
+RayTraceOptimization 1
+DataOverlayLabel  
+SaveRGB 0
+SaveAlpha 0
+
+ViewConfiguration 0
+DefineView 0
+ViewType 1
+ViewLevel 3
+CenterItem 1
+ViewAimpoint 0 0 0
+ViewZoomFactor 2.385734
+
+GridNumber 80
+GridSize 5
+CameraViewBG 0
+ShowMotionPath 1
+ShowFogRadius 0
+ShowFogEffect 0
+ShowSafeAreas 0
+ShowFieldChart 0
+OverlayColor_fv 0 0 0
+
+CurrentObject 141
+CurrentLight 1
+CurrentCamera 0
+GraphEditorData
+{ GraphEd_Favorites
+}
+{ GE_Expression_Lib
+  1
+}
+ImageEditorData
+NumberOfClips 44
+Clip 0
+{ ClipObject
+  "himmel_01.bmp"
+  128
+  0
+}
+Clip 1
+{ ClipObject
+  "gradient_color.bmp"
+  128
+  0
+}
+Clip 2
+{ ClipObject
+  "flares_ (sequence)"
+  0
+  0
+}
+Clip 3
+{ ClipObject
+  "flamme_ (sequence)"
+  0
+  0
+}
+Clip 4
+{ ClipObject
+  "heuballen_03.bmp"
+  128
+  0
+}
+Clip 5
+{ ClipObject
+  "heuballen_02.bmp"
+  128
+  0
+}
+Clip 6
+{ ClipObject
+  "heuballen_01.bmp"
+  128
+  0
+}
+Clip 7
+{ ClipObject
+  "felsen_06b.bmp"
+  128
+  0
+}
+Clip 8
+{ ClipObject
+  "felsen_06d.bmp"
+  128
+  0
+}
+Clip 9
+{ ClipObject
+  "holz_01f.bmp"
+  128
+  0
+}
+Clip 10
+{ ClipObject
+  "felsen_02_bump1.bmp"
+  128
+  0
+}
+Clip 11
+{ ClipObject
+  "holz_01e.bmp"
+  128
+  0
+}
+Clip 12
+{ ClipObject
+  "holz_02e.bmp"
+  128
+  0
+}
+Clip 13
+{ ClipObject
+  "felsen_06.bmp"
+  128
+  0
+}
+Clip 14
+{ ClipObject
+  "felsen_09.bmp"
+  128
+  0
+}
+Clip 15
+{ ClipObject
+  "lightmap_additionals.bmp"
+  128
+  0
+}
+Clip 16
+{ ClipObject
+  "wasser_ (sequence)"
+  0
+  0
+}
+Clip 17
+{ ClipObject
+  "speedup_01.bmp"
+  128
+  0
+}
+Clip 18
+{ ClipObject
+  "felsen_06c.bmp"
+  128
+  0
+}
+Clip 19
+{ ClipObject
+  "bretterwand_01a.bmp"
+  128
+  0
+}
+Clip 20
+{ ClipObject
+  "metal_01.bmp"
+  128
+  0
+}
+Clip 21
+{ ClipObject
+  "lightmap_boden.bmp"
+  128
+  0
+}
+Clip 22
+{ ClipObject
+  "boden_dreck_11.bmp"
+  128
+  0
+}
+Clip 23
+{ ClipObject
+  "sand_04b.bmp"
+  128
+  0
+}
+Clip 24
+{ ClipObject
+  "boden_dreck_11a.bmp"
+  128
+  0
+}
+Clip 25
+{ ClipObject
+  "boden_dreck_06.bmp"
+  128
+  0
+}
+Clip 26
+{ ClipObject
+  "wiese_03.bmp"
+  128
+  0
+}
+Clip 27
+{ ClipObject
+  "saurier_01.bmp"
+  128
+  0
+}
+Clip 28
+{ ClipObject
+  "lightmap_dinos.bmp"
+  128
+  0
+}
+Clip 29
+{ ClipObject
+  "wandmalerei_01.bmp"
+  128
+  0
+}
+Clip 30
+{ ClipObject
+  "wandmalerei_02.bmp"
+  128
+  0
+}
+Clip 31
+{ ClipObject
+  "wandmalerei_03.bmp"
+  128
+  0
+}
+Clip 32
+{ ClipObject
+  "rockstone.bmp"
+  128
+  0
+}
+Clip 33
+{ ClipObject
+  "holz_tuecher_01.bmp"
+  128
+  0
+}
+Clip 34
+{ ClipObject
+  "lightmap_felsbrocken.bmp"
+  128
+  0
+}
+Clip 35
+{ ClipObject
+  "lightmap_knochen.bmp"
+  128
+  0
+}
+Clip 36
+{ ClipObject
+  "blaetter_01.bmp"
+  128
+  0
+}
+Clip 37
+{ ClipObject
+  "blaetter_01bump.bmp"
+  128
+  0
+}
+Clip 38
+{ ClipObject
+  "blatt2.bmp"
+  128
+  0
+}
+Clip 39
+{ ClipObject
+  "lightmap_pflanzen.bmp"
+  128
+  0
+}
+Clip 40
+{ ClipObject
+  "lightmap_tankstelle.bmp"
+  128
+  0
+}
+Clip 41
+{ ClipObject
+  "lightmap_zaun.bmp"
+  128
+  0
+}
+Clip 42
+{ ClipObject
+  "felsen_09a.bmp"
+  128
+  0
+}
+Clip 43
+{ ClipObject
+  "lightmap_felsen.bmp"
+  128
+  0
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<Imageset Name="Minimap_Track04" Imagefile="Minimap_Track04.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+   <Image Name="Minimap" XPos="0" YPos="0" Width="512" Height="512" />
+</Imageset>

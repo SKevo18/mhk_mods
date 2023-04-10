@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<Imageset Name="Extras" Imagefile="Extras.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+   <Image Name="Extra_None"     XPos="0"   YPos="0"   Width="120" Height="120" />
+   <Image Name="Extra_Oil"      XPos="120" YPos="0"   Width="120" Height="120" />
+   <Image Name="Extra_Weight"   XPos="240" YPos="0"   Width="120" Height="120" />
+   <Image Name="Extra_Froster"  XPos="360" YPos="0"   Width="120" Height="120" />
+   <Image Name="Extra_Flash"    XPos="0"   YPos="120" Width="120" Height="120" />
+   <Image Name="Extra_Mine"     XPos="120" YPos="120" Width="120" Height="120" />
+   <Image Name="Extra_Rocket1"  XPos="240" YPos="120" Width="120" Height="120" />
+   <Image Name="Extra_Rocket2"  XPos="360" YPos="120" Width="120" Height="120" />
+   <Image Name="Extra_Soap"     XPos="0"   YPos="240" Width="120" Height="120" />
+   <Image Name="Extra_Magnet"   XPos="120" YPos="240" Width="120" Height="120" />
+   <Image Name="Extra_Turbo"    XPos="240" YPos="240" Width="120" Height="120" />
+   <Image Name="Extra_Shield"   XPos="360" YPos="240" Width="120" Height="120" />
+   <Image Name="Extra_Shrinker" XPos="0"   YPos="360" Width="120" Height="120" />
+</Imageset>

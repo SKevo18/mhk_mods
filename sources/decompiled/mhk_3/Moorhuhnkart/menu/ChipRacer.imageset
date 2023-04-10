@@ -1,0 +1,174 @@
+<?xml version="1.0" ?>
+<Imageset Name="ChipRacer" Imagefile="Chipracer.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+
+	<Image Name = "IconReady"   XPos="265" YPos="190" Width="25" Height="25" />
+	<Image Name = "IconWaiting" XPos="265" YPos="218" Width="25" Height="25" />
+
+	<Image Name = "GenericBrush" XPos = "992" YPos = "3" Width = "28" Height = "28" />
+	<Image Name = "BlackBrush" XPos = "992" YPos="36" Width="28" Height="28" />
+	<Image Name = "TransparentBrush" XPos = "992" YPos = "69" Width = "28" Height = "28" />
+	
+	<Image Name = "MouseArrow" XPos = "216" YPos = "184" Width = "43" Height = "44" />
+	
+	<Image Name = "BackButton" XPos = "207" YPos = "260" Width = "135" Height = "130" />
+	<Image Name = "BackButtonHover" XPos = "207" YPos = "390" Width = "135" Height = "130" />
+	
+	<Image Name = "OffButton" XPos = "342" YPos = "0" Width = "135" Height = "130" />  
+	<Image Name = "OffButtonHover" XPos = "342" YPos = "130" Width = "135" Height = "130" />	
+
+	<Image Name = "OKButton" XPos = "342" YPos = "260" Width = "135" Height = "130" />
+	<Image Name = "OKButtonHover" XPos = "342" YPos = "390" Width = "135" Height = "130" />
+	<Image Name = "OKButtonDisabled" XPos = "342" YPos = "520" Width = "135" Height = "130" />   
+
+	<Image Name = "HelpButton" XPos = "0" YPos = "222" Width = "76" Height = "73" />
+	<Image Name = "HelpButtonHover" XPos = "0" YPos = "295" Width = "76" Height = "73" />
+	<Image Name = "HelpButtonDisabled" XPos = "0" YPos = "368" Width = "76" Height = "73" />	
+	
+	<Image Name = "ButtonLeftEdge" XPos = "304" YPos = "15" Width = "10" Height = "7" />
+	<Image Name = "ButtonRightEdge" XPos = "331" YPos = "15" Width = "11" Height = "7" />
+	<Image Name = "ButtonTopEdge" XPos = "319" YPos = "0" Width = "8" Height = "10" />
+	<Image Name = "ButtonBottomEdge" XPos = "319" YPos = "28" Width = "8" Height = "9" />
+	<Image Name = "ButtonTopLeftCorner" XPos = "304" YPos = "0" Width = "10" Height = "10" />
+	<Image Name = "ButtonTopRightCorner" XPos = "331" YPos = "0" Width = "11" Height = "10" />
+	<Image Name = "ButtonBottomLeftCorner" XPos = "304" YPos = "28" Width = "10" Height = "9" />
+	<Image Name = "ButtonBottomRightCorner" XPos = "331" YPos = "28" Width = "11" Height = "9" />	
+	<Image Name = "ButtonInner" XPos = "319" YPos = "15" Width = "5" Height = "5" />
+
+	<Image Name = "ButtonLeftEdgeHover" XPos = "304" YPos = "237" Width = "10" Height = "7" />
+	<Image Name = "ButtonRightEdgeHover" XPos = "331" YPos = "237" Width = "11" Height = "7" />
+	<Image Name = "ButtonTopEdgeHover" XPos = "319" YPos = "222" Width = "8" Height = "10" />
+	<Image Name = "ButtonBottomEdgeHover" XPos = "319" YPos = "250" Width = "8" Height = "9" />
+	<Image Name = "ButtonTopLeftCornerHover" XPos = "304" YPos = "222" Width = "10" Height = "10" />
+	<Image Name = "ButtonTopRightCornerHover" XPos = "331" YPos = "222" Width = "11" Height = "10" />
+	<Image Name = "ButtonBottomLeftCornerHover" XPos = "304" YPos = "250" Width = "10" Height = "9" />
+	<Image Name = "ButtonBottomRightCornerHover" XPos = "331" YPos = "250" Width = "11" Height = "9" />	
+	<Image Name = "ButtonInnerHover" XPos = "319" YPos = "237" Width = "5" Height = "5" />
+	
+	<Image Name = "ButtonLeftEdgeDisabled" XPos = "304" YPos = "200" Width = "10" Height = "7" />
+	<Image Name = "ButtonRightEdgeDisabled" XPos = "331" YPos = "200" Width = "11" Height = "7" />
+	<Image Name = "ButtonTopEdgeDisabled" XPos = "319" YPos = "185" Width = "8" Height = "10" />
+	<Image Name = "ButtonBottomEdgeDisabled" XPos = "319" YPos = "213" Width = "8" Height = "9" />
+	<Image Name = "ButtonTopLeftCornerDisabled" XPos = "304" YPos = "185" Width = "10" Height = "10" />
+	<Image Name = "ButtonTopRightCornerDisabled" XPos = "331" YPos = "185" Width = "11" Height = "10" />
+	<Image Name = "ButtonBottomLeftCornerDisabled" XPos = "304" YPos = "213" Width = "10" Height = "9" />
+	<Image Name = "ButtonBottomRightCornerDisabled" XPos = "331" YPos = "213" Width = "11" Height = "9" />	
+	<Image Name = "ButtonInnerDisabled" XPos = "319" YPos = "200" Width = "5" Height = "5" />
+	
+	<Image Name = "ThinLeftEdge" XPos = "304" YPos = "125" Width = "6" Height = "7" />
+	<Image Name = "ThinRightEdge" XPos = "334" YPos = "125" Width = "8" Height = "8" />
+	<Image Name = "ThinTopEdge" XPos = "319" YPos = "111" Width = "6" Height = "6" />
+	<Image Name = "ThinBottomEdge" XPos = "319" YPos = "142" Width = "6" Height = "6" />
+	<Image Name = "ThinTopLeftCorner" XPos = "304" YPos = "111" Width = "5" Height = "5" />
+	<Image Name = "ThinTopRightCorner" XPos = "334" YPos = "111" Width = "8" Height = "5" />
+	<Image Name = "ThinBottomLeftCorner" XPos = "304" YPos = "142" Width = "5" Height = "6" />
+	<Image Name = "ThinBottomRightCorner" XPos = "334" YPos = "142" Width = "8" Height = "6" />
+	<Image Name = "ThinInner" XPos = "314" YPos = "125" Width = "5" Height = "5" />
+	
+	<Image Name = "RoundedMiniButton" XPos = "76" YPos = "222" Width = "76" Height = "73" />
+	<Image Name = "RoundedMiniButtonHover" XPos = "76" YPos = "295" Width = "76" Height = "73" />
+	<Image Name = "RoundedMiniButtonDisabled" XPos = "76" YPos = "368" Width = "76" Height = "73" />	
+
+	<Image Name = "RadioButtonON" XPos = "152" YPos = "111" Width = "32" Height = "73" />
+	<Image Name = "RadioButtonONHover" XPos = "184" YPos = "184" Width = "32" Height = "73" />
+	<Image Name = "RadioButtonONDisabled" XPos = "216" YPos = "111" Width = "32" Height = "73" />	
+	<Image Name = "RadioButtonOFF" XPos = "184" YPos = "111" Width = "32" Height = "73" />
+	<Image Name = "RadioButtonOFFDisabled" XPos = "248" YPos = "111" Width = "32" Height = "73" />
+	<Image Name = "RadioButtonOFFHover" XPos = "152" YPos = "184" Width = "32" Height = "73" />
+	
+	<Image Name = "BigRadioButtonOFF" XPos = "76" YPos = "222" Width = "76" Height = "73" />
+	<Image Name = "BigRadioButtonOFFHover" XPos = "76" YPos = "295" Width = "76" Height = "73" />
+	<Image Name = "BigRadioButtonOFFDisabled" XPos = "76" YPos = "368" Width = "76" Height = "73" />	
+	<Image Name = "BigRadioButtonON" XPos = "76" YPos = "442" Width = "76" Height = "73" />
+	<Image Name = "BigRadioButtonONHover" XPos = "76" YPos = "520" Width = "76" Height = "73" />
+	<Image Name = "BigRadioButtonONDisabled" XPos = "76" YPos = "607" Width = "76" Height = "73" />
+
+	<Image Name = "CheckboxOFF" XPos = "304" YPos = "0" Width = "38" Height = "37" />
+	<Image Name = "CheckboxOFFHover" XPos = "304" YPos = "37" Width = "38" Height = "37" />
+	<Image Name = "CheckboxOFFDisabled" XPos = "304" YPos = "74" Width = "38" Height = "37" />
+	<Image Name = "CheckboxHook" XPos = "152" YPos = "0" Width = "38" Height = "37" />
+	<Image Name = "CheckboxHookHover" XPos = "152" YPos = "37" Width = "38" Height = "37" />
+	<Image Name = "CheckboxHookDisabled" XPos = "152" YPos = "74" Width = "38" Height = "37" />
+	<Image Name = "CheckboxCross" XPos = "190" YPos = "0" Width = "38" Height = "37" />
+	<Image Name = "CheckboxCrossHover" XPos = "190" YPos = "37" Width = "38" Height = "37" />
+	<Image Name = "CheckboxCrossDisabled" XPos = "190" YPos = "74" Width = "38" Height = "37" />
+	
+	<Image Name = "VertScrollbar" XPos = "152" YPos = "260" Width = "15" Height = "346" />
+	<Image Name = "HorizScrollbar" XPos = "151" YPos = "674" Width = "15" Height = "347" />
+
+	<Image Name = "SliderThumb" XPos = "107" YPos = "786" Width = "33" Height = "32" />
+	<Image Name = "SliderThumbHover" XPos = "107" YPos = "739" Width = "33" Height = "32" />
+	<Image Name = "SliderThumbDisabled" XPos = "107" YPos = "692" Width = "33" Height = "32" />
+	
+	<Image Name = "BlackLeftEdge" XPos = "304" YPos = "162" Width = "10" Height = "7" />
+	<Image Name = "BlackRightEdge" XPos = "331" YPos = "162" Width = "11" Height = "8" />
+	<Image Name = "BlackTopEdge" XPos = "319" YPos = "148" Width = "6" Height = "9" />
+	<Image Name = "BlackBottomEdge" XPos = "319" YPos = "176" Width = "6" Height = "9" />
+	<Image Name = "BlackTopLeftCorner" XPos = "304" YPos = "148" Width = "10" Height = "9" />
+	<Image Name = "BlackTopRightCorner" XPos = "331" YPos = "148" Width = "11" Height = "9" />
+	<Image Name = "BlackBottomLeftCorner" XPos = "304" YPos = "176" Width = "10" Height = "9" />
+	<Image Name = "BlackBottomRightCorner" XPos = "331" YPos = "176" Width = "11" Height = "9" />
+	<Image Name = "BlackBackground" XPos="314" YPos="158" Width="17" Height="17" />
+	
+	<Image Name="WindowBg" XPos="528" YPos="53" Width="404" Height="250" />
+	
+	<!-- Der Kram hier muss eventuell noch ueberarbeitet werden -->
+	
+	<Image Name = "RightButton" XPos = "76" YPos = "0" Width = "76" Height = "74" />
+	<Image Name = "LeftButton" XPos = "0" YPos = "0" Width = "76" Height = "74" />
+	<Image Name = "DownArrow" XPos = "266" YPos = "0" Width = "38" Height = "37" />
+	<Image Name = "UpArrow" XPos = "228" YPos = "0" Width = "38" Height = "37" />
+	
+	<Image Name = "RightButtonDisabled" XPos = "76" YPos = "148" Width = "76" Height = "74" />
+	<Image Name = "LeftButtonDisabled" XPos = "0" YPos = "148" Width = "76" Height = "74" />	
+	<Image Name = "DownArrowDisabled" XPos = "266" YPos = "74" Width = "38" Height = "37" />
+	<Image Name = "UpArrowDisabled" XPos = "228" YPos = "74" Width = "38" Height = "37" />
+	
+	<Image Name = "RightButtonHover" XPos = "76" YPos = "74" Width = "76" Height = "74" />
+	<Image Name = "LeftButtonHover" XPos = "0" YPos = "74" Width = "76" Height = "74" />	
+	<Image Name = "DownArrowHover" XPos = "266" YPos = "37" Width = "38" Height = "37" />
+	<Image Name = "UpArrowHover" XPos = "228" YPos = "37" Width = "38" Height = "37" />
+	
+	
+ 	<Image Name = "ThickLeftEdge" XPos = "916" YPos = "19" Width = "21" Height = "35" />
+	<Image Name = "ThickRightEdge" XPos = "1006" YPos = "19" Width = "18" Height = "35" />
+	<Image Name = "ThickTopEdge" XPos = "937" YPos = "0" Width = "69" Height = "19" />
+	<Image Name = "ThickBottomEdge" XPos = "937" YPos = "54" Width = "69" Height = "19" />
+	<Image Name = "ThickTopLeftCorner" XPos = "916" YPos = "0" Width = "21" Height = "19" />
+	<Image Name = "ThickTopRightCorner" XPos = "1006" YPos = "0" Width = "18" Height = "19" />
+	<Image Name = "ThickBottomLeftCorner" XPos = "916" YPos = "54" Width = "21" Height = "19" />
+	<Image Name = "ThickBottomRightCorner" XPos = "1006" YPos = "54" Width = "18" Height = "19" />	
+		
+	<Image Name = "BigCheckButtonON" XPos = "50" YPos = "909" Width = "68" Height = "68" />
+	<Image Name = "BigCheckButtonONDisabled" XPos = "186" YPos = "909" Width = "68" Height = "68" />
+	<Image Name = "BigCheckButtonONHover" XPos = "322" YPos = "909" Width = "68" Height = "68" />   
+	<Image Name = "ButtonBackground" XPos = "660" YPos = "482" Width = "346" Height = "346" />
+   
+	<!-- Nicht definiert -->
+   
+	<Image Name = "CloseButtonNormal" XPos = "344" YPos = "84" Width = "34" Height = "34" />
+	<Image Name = "CloseButtonHover" XPos = "344" YPos = "420" Width = "34" Height = "34" />
+	<Image Name = "CloseButtonDisabled" XPos = "344" YPos = "252" Width = "34" Height = "34" />
+	<Image Name = "ButtonArrowUp" XPos = "135" YPos = "2" Width = "5" Height = "5" />
+	<Image Name = "ButtonArrowDown" XPos = "135" YPos = "8" Width = "5" Height = "5" />
+	<Image Name = "ButtonBG_normal" XPos = "1" YPos = "37" Width = "1" Height = "1" />
+	<Image Name = "ButtonBG_hover" XPos = "5" YPos = "37" Width = "1" Height = "1" />
+	<Image Name = "ButtonBG_filled" XPos = "9" YPos = "37" Width = "1" Height = "1" />
+	<Image Name = "Border" XPos = "1" YPos = "33" Width = "1" Height = "1" />
+	<Image Name = "MouseTextBar" XPos = "4" YPos = "64" Width = "9" Height = "21" XOffset = "-4" YOffset = "-11" />
+	<Image Name = "PopupMenuArrowRight" XPos = "146" YPos = "2" Width = "5" Height = "5" />
+	<Image Name = "PopupMenuArrowLeft" XPos = "146" YPos = "8" Width = "5" Height = "5" />
+	<Image Name = "SysAreaMiddle" XPos = "231" YPos = "1" Width = "12" Height = "16" />
+	<Image Name = "SysAreaRight" XPos = "246" YPos = "1" Width = "13" Height = "16" />
+	<Image Name = "Titlebar" XPos = "5" YPos = "33" Width = "1" Height = "1" />
+	<Image Name = "White" XPos = "9" YPos = "33" Width = "1" Height = "1" />
+	<Image Name = "MouseNoSoCursor" XPos = "52" YPos = "64" Width = "12" Height = "20" XOffset = "-6" YOffset = "-10" />
+	<Image Name = "MouseMoveCursor" XPos = "16" YPos = "63" Width = "22" Height = "22" XOffset = "-11" YOffset = "-11" />
+	<Image Name = "MouseTarget" XPos = "50" YPos = "86" Width = "17" Height = "17" XOffset = "-8" YOffset = "-8" />
+	<Image Name = "MouseEsWeCursor" XPos = "15" YPos = "86" Width = "18" Height = "14" XOffset = "-9" YOffset = "-3" />
+	<Image Name = "MouseNeSwCursor" XPos = "34" YPos = "86" Width = "14" Height = "14" XOffset = "-7" YOffset = "-7" />
+	<Image Name = "MouseNwSeCursor" XPos = "64" YPos = "65" Width = "14" Height = "14" XOffset = "-7" YOffset = "-7" />
+	<Image Name = "RadioButtonNormal" XPos = "4" YPos = "127" Width = "12" Height = "12" />
+	<Image Name = "RadioButtonMark_hover" XPos = "4" YPos = "155" Width = "12" Height = "12" />
+	<Image Name = "RadioButtonMark" XPos = "4" YPos = "141" Width = "12" Height = "12" />
+
+	</Imageset>
