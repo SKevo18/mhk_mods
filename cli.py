@@ -99,7 +99,7 @@ def new(
     # Create README.md files:
     rich.print(f"[orange3]Creating [yellow]README[/yellow] files...[/orange3]")
     (mod_root_path / 'source' / 'README.md').write_text("# Copy modified game assets from `./sources/decompiled` here. Make sure the directory structure stays the same! It is good practice to only include modified files here. Remove this file when you are done\n")
-    (mod_root_path / 'README.md').write_text(f"# {mod_id.replace('_', ' ').title()} for {game.name}\n> A short description? Insert here!\n## Installation\n\nReplace original data file in game's installation directory with modified `{game.data_filename}`\n")
+    (mod_root_path / 'README.md').write_text(f"# {mod_id.replace('_', ' ').title()} for {game.name}\n\n> A short description? Insert here!\n\n## Installation\n\nReplace original data file in game's installation directory with modified `{game.data_filename}`\n")
 
 
     rich.print(f"[bright_green]Done! Make sure to run [bright_black]python cli.py compile {game.id} {mod_id}[/bright_black] after you are done![/bright_green]")
