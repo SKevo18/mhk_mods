@@ -23,6 +23,7 @@ ROOT_PATH = Path(__file__).parent.absolute()
 
 SOURCES_ROOT = ROOT_PATH / 'sources'
 ORIGINAL_SOURCES_ROOT = SOURCES_ROOT / 'original'
+DECOMPILED_SOURCES_ROOT = SOURCES_ROOT / 'decompiled'
 MODS_ROOT = SOURCES_ROOT / 'mods'
 
 QUICKBMS_ROOT = ROOT_PATH / 'quickbms'
@@ -72,7 +73,7 @@ CLI = typer.Typer()
 
 @CLI.command(help="Creates a new mod. This will create the necessary directory structure in `./source/mods`.")
 def new(
-    game_id: str = typer.Argument(help=f"The ID of the game to compile the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...), # type: ignore
+    game_id: str = typer.Argument(help=f"The ID of the game to compile the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
     mod_id: str = typer.Argument(help="The ID of the mod (must be unique).", default=...)
 ):
 
@@ -98,7 +99,7 @@ def new(
     # Create README.md files:
     rich.print(f"[orange3]Creating [yellow]README[/yellow] files...[/orange3]")
     (mod_root_path / 'source' / 'README.md').write_text("# Copy modified game assets from `./sources/decompiled` here. Make sure the directory structure stays the same! It is good practice to only include modified files here. Remove this file when you are done\n")
-    (mod_root_path / 'README.md').write_text(f"# {mod_id} for {game.id}\n\n## Installation\n\nReplace original data file in game's installation directory with modified `{game.data_filename}`\n")
+    (mod_root_path / 'README.md').write_text(f"# {mod_id.replace('_', ' ').title()} for {game.name}\n> A short description? Insert here!\n## Installation\n\nReplace original data file in game's installation directory with modified `{game.data_filename}`\n")
 
 
     rich.print(f"[bright_green]Done! Make sure to run [bright_black]python cli.py compile {game.id} {mod_id}[/bright_black] after you are done![/bright_green]")
@@ -106,9 +107,48 @@ def new(
 
 
 
+@CLI.command(help="Validates if modified file size is not larger than original (so it can be re-imported).")
+def validate(
+    game_id: str = typer.Argument(help=f"The ID of the game to validate the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
+    mod_id: str = typer.Argument(help="The ID of the mod to validate.", default=...)
+):
+    
+    rich.print(f"[orange3]Validating file sizes for [yellow]{game_id}/{mod_id}[/yellow][/orange3]")
+
+    try:
+        game = MHK_GAMES[game_id]
+    except KeyError:
+        rich.print(f"[red][yellow]{game_id}[/yellow] must be one of: [bright_black]{', '.join(MHK_GAMES.keys())}[/bright_black][/red]")
+        raise typer.Exit(1)
+
+
+    modded_sources = game.mod_root_path(mod_id) / 'source'
+    original_sources = DECOMPILED_SOURCES_ROOT / game.id
+    sizes = {}
+
+
+    for original_path in original_sources.rglob('**/*'):
+        relative = original_path.relative_to(original_sources)
+        sizes[relative] = original_path.stat().st_size
+
+    for modded_path in modded_sources.rglob('**/*'):
+        if not modded_path.is_file():
+            continue
+
+        relative = modded_path.relative_to(modded_sources)
+        original_size = sizes.get(relative)
+        size = modded_path.stat().st_size
+
+        if original_size is not None and original_size < size:
+            rich.print(f"[red]{relative} is larger than original (O:{original_size} M:{size})![/red]")
+    
+    rich.print("[bright_green]Done![/bright_green]")
+
+
+
 @CLI.command(help="Injects the modified assets back into the game archive.")
 def compile(
-    game_id: str = typer.Argument(help=f"The ID of the game to compile the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...), # type: ignore
+    game_id: str = typer.Argument(help=f"The ID of the game to compile the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
     mod_id: str = typer.Argument(help="The ID of the mod to compile.", default=...)
 ):
 
@@ -144,8 +184,7 @@ def compile(
         raise typer.Exit(1)
 
 
-
-    # Ensure that correct data files exist
+    # Ensure that correct data files exist:
     if modded_data_file.exists():
         rich.print(f"[red]Modded data file for [bright_black]{game_id}[/bright_black] ([bright_black]{modded_data_file}[/bright_black]) already exists![/red]")
         yes = input("\nOverwrite? Answering with 'y' or 'Y' will remove the file above and restart the whole process, answering with anything else will terminate the execution.\nYour choice: ")
@@ -182,7 +221,7 @@ def compile(
 
 
 @CLI.command(help="Compiles all mods from their source.")
-def compile_all(game_id: str = typer.Argument(help=f"The ID of the game to compile all mods for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=None)): # type: ignore
+def compile_all(game_id: str = typer.Argument(help=f"The ID of the game to compile all mods for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=None)):
     if game_id is not None and game_id not in MHK_GAMES.keys():
         rich.print(f"[red][yellow]{game_id}[/yellow] must be one of: [bright_black]{', '.join(MHK_GAMES.keys())}[/bright_black][/red]")
         raise typer.Exit(1)
@@ -224,6 +263,90 @@ def compile_all(game_id: str = typer.Argument(help=f"The ID of the game to compi
                 continue
 
     rich.print("[bright_green]Done![/bright_green]")
+
+
+
+@CLI.command(help="Merges two mods together. Files from first mods are prioritized (e. g.: if the modified file exists in both mods, the one from the first mod will overwrite the second).")
+def merge(
+        game_id: str = typer.Argument(help=f"The ID of the game to merge the mods for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
+        merged_mod_id: str = typer.Argument(help="The new (merged) mod ID.", default=...),
+        mod_ids: t.List[str] = typer.Argument(help="Mod IDs to combine, e. g.: 'cli.py merge mhk_2_en new_mod example_mod abc_mod 123_mod'", default=...)
+    ):
+        def _merge_unique_lines(original_file: Path, file: Path, merge_with: Path, merged_file: Path):
+            for path in [original_file, file, merge_with]:
+                if not path.exists():
+                    raise FileNotFoundError(f"{path} does not exist!")
+
+            merged = []
+            with original_file.open() as f_original, file.open() as f, merge_with.open() as f_mw:
+                for (original_line, first_line, second_line) in zip(f_original, f, f_mw):
+                    if original_line != first_line:
+                        merged.append(first_line)
+                    elif original_line != second_line:
+                        merged.append(second_line)
+                    else:
+                        merged.append(original_line)
+
+            merged_file.write_text(''.join(merged))
+
+
+        def _merge_directories(new_directory: Path, merge_paths: t.List[Path]):
+            new_directory.mkdir(parents=True)
+
+            for path_root in merge_paths:
+                for to_copy in path_root.rglob('**/*'):
+                    relative = to_copy.relative_to(path_root) 
+                    copy_to = new_directory / relative
+                    rich.print(f"Copy {to_copy} to {copy_to}")
+
+                    if to_copy.is_dir():
+                        copy_to.mkdir(parents=True, exist_ok=True)
+
+                    else:
+                        if copy_to.exists():
+                            rich.print(f"{copy_to} already exists, comparing it to original and merging unique lines...")
+                            try:
+                                _merge_unique_lines(
+                                    DECOMPILED_SOURCES_ROOT / game_id / relative,
+                                    to_copy,
+                                    copy_to,
+                                    copy_to
+                                )
+                                rich.print(f"Successfuly created new merged file {copy_to}. [yellow]But check it, just in case...[/yellow]")
+
+                            except Exception as exception:
+                                rich.print(f"[red]Failed to merge {to_copy} with {copy_to}: {exception}[/red]")
+                                continue
+
+                        else:
+                            shutil.copy2(to_copy, copy_to)
+
+
+        new(game_id=game_id, mod_id=merged_mod_id)
+
+
+        if len(mod_ids) < 2:
+            rich.print("[red]Please, specify 2 or more mods to merge together.[/red]")
+            raise typer.Exit()
+
+
+        game = MHK_GAMES[game_id]
+        mod_sources = [game.mod_root_path(mod_id) / 'source' for mod_id in mod_ids]
+
+        for mod_path in mod_sources:
+            if not mod_path.exists():
+                rich.print(f"[red][bright_black]{mod_path}[/bright_black] does not exist![/red]")
+                raise typer.Exit(1)
+
+
+        rich.print(f"[orange3]Creating a new [yellow]{merged_mod_id}[/yellow] merged mod from mods [yellow]{', '.join(mod_ids)}[/yellow]...[/orange3]")
+        merged_mod_source_path = game.mod_root_path(merged_mod_id) / 'source'
+
+        shutil.rmtree(merged_mod_source_path)
+        _merge_directories(merged_mod_source_path, mod_sources)
+
+        rich.print(f"[orange3]Compiling...[/orange3]")
+        compile(game_id=game_id, mod_id=merged_mod_id)
 
 
 
