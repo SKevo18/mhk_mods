@@ -13,9 +13,11 @@
                 <h2 x-text="mod.meta.title"></h2>
                 <p x-text="mod.meta.description"></p>
 
-                <p><a x-bind:href="mod.source">GitHub Source</a></p>
-                <p><a x-bind:href="`/{{ game.id }}/${mod.mod_id}`">Mod page</a></p>
-                <p><a x-bind:href="mod.download_url">Download</a></p>
+                <p style="display: inline-flex; gap: 0.5rem;">
+                    <a x-bind:href="mod.source" title="View the README and source at GitHub.">README & GitHub Source</a>
+                    <span style="color: #fff;">|</span>
+                    <a x-bind:href="mod.download_url" title="Download the data file for this mod.">Download</a>
+                </p>
             </li>
         </template>
     </template>
@@ -25,12 +27,12 @@
     async function get_mods() {
         let mods_data = []
 
-        game_request = await fetch("/api/{{ game.id }}")
+        game_request = await fetch("/api/info/{{ game.id }}")
         if (game_request.status == 404) { return [] }
 
         mod_ids = await game_request.json()
         for (const mod_id of mod_ids) {
-            let mod_request = await fetch(`/api/{{ game.id }}/${mod_id}`)
+            let mod_request = await fetch(`/api/info/{{ game.id }}/${mod_id}`)
             if (mod_request.status == 404) { continue }
 
             let mod_data = await (mod_request).json()

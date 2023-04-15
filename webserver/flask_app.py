@@ -1,6 +1,5 @@
 from flask import Flask, render_template, abort
 
-from webserver.fastapi_app import MHKM_FASTAPI_APP
 from cli import MHK_GAME, MHK_GAMES
 
 

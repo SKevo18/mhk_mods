@@ -1,3 +1,8 @@
+# Place in `/etc/systemd/system/mhkmods.service`
+#
+# `systemctl daemon-reload`
+# `systemctl enable mhkmods.service`
+# `systemctl start mhkmods.service`
 [Install]
 WantedBy=multi-user.target
 
@@ -8,8 +13,8 @@ After=network.target
 [Service]
 Type=simple
 
-# Update with your path:
-ExecStart=ExecStart=./webserver/start.sh
+# FIXME: Update with your path to `start.sh`:
+ExecStart=./webserver/start.sh
 
 Restart=on-failure
 User=www-data

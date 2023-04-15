@@ -1,7 +1,11 @@
 import typing as t
 
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import StreamingResponse, FileResponse
+import aiofiles
+import shutil
+
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import StreamingResponse
+from starlette.background import BackgroundTask
 
 from pathlib import Path
 from os import getenv
@@ -22,7 +26,20 @@ def _get_game(game_id: str) -> MHK_GAME:
     return game
 
 
-@MHKM_FASTAPI_APP.get("/")
+async def _async_download(path: Path, *args, **kwargs) -> StreamingResponse:
+    async def _iter_file() -> t.AsyncGenerator[bytes, None]:
+        async with aiofiles.open(path, 'rb') as f:
+            while chunk := await f.read((1024 * 1024) * 25):
+                yield chunk
+
+    return StreamingResponse(_iter_file(), headers={
+        'Content-Length': str(path.stat().st_size),
+        'Content-Disposition': f'attachment; filename="{path.name}"'
+    }, *args, **kwargs)
+
+
+
+@MHKM_FASTAPI_APP.get("/info")
 async def get_game_ids() -> t.Dict[str, str]:
     all_games = {}
 
@@ -33,8 +50,7 @@ async def get_game_ids() -> t.Dict[str, str]:
 
 
 
-
-@MHKM_FASTAPI_APP.get("/{game_id}")
+@MHKM_FASTAPI_APP.get("/info/{game_id}")
 async def get_mod_ids_for_game(game_id: str) -> t.List[str]:
     game = _get_game(game_id)
     root_path = game.mod_root_path()
@@ -47,20 +63,7 @@ async def get_mod_ids_for_game(game_id: str) -> t.List[str]:
 
 
 
-@MHKM_FASTAPI_APP.get("/{game_id}/{mod_id}/thumbnail")
-async def get_thumbnail(game_id: str, mod_id: str):
-    game = _get_game(game_id)
-    thumbnail_file = game.mod_root_path(mod_id) / 'thumbnail.png'
-
-    if thumbnail_file.exists():
-        return FileResponse(thumbnail_file, media_type='image/png')
-
-    else:
-        raise HTTPException(404, f"Thumbnail for `{game_id}/{mod_id}` does not exist.")
-
-
-
-@MHKM_FASTAPI_APP.get("/{game_id}/{mod_id}")
+@MHKM_FASTAPI_APP.get("/info/{game_id}/{mod_id}")
 async def get_mod_data(game_id: str, mod_id: str) -> t.Dict[str, t.Any]:
     game = _get_game(game_id)
     root = game.mod_root_path(mod_id)
@@ -72,13 +75,11 @@ async def get_mod_data(game_id: str, mod_id: str) -> t.Dict[str, t.Any]:
         "meta": {
             "title": None,
             "description": None,
-            "readme": None,
-            "thumbnail": None,
+            "readme": None
         }
     }
 
     readme = root / 'README.md'
-    thumbnail = root / 'thumbnail.png'
 
 
     if readme.exists():
@@ -92,22 +93,12 @@ async def get_mod_data(game_id: str, mod_id: str) -> t.Dict[str, t.Any]:
         data['meta']['readme'] = readme_text
 
 
-    if thumbnail.exists():
-        data['meta']['thumbnail'] = MHKM_FASTAPI_APP.url_path_for('get_thumbnail', game_id=game_id, mod_id=mod_id)
-
-
     return data
 
 
 
-@MHKM_FASTAPI_APP.get("/{game_id}/{mod_id}/download")
+@MHKM_FASTAPI_APP.get("/download/{game_id}/{mod_id}")
 async def download_mod(game_id: str, mod_id: str):
-    def _iter_mod_file(mod_file: Path):
-        with open(mod_file, 'rb') as f:
-            while chunk := f.read((1024 * 1024) * 25):
-                yield chunk
-
-
     game = _get_game(game_id)
     mod_file = game.mod_root_path(mod_id) / game.data_filename
 
@@ -123,5 +114,25 @@ async def download_mod(game_id: str, mod_id: str):
         raise HTTPException(404, f"An error ocurred while downloading mod `{game_id}/{mod_id}`. Please, try again later.")
 
 
-    headers = {'Content-Length': str(mod_file.stat().st_size), 'Content-Disposition': f'attachment; filename="{game.data_filename}"'}
-    return StreamingResponse(_iter_mod_file(mod_file), headers=headers, media_type='application/octet-stream')
+    return await _async_download(mod_file)
+
+
+
+@MHKM_FASTAPI_APP.get("/merge/{game_id}")
+async def merge_mods(game_id: str, mod_ids: t.List[str] = Query(alias='mod_id')):
+    game = _get_game(game_id)
+
+    merged_mod_id = f".merged.{'_'.join(mod_ids)}"
+    merged_mod_path = game.mod_root_path(merged_mod_id)
+    merged_mod_file = merged_mod_path / game.data_filename
+
+
+    if not merged_mod_file.exists():
+        try:
+            merge(game_id=game_id, merged_mod_id=merged_mod_id, mod_ids=mod_ids)
+
+        except Exception as exception:
+            raise HTTPException(404, f"An error ocurred while merging: `{exception}`")
+
+
+    return await _async_download(merged_mod_file, background=BackgroundTask(shutil.rmtree, merged_mod_file.parent))

@@ -11,11 +11,12 @@ try:
 except ImportError:
     raise RuntimeError('Please, install required third-party modules via `pip install -r requirements.txt`.')
 
+import re
 import os
 import shutil
 
-from enum import Enum
 from pathlib import Path
+from subprocess import run
 from dataclasses import dataclass
 
 
@@ -63,8 +64,17 @@ MHK_GAMES = {
 
 
 QUICKBMS_COMMANDS = {
-    "recompile": lambda bms_script_path, original_path, modified_path: os.system(f"{QUICKBMS_EXECUTABLE} -. -w -r -r -r {bms_script_path} {original_path} {modified_path}")
+    "recompile": lambda bms_script_path, original_path, modified_path: run([QUICKBMS_EXECUTABLE, "-.", "-w", "-r", "-r", "-r", bms_script_path, original_path, modified_path], check=True)
 }
+
+
+VALID_MOD_ID_REGEX = r'[a-zA-Z0-9_\.]{1,260}'
+
+def is_valid_mod_id(mod_id: str):
+    if re.match(VALID_MOD_ID_REGEX, mod_id) is not None:
+        return True
+
+    raise ValueError(f"Invalid mod ID: {mod_id}. Mod IDs may contain alphanumeric characters, dots and underscores only.")
 
 
 CLI = typer.Typer()
@@ -76,6 +86,8 @@ def new(
     game_id: str = typer.Argument(help=f"The ID of the game to compile the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
     mod_id: str = typer.Argument(help="The ID of the mod (must be unique).", default=...)
 ):
+
+    is_valid_mod_id(mod_id)
 
     try:
         game = MHK_GAMES[game_id]
@@ -112,7 +124,8 @@ def validate(
     game_id: str = typer.Argument(help=f"The ID of the game to validate the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
     mod_id: str = typer.Argument(help="The ID of the mod to validate.", default=...)
 ):
-    
+
+    is_valid_mod_id(mod_id)
     rich.print(f"[orange3]Validating file sizes for [yellow]{game_id}/{mod_id}[/yellow][/orange3]")
 
     try:
@@ -151,6 +164,8 @@ def compile(
     game_id: str = typer.Argument(help=f"The ID of the game to compile the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
     mod_id: str = typer.Argument(help="The ID of the mod to compile.", default=...)
 ):
+
+    is_valid_mod_id(mod_id)
 
     try:
         game = MHK_GAMES[game_id]
@@ -277,6 +292,7 @@ def merge(
                 if not path.exists():
                     raise FileNotFoundError(f"{path} does not exist!")
 
+
             merged = []
             with original_file.open() as f_original, file.open() as f, merge_with.open() as f_mw:
                 for (original_line, first_line, second_line) in zip(f_original, f, f_mw):
@@ -327,11 +343,11 @@ def merge(
 
         if len(mod_ids) < 2:
             rich.print("[red]Please, specify 2 or more mods to merge together.[/red]")
-            raise typer.Exit()
+            raise typer.Exit(1)
 
 
         game = MHK_GAMES[game_id]
-        mod_sources = [game.mod_root_path(mod_id) / 'source' for mod_id in mod_ids]
+        mod_sources = [game.mod_root_path(mod_id) / 'source' for mod_id in mod_ids if is_valid_mod_id(mod_id)]
 
         for mod_path in mod_sources:
             if not mod_path.exists():

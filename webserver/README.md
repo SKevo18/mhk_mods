@@ -9,7 +9,8 @@ API documentation is available at [https://mhk-mods.svit.ac/api/docs](https://mh
 ## Running it locally
 
 1. Copy config files from `conf.d`
-2. Install Python 3.6+ requirements: `pip install -r requirements.txt`
-3. `service mhkmods start` if running via systemd, or simply `./start.sh`
+2. Install Python 3.6+ virtualenv in `./.venv`: `python3 -m venv .env`
+3. Install dependencies: `pip install -r requirements.txt`
+4. `service mhkmods start` if running via systemd, or simply `./start.sh`
 
 The webserver runs as a Unix `.sock` socket file. You can connect it to a webserver such as [Caddy](https://caddyserver.com) to make it publicly available.
