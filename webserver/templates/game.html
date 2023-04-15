@@ -32,7 +32,10 @@
                 <a x-bind:href="`/api/merge/{{ game.id }}?mod_id=${selected_mods.join('&mod_id=')}`">Merge & download selected mods</a>
                 <i style="display: flex; flex-direction: column; color: #fff;">
                     <span x-text="`(${selected_mods.join(', ')})`"></span>
-                    <p>Note: these mods will be repacked before downloading. The compilation speed may vary, depending on server load, etc... Please, report any issues you find to my GitHub repository.</p>
+                    <p>
+                        Note: these mods will be repacked before downloading. The compilation speed may vary, depending on server load, etc...<br/>
+                        This is an experimental feature. Please, report any issues that you find to my <a href="https://github.com/SKevo18/mhk_mods">GitHub repository</a>.
+                    </p>
                 </i>
             </div>
         </template>
