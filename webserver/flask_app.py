@@ -24,8 +24,3 @@ def index():
 @MHKM_FLASK_APP.get('/<string:game_id>')
 def game(game_id: str):
     return render_template("game.html", game=_get_game(game_id))
-
-
-@MHKM_FLASK_APP.get('/<string:game_id>/<string:mod_id>')
-def mod(game_id: str, mod_id: str):
-    return render_template("mod.html", game=_get_game(game_id), mod_id=mod_id)

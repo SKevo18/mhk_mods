@@ -1,5 +1,5 @@
 # Update with your paths
-mhk-mods.svit.ac {
+domain.tld {
     encode zstd gzip
     root * ./webserver
 

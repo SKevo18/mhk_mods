@@ -4,11 +4,14 @@ from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse, FileResponse
 
 from pathlib import Path
-from cli import MHK_GAMES, MHK_GAME
+from os import getenv
+from cli import MHK_GAMES, MHK_GAME, compile, merge
 
 
 MHKM_FASTAPI_APP = FastAPI(root_path='/api')
 GITHUB_ROOT = 'https://github.com/SKevo18/mhk_mods/tree/main/sources/mods'
+
+RUNTIME_COMPILATION = getenv("ENV_VAR", 'False').lower() in ('true', '1', 't', 'yes')
 
 
 def _get_game(game_id: str) -> MHK_GAME:
@@ -20,7 +23,7 @@ def _get_game(game_id: str) -> MHK_GAME:
 
 
 @MHKM_FASTAPI_APP.get("/")
-def get_game_ids() -> t.Dict[str, str]:
+async def get_game_ids() -> t.Dict[str, str]:
     all_games = {}
 
     for game_id, game in MHK_GAMES.items():
@@ -32,7 +35,7 @@ def get_game_ids() -> t.Dict[str, str]:
 
 
 @MHKM_FASTAPI_APP.get("/{game_id}")
-def get_mod_ids_for_game(game_id: str) -> t.List[str]:
+async def get_mod_ids_for_game(game_id: str) -> t.List[str]:
     game = _get_game(game_id)
     root_path = game.mod_root_path()
 
@@ -45,7 +48,7 @@ def get_mod_ids_for_game(game_id: str) -> t.List[str]:
 
 
 @MHKM_FASTAPI_APP.get("/{game_id}/{mod_id}/thumbnail")
-def get_thumbnail(game_id: str, mod_id: str):
+async def get_thumbnail(game_id: str, mod_id: str):
     game = _get_game(game_id)
     thumbnail_file = game.mod_root_path(mod_id) / 'thumbnail.png'
 
@@ -58,7 +61,7 @@ def get_thumbnail(game_id: str, mod_id: str):
 
 
 @MHKM_FASTAPI_APP.get("/{game_id}/{mod_id}")
-def get_mod_data(game_id: str, mod_id: str) -> t.Dict[str, t.Any]:
+async def get_mod_data(game_id: str, mod_id: str) -> t.Dict[str, t.Any]:
     game = _get_game(game_id)
     root = game.mod_root_path(mod_id)
     data = {
@@ -98,7 +101,7 @@ def get_mod_data(game_id: str, mod_id: str) -> t.Dict[str, t.Any]:
 
 
 @MHKM_FASTAPI_APP.get("/{game_id}/{mod_id}/download")
-def download_mod(game_id: str, mod_id: str):
+async def download_mod(game_id: str, mod_id: str):
     def _iter_mod_file(mod_file: Path):
         with open(mod_file, 'rb') as f:
             while chunk := f.read((1024 * 1024) * 25):
@@ -109,7 +112,16 @@ def download_mod(game_id: str, mod_id: str):
     mod_file = game.mod_root_path(mod_id) / game.data_filename
 
     if not mod_file.exists():
-        raise HTTPException(404, f"Mod file for `{game_id}/{mod_id}` does not exist!")
+        if not RUNTIME_COMPILATION:
+            raise HTTPException(404, f"Mod file for `{game_id}/{mod_id}` does not exist!")
+
+
+    try:
+        compile(game_id=game_id, mod_id=mod_id)
+
+    except Exception:
+        raise HTTPException(404, f"An error ocurred while downloading mod `{game_id}/{mod_id}`. Please, try again later.")
+
 
     headers = {'Content-Length': str(mod_file.stat().st_size), 'Content-Disposition': f'attachment; filename="{game.data_filename}"'}
     return StreamingResponse(_iter_mod_file(mod_file), headers=headers, media_type='application/octet-stream')
