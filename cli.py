@@ -221,7 +221,7 @@ def compile(
 
 
     if not temp_data_file.exists():
-        rich.print(f"[yellow]Original data file for [bright_black]{game_id}[/bright_black] does not exist, copying it from original source...[/yellow]")
+        rich.print(f"[yellow]Copying original data file for [bright_black]{game_id}[/bright_black] from source...[/yellow]")
 
         try:
             shutil.copyfile(game.data_path, temp_data_file)
