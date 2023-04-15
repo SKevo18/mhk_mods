@@ -54,7 +54,7 @@ async def get_mod_ids_for_game(game_id: str) -> t.List[str]:
     root_path = game.mod_root_path()
 
     if root_path.exists():
-        return [path.stem for path in root_path.iterdir() if path.is_dir()]
+        return [path.stem for path in root_path.iterdir() if path.is_dir() and not path.stem.startswith('.')]
 
     else:
         raise HTTPException(404, f"Game `{game_id}` has no mods.")
@@ -63,6 +63,9 @@ async def get_mod_ids_for_game(game_id: str) -> t.List[str]:
 
 @MHKM_FASTAPI_APP.get("/info/{game_id}/{mod_id}")
 async def get_mod_data(game_id: str, mod_id: str) -> t.Dict[str, t.Any]:
+    if mod_id.startswith('.'):
+        raise HTTPException(404, f"Mod file for `{game_id}/{mod_id}` does not exist!")
+
     game = _get_game(game_id)
     root = game.mod_root_path(mod_id)
     data = {
@@ -100,7 +103,7 @@ async def download_mod(game_id: str, mod_id: str):
     game = _get_game(game_id)
     mod_file = game.mod_root_path(mod_id) / game.data_filename
 
-    if not mod_file.exists():
+    if mod_id.startswith('.') or not mod_file.exists():
         raise HTTPException(404, f"Mod file for `{game_id}/{mod_id}` does not exist!")
 
 
