@@ -9,8 +9,18 @@
 
     <template x-if="games !== null">
         <template x-for="[game_id, game] in Object.entries(games)">
-            <li x-data="{ mod_count: '...' }" x-init="mod_count = (await (await fetch(`/api/info/${game_id}`)).json()).length">
-                <h2><a x-text="game" x-bind:href="`/${game_id}`"></a> <small><code x-text="`(${mod_count !== undefined ? mod_count : 0} mods)`"></code></small></h2>
+            <li x-data="{ mod_count: null }" x-init="mod_count = (await (await fetch(`/api/info/${game_id}`)).json()).length">
+                <h2>
+                    <template x-if="mod_count == null">
+                        <span x-text="game">...</span>
+                    </template>
+
+                    <template x-if="mod_count > 0">
+                        <a x-text="game" x-bind:href="`/${game_id}`">...</a>
+                    </template>
+
+                    <small><code x-text="`(${mod_count !== undefined ? mod_count : 0} mods)`"></code></small>
+                </h2>
             </li>
         </template>
     </template>

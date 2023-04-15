@@ -2,25 +2,41 @@
 
 {% block content %}
 <h1>{{ game.name }} Modded Data Files</h1>
-<ul x-data="{ mods: null }" x-init="mods = await get_mods()">
+<ul x-data="{ mods: null, selected_mods: [] }" x-init="mods = await get_mods()">
     <template x-if="mods !== null && mods.length <= 0">
         <p style="text-align: center; color: #aaa;">There are no mods available for '{{ game.name }}'</p>
     </template>
 
     <template x-if="mods !== null && mods.length > 0">
-        <template x-for="mod in mods" :key="'{{ game.id }}-' + mod.mod_id">
-            <li>
-                <h2 x-text="mod.meta.title"></h2>
-                <p x-text="mod.meta.description"></p>
+        <template x-for="mod in mods" :key="mod.mod_id">
+            <li style="display: flex; gap: 1.5rem;">
+                <input x-show="mods.length >= 2" type="checkbox" x-bind:name="`{{ game.id }}/${mod.mod_id}`" x-on:change="if ($el.checked) { selected_mods.push(mod.mod_id);} else { selected_mods.pop(mod.mod_id); };">
 
-                <p style="display: inline-flex; gap: 0.5rem;">
-                    <a x-bind:href="mod.source" title="View the README and source at GitHub.">README & GitHub Source</a>
-                    <span style="color: #fff;">|</span>
-                    <a x-bind:href="mod.download_url" title="Download the data file for this mod.">Download</a>
-                </p>
+                <div>
+                    <h2 x-text="mod.meta.title"></h2>
+                    <p x-text="mod.meta.description"></p>
+
+                    <p style="display: inline-flex; gap: 0.5rem;">
+                        <a x-bind:href="mod.source" title="View the README and source at GitHub.">README & GitHub Source</a>
+                        <span style="color: #fff;">|</span>
+                        <a x-bind:href="mod.download_url" title="Download the data file for this mod.">Download this mod</a>
+                    </p>
+                </div>
             </li>
         </template>
     </template>
+
+    <div style="margin: 3rem 0;">
+        <template x-if="selected_mods.length >= 2">
+            <div style="text-align: center;">
+                <a x-bind:href="`/api/merge/{{ game.id }}?mod_id=${selected_mods.join('&mod_id=')}`">Merge & download selected mods</a>
+                <i style="display: flex; flex-direction: column; color: #fff;">
+                    <span x-text="`(${selected_mods.join(', ')})`"></span>
+                    <p>Note: these mods will be repacked before downloading. The compilation speed may vary, depending on server load, etc... Please, report any issues you find to my GitHub repository.</p>
+                </i>
+            </div>
+        </template>
+    </div>
 </ul>
 
 <script type="text/javascript">
