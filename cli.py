@@ -162,7 +162,8 @@ def validate(
 @CLI.command(help="Injects the modified assets back into the game archive.")
 def compile(
     game_id: str = typer.Argument(help=f"The ID of the game to compile the mod for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=...),
-    mod_id: str = typer.Argument(help="The ID of the mod to compile.", default=...)
+    mod_id: str = typer.Argument(help="The ID of the mod to compile.", default=...),
+    force: bool = typer.Option(help="Overwrites the mod file, if it already exists.", default=False)
 ):
 
     is_valid_mod_id(mod_id)
@@ -202,17 +203,21 @@ def compile(
     # Ensure that correct data files exist:
     if modded_data_file.exists():
         rich.print(f"[red]Modded data file for [bright_black]{game_id}[/bright_black] ([bright_black]{modded_data_file}[/bright_black]) already exists![/red]")
-        yes = input("\nOverwrite? Answering with 'y' or 'Y' will remove the file above and restart the whole process, answering with anything else will terminate the execution.\nYour choice: ")
 
-        if yes.lower() == 'y':
-            rich.print("[yellow]Answered '[bright_green]y/Y[/bright_green]', repeating the whole process...[/yellow]")
-            modded_data_file.unlink()
-
-            return compile(game_id=game_id, mod_id=mod_id)
+        if force:
+            rich.print("[yellow]Overwritting, because `force` is on.[/yellow]")
+            modded_data_file.unlink(missing_ok=True)
 
         else:
-            rich.print("[yellow][bright_red]Not 'y/Y'[/bright_red], exitting...[/yellow]")
-            raise typer.Exit(1)
+            yes = input("\nOverwrite? Answering with 'y' or 'Y' will remove the file above and restart the whole process, answering with anything else will terminate the execution.\nYour choice: ")
+
+            if yes.lower() == 'y':
+                rich.print("[yellow]Answered '[bright_green]y/Y[/bright_green]'[/yellow]")
+                modded_data_file.unlink(missing_ok=True)
+
+            else:
+                rich.print("[yellow][bright_red]Not 'y/Y'[/bright_red], exitting...[/yellow]")
+                raise typer.Exit(1)
 
 
     if not temp_data_file.exists():
@@ -220,6 +225,7 @@ def compile(
 
         try:
             shutil.copyfile(game.data_path, temp_data_file)
+
         except FileNotFoundError:
             rich.print(f"[red]Original data file for [bright_black]{game_id}[/bright_black] does not exist (expected: [bright_black]{game.data_path}[/bright_black])![/red]")
             raise typer.Exit(1)
@@ -236,7 +242,10 @@ def compile(
 
 
 @CLI.command(help="Compiles all mods from their source.")
-def compile_all(game_id: str = typer.Argument(help=f"The ID of the game to compile all mods for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=None)):
+def compile_all(
+        game_id: str = typer.Argument(help=f"The ID of the game to compile all mods for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=None),
+        force: bool = typer.Option(help="Overwrites the mod file, if it already exists.", default=False)
+    ):
     if game_id is not None and game_id not in MHK_GAMES.keys():
         rich.print(f"[red][yellow]{game_id}[/yellow] must be one of: [bright_black]{', '.join(MHK_GAMES.keys())}[/bright_black][/red]")
         raise typer.Exit(1)
@@ -273,7 +282,7 @@ def compile_all(game_id: str = typer.Argument(help=f"The ID of the game to compi
             rich.print(f"[yellow]Compiling: {game_id}/{mod_id}[/yellow]")
 
             try:
-                compile(game_id=game_id, mod_id=mod_id)
+                compile(game_id=game_id, mod_id=mod_id, force=force)
             except typer.Exit:
                 continue
 

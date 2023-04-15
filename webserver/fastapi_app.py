@@ -8,7 +8,6 @@ from fastapi.responses import StreamingResponse
 from starlette.background import BackgroundTask
 
 from pathlib import Path
-from os import getenv
 from cli import MHK_GAMES, MHK_GAME, compile, merge
 
 
@@ -103,15 +102,16 @@ async def download_mod(game_id: str, mod_id: str):
     game = _get_game(game_id)
     mod_file = game.mod_root_path(mod_id) / game.data_filename
 
-    if mod_id.startswith('.') or not mod_file.exists():
-        raise HTTPException(404, f"Mod file for `{game_id}/{mod_id}` does not exist!")
+    if mod_id.startswith('.'):
+        raise HTTPException(404, f"Mod `{game_id}/{mod_id}` is WIP!")
 
 
-    try:
-        compile(game_id=game_id, mod_id=mod_id)
+    if not mod_file.exists():
+        try:
+            compile(game_id=game_id, mod_id=mod_id, force=True)
 
-    except Exception:
-        raise HTTPException(502, f"An error ocurred while downloading mod `{game_id}/{mod_id}`. Please, try again later.")
+        except Exception:
+            raise HTTPException(502, f"An error ocurred while downloading mod `{game_id}/{mod_id}`. Please, try again later.")
 
 
     return await _async_download(mod_file)
