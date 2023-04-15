@@ -21,6 +21,9 @@ Because of the big file size of data files, the modded ones are not included in 
 
 1. Run `python cli.py compile-all` to compile all mods, or just mods for a specific game (`python cli.py compile-all <game_id>`.
     - **Note:** To compile a specific mod, use `python cli.py compile <game_id> <mod_id>`
+2. Copy the new data file to game's installation directory. Make sure that the name is exactly the same as old data file.
+    - It is a good practice to back up the original data file for your target Moorhuhn Kart game (renaming it is enough)
+    - If you screwed up the original, you can download it again from this repo in the `./sources/original` directory
 
 ### To create new mods
 
