@@ -12,10 +12,8 @@ from os import getenv
 from cli import MHK_GAMES, MHK_GAME, compile, merge
 
 
-MHKM_FASTAPI_APP = FastAPI(root_path='/api')
+MHKM_FASTAPI_APP = FastAPI(root_path='/api', docs_url='/')
 GITHUB_ROOT = 'https://github.com/SKevo18/mhk_mods/tree/main/sources/mods'
-
-RUNTIME_COMPILATION = getenv("ENV_VAR", 'False').lower() in ('true', '1', 't', 'yes')
 
 
 def _get_game(game_id: str) -> MHK_GAME:
@@ -103,15 +101,14 @@ async def download_mod(game_id: str, mod_id: str):
     mod_file = game.mod_root_path(mod_id) / game.data_filename
 
     if not mod_file.exists():
-        if not RUNTIME_COMPILATION:
-            raise HTTPException(404, f"Mod file for `{game_id}/{mod_id}` does not exist!")
+        raise HTTPException(404, f"Mod file for `{game_id}/{mod_id}` does not exist!")
 
 
     try:
         compile(game_id=game_id, mod_id=mod_id)
 
     except Exception:
-        raise HTTPException(404, f"An error ocurred while downloading mod `{game_id}/{mod_id}`. Please, try again later.")
+        raise HTTPException(502, f"An error ocurred while downloading mod `{game_id}/{mod_id}`. Please, try again later.")
 
 
     return await _async_download(mod_file)
@@ -127,12 +124,19 @@ async def merge_mods(game_id: str, mod_ids: t.List[str] = Query(alias='mod_id'))
     merged_mod_file = merged_mod_path / game.data_filename
 
 
+    if len(mod_ids) < 2:
+        raise HTTPException(400, f"Please, specify at least 2 mod IDs to merge.")
+
+
+    rm_mod_dir = lambda: shutil.rmtree(merged_mod_file.parent)
+
     if not merged_mod_file.exists():
         try:
             merge(game_id=game_id, merged_mod_id=merged_mod_id, mod_ids=mod_ids)
 
-        except Exception as exception:
-            raise HTTPException(404, f"An error ocurred while merging: `{exception}`")
+        except Exception:
+            rm_mod_dir()
+            raise HTTPException(500, f"An error ocurred. Are mod IDs correct?")
 
 
-    return await _async_download(merged_mod_file, background=BackgroundTask(shutil.rmtree, merged_mod_file.parent))
+    return await _async_download(merged_mod_file, background=BackgroundTask(rm_mod_dir))

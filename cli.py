@@ -287,6 +287,7 @@ def merge(
         merged_mod_id: str = typer.Argument(help="The new (merged) mod ID.", default=...),
         mod_ids: t.List[str] = typer.Argument(help="Mod IDs to combine, e. g.: 'cli.py merge mhk_2_en new_mod example_mod abc_mod 123_mod'", default=...)
     ):
+
         def _merge_unique_lines(original_file: Path, file: Path, merge_with: Path, merged_file: Path):
             for path in [original_file, file, merge_with]:
                 if not path.exists():
@@ -338,9 +339,6 @@ def merge(
                             shutil.copy2(to_copy, copy_to)
 
 
-        new(game_id=game_id, mod_id=merged_mod_id)
-
-
         if len(mod_ids) < 2:
             rich.print("[red]Please, specify 2 or more mods to merge together.[/red]")
             raise typer.Exit(1)
@@ -353,6 +351,9 @@ def merge(
             if not mod_path.exists():
                 rich.print(f"[red][bright_black]{mod_path}[/bright_black] does not exist![/red]")
                 raise typer.Exit(1)
+
+
+        new(game_id=game_id, mod_id=merged_mod_id)
 
 
         rich.print(f"[orange3]Creating a new [yellow]{merged_mod_id}[/yellow] merged mod from mods [yellow]{', '.join(mod_ids)}[/yellow]...[/orange3]")

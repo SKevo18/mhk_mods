@@ -1,12 +1,12 @@
 __pycache__/
 
 .venv/
-.env
 
 *.dat
 *.sar
 
 *.sock
 
+.merged.*/
 !sources/decompiled/**
 !sources/original/**
