@@ -394,7 +394,7 @@
 		<Ru>Du hast den 10. Platz in der Highscore erreicht.</Ru>
 	</Take>	
 	<Take id="4020">
-		<De>Meisterschaft 2 (50 ccm) wurde freigeschaltet!</De>
+		<De>Šampionát 2 (50 ccm) bol odomknutý!</De>
 		<En>Championship 2 (50 ccm) unlocked!</En>
 		<Fr>Championnat 2 (50 ccm) débloqué !</Fr>
 		<Sp>¡Desbloqueado el campeonato 2 (50 ccm)!</Sp>
@@ -403,7 +403,7 @@
 	</Take>
 	
 	<Take id="4021">
-		<De>Meisterschaft 1 (100 ccm) wurde freigeschaltet!</De>
+		<De>Šampionát 1 (100 ccm) bol odomknutý!</De>
 		<En>Championship 1 (100 ccm) unlocked!</En>
 		<Fr>Championnat 1 (100 ccm) débloqué !</Fr>
 		<Sp>¡Desbloqueado el campeonato 1 (100 ccm)!</Sp>
@@ -411,7 +411,7 @@
 		<Ru>Meisterschaft 1 (100 ccm) wurde freigeschaltet!</Ru>
 	</Take>
 	<Take id="4022">
-		<De>Meisterschaft 2 (100 ccm) wurde freigeschaltet!</De>
+		<De>Šampionát 2 (100 ccm) bol odomknutý!</De>
 		<En>Championship 2 (100 ccm) unlocked!</En>
 		<Fr>Championnat 2 (100 ccm) débloqué !</Fr>
 		<Sp>¡Desbloqueado el campeonato 2 (100 ccm)!</Sp>
@@ -419,7 +419,7 @@
 		<Ru>Meisterschaft 2 (100 ccm) wurde freigeschaltet!</Ru>
 	</Take>
 	<Take id="4023">
-		<De>Meisterschaft 1 (150 ccm) wurde freigeschaltet!</De>
+		<De>Šampionát 1 (150 ccm) bol odomknutý!</De>
 		<En>Championship 1 (150 ccm) unlocked!</En>
 		<Fr>Championnat 1 (150 ccm) débloqué !</Fr>
 		<Sp>¡Desbloqueado el campeonato 1 (150 ccm)!</Sp>
@@ -427,7 +427,7 @@
 		<Ru>Meisterschaft 1 (150 ccm) wurde freigeschaltet!</Ru>
 	</Take>
 	<Take id="4024">
-		<De>Meisterschaft 2 (150 ccm) wurde freigeschaltet!</De>
+		<De>Šampionát 2 (150 ccm) bol odomknutý!</De>
 		<En>Championship 2 (150 ccm) unlocked!</En>
 		<Fr>Championnat 2 (150 ccm) débloqué !</Fr>
 		<Sp>¡Desbloqueado el campeonato 2 (150 ccm)!</Sp>
@@ -435,7 +435,7 @@
 		<Ru>Meisterschaft 2 (150 ccm) wurde freigeschaltet!</Ru>
 	</Take>
 	<Take id="4025">
-		<De>Ein neuer Character wurde freigeschaltet!</De>
+		<De>Odomkla sa nová postava!</De>
 		<En>Ein neuer Character wurde freigeschaltet!</En>
 		<Fr>Ein neuer Character wurde freigeschaltet!</Fr>
 		<Sp>Ein neuer Character wurde freigeschaltet!</Sp>
@@ -443,7 +443,7 @@
 		<Ru>Ein neuer Character wurde freigeschaltet!</Ru>
 	</Take>
 	<Take id="4030">
-		<De>[NICKNAME] wurde aus dem Rennen geworfen!</De>
+		<De>[NICKNAME] bol vykopnutý zo závodu!</De>
 		<En>[NICKNAME] was kicked from the race!</En>
 		<Fr>[NICKNAME] a été exclu de la course !</Fr>
 		<Sp>¡[NICKNAME] ha sido expulsado de la carrera!</Sp>
@@ -451,7 +451,7 @@
 		<Ru>[NICKNAME] wurde aus dem Rennen geworfen!</Ru>
 	</Take>
 	<Take id="4031">
-		<De>[NICKNAME] hat das Spiel in [TIME] gewonnen!</De>
+		<De>[NICKNAME] vyhral hru v čase [TIME]!</De>
 		<En>[NICKNAME] hat das Spiel in [TIME] gewonnen!</En>
 		<Fr>[NICKNAME] hat das Spiel in [TIME] gewonnen!</Fr>
 		<Sp>[NICKNAME] hat das Spiel in [TIME] gewonnen!</Sp>
@@ -459,7 +459,7 @@
 		<Ru>[NICKNAME] hat das Spiel in [TIME] gewonnen!</Ru>
 	</Take>
 	<Take id="4032">
-		<De>Verlierer</De>
+		<De>Porazený</De>
 		<En>Loser</En>
 		<Fr>Perdant</Fr>
 		<Sp>Perdedor</Sp>
@@ -467,7 +467,7 @@
 		<Ru>ausgeschieden</Ru>
 	</Take>
 	<Take id="9000">
-		<De>Rennen fortsetzen</De>
+		<De>Pokračovať v závode</De>
 		<En>Continue the race</En>
 		<Fr>Poursuivre la course</Fr>
 		<Sp>Continuar la carrera</Sp>
@@ -475,7 +475,7 @@
 		<Ru>Rennen fortsetzen</Ru>
 	</Take>
 	<Take id="9010">
-		<De>Rennen neu starten</De>
+		<De>Reštartovať závod</De>
 		<En>Restart the race</En>
 		<Fr>Relancer la course</Fr>
 		<Sp>Reiniciar la carrera</Sp>
@@ -483,7 +483,7 @@
 		<Ru>Rennen neu starten</Ru>
 	</Take>
 	<Take id="9020">
-		<De>Rennen abbrechen</De>
+		<De>Zrušiť závod</De>
 		<En>Cancel the race</En>
 		<Fr>Annuler la course</Fr>
 		<Sp>Cancelar la carrera</Sp>
@@ -491,7 +491,7 @@
 		<Ru>Rennen abbrechen</Ru>
 	</Take>
 	<Take id="9050">
-		<De>Drücke die Leertaste, um das Rennen zu starten.</De>
+		<De>Stlač SPACE pre zahájenie závodu.</De>
 		<En>Press SPACE to start racing.</En>
 		<Fr>Appuyez sur ESPACE pour démarrer la course.</Fr>
 		<Sp>Pulsa ESPACIO para comenzar la carrera.</Sp>
@@ -499,7 +499,7 @@
 		<Ru>Drücke SPACE um das Rennen zu starten.</Ru>
 	</Take>
 	<Take id="9100">
-		<De>Die Netzwerkverbindung wurde getrennt.</De>
+		<De>Spojenie k sieti bolo stratené.</De>
 		<En>The connection to the network was lost.</En>
 		<Fr>La connexion au réseau a été perdue.</Fr>
 		<Sp>Se ha perdido la conexión con la red.</Sp>
@@ -517,7 +517,7 @@
 	</Take>
 	-->
 	<Take id="9008">
-		<De>Warte auf Spieler ...</De>
+		<De>Čaká sa na hráča ...</De>
 		<En>Waiting for Player ...</En>
 		<Fr>En attente d'adversaire ...</Fr>
 		<Sp>Esperando al jugador ...</Sp>
@@ -525,7 +525,7 @@
 		<Ru>Ожидание игрока …</Ru>
 	</Take>
 	<Take id="9110">
-		<De>Ein Mitspieler hat das Rennen beendet.</De>
+		<De>Závod bol zrušený iným hráčom.</De>
 		<En>Race terminated by another player.</En>
 		<Fr>Un autre joueur a annulé la course.</Fr>
 		<Sp>Otro jugador ha terminado la carrera.</Sp>
@@ -533,7 +533,7 @@
 		<Ru>Ein Mitspieler hat das Rennen beendet.</Ru>
 	</Take>
 	<Take id="9120">
-		<De>Eine Verbindung zum Server konnte nicht aufgebaut werden.</De>
+		<De>Nepodarilo sa pripojiť na server.</De>
 		<En>Could not connect to server.</En>
 		<Fr>Connexion au serveur impossible</Fr>
 		<Sp>Imposible conectarse al servidor.</Sp>
@@ -541,7 +541,7 @@
 		<Ru>Eine Verbindung zum Server konnte nicht aufgebaut werden.</Ru>
 	</Take>
 	<Take id="9130">
-		<De>Der Server hat die Teilnahme verweigert.</De>
+		<De>Pripojenie bolo odmietnuté serverom.</De>
 		<En>Connection refused by server.</En>
 		<Fr>Connexion refusée par le serveur</Fr>
 		<Sp>El servidor ha rechazado la conexión.</Sp>
@@ -549,7 +549,7 @@
 		<Ru>Der Server hat die Teilnahme verweigert.</Ru>
 	</Take>
 	<Take id="9140">
-		<De>Der Server hat die Verbindung beendet.</De>
+		<De>Server ukončil spojenie.</De>
 		<En>Der Server hat die Verbindung beendet.</En>
 		<Fr>Der Server hat die Verbindung beendet.</Fr>
 		<Sp>Der Server hat die Verbindung beendet.</Sp>
@@ -557,7 +557,7 @@
 		<Ru>Der Server hat die Verbindung beendet.</Ru>
 	</Take>
 	<Take id="9999">
-		<De>Möchtest du das Rennen wirklich abbrechen?</De>
+		<De>Naozaj chcete zrušiť závod?</De>
 		<En>Do you really want to cancel the race?</En>
 		<Fr>Voulez-vous vraiment annuler la course ?</Fr>
 		<Sp>¿Seguro que quieres cancelar la carrera?</Sp>
@@ -565,7 +565,7 @@
 		<Ru>Möchtest Du das Rennen wirklich abbrechen?</Ru>
 	</Take>	
 	<Take id="20000">
-		<De>Was! Schon vorbei? Hol Dir jetzt die Vollversion!</De>
+		<De>Čože! Už to skončilo? Získajte plnú verziu ešte dnes!</De>
 		<En>Was! Schon vorbei? Hol Dir jetzt die Vollversion!</En>
 		<Fr>Was! Schon vorbei? Hol Dir jetzt die Vollversion!</Fr>
 		<Sp>Was! Schon vorbei? Hol Dir jetzt die Vollversion!</Sp>
