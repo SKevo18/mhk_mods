@@ -6,7 +6,7 @@ You can access it live at [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac).
 
 API documentation is available at [https://mhk-mods.svit.ac/api/docs](https://mhk-mods.svit.ac/api/docs).
 
-> **Note:** Mod folders starting with dot (`.`) are marked as WIP and will be excluded from the mod list.
+> **Note:** Mod folders starting with dot (`.`) are marked as WIP/temporary and will be excluded from the mod list.
 
 ## Running it locally
 
