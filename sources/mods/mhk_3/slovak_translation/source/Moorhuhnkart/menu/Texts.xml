@@ -164,7 +164,7 @@
 		<Ru>Нет</Ru>
 	</Take>
 	<Take id="1003">
-		<De>Štart</De>
+		<De>Start</De>
 		<En>Start</En>
 		<Fr>Démarrer</Fr>
 		<Sp>Inicio</Sp>
@@ -173,7 +173,7 @@
 	</Take>
 	
 	<Take id="1004">
-		<De>Zrušiť</De>
+		<De>Zrusit</De>
 		<En>Abort</En>
 		<Fr>Annuler</Fr>
 		<Sp>Anular</Sp>
@@ -181,7 +181,7 @@
 		<Ru>Отменить</Ru>
 	</Take>
 	<Take id="1005">
-		<De>Opakovať</De>
+		<De>Opakovat</De>
 		<En>Retry</En>
 		<Fr>Réessayer</Fr>
 		<Sp>Reintentar</Sp>
@@ -189,7 +189,7 @@
 		<Ru>Повторить</Ru>
 	</Take>
 	<Take id="1006">
-		<De>Zmeniť</De>
+		<De>Zmenit</De>
 		<En>Change</En>
 		<Fr>Changer</Fr>
 		<Sp>Cambiar</Sp>
@@ -197,7 +197,7 @@
 		<Ru>Изменить</Ru>
 	</Take>
 	<Take id="1007">
-		<De>Pokračovať</De>
+		<De>Pokracovat</De>
 		<En>Continue</En>
 		<Fr>Continuer</Fr>
 		<Sp>Continuar</Sp>
@@ -205,7 +205,7 @@
 		<Ru>Продолжить</Ru>
 	</Take>
 	<Take id="1008">
-		<De>Späť</De>
+		<De>Spät</De>
 		<En>Back</En>
 		<Fr>Retour</Fr>
 		<Sp>Atrás</Sp>
@@ -213,7 +213,7 @@
 		<Ru>Вернуться</Ru>
 	</Take>
 	<Take id="1009">
-		<De>Potvrdiť</De>
+		<De>Potvrdit</De>
 		<En>Accept</En>
 		<Fr>Accepter</Fr>
 		<Sp>Aceptar</Sp>
@@ -221,7 +221,7 @@
 		<Ru>Примите</Ru>
 	</Take>
 	<Take id="1010">
-		<De>Odmietnuť</De>
+		<De>Odmietnut</De>
 		<En>Reject</En>
 		<Fr>Rejet</Fr>
 		<Sp>Rechazo</Sp>
@@ -253,7 +253,7 @@
 		<Ru>High</Ru>
 	</Take>
 	<Take id="2000">
-		<De>Šampionát</De>
+		<De>Sampionát</De>
 		<En>Championship</En>
 		<Fr>Championnat</Fr>
 		<Sp>Campeonato</Sp>
@@ -261,7 +261,7 @@
 		<Ru>Championship</Ru>
 	</Take>
 	<Take id="2010">
-		<De>Šampionát 1</De>
+		<De>Sampionát 1</De>
 		<En>Championship 1</En>
 		<Fr>Championnat 1</Fr>
 		<Sp>Campeonato 1</Sp>
@@ -269,7 +269,7 @@
 		<Ru>Championship 1</Ru>
 	</Take>
 	<Take id="2020">
-		<De>Šampionát 2</De>
+		<De>Sampionát 2</De>
 		<En>Championship 2</En>
 		<Fr>Championnat 2</Fr>
 		<Sp>Campeonato 2</Sp>
@@ -277,7 +277,7 @@
 		<Ru>Championship 2</Ru>
 	</Take>
 	<Take id="2100">
-		<De>Časovka</De>
+		<De>Casovka</De>
 		<En>Time Trial</En>
 		<Fr>Contre-la-montre</Fr>
 		<Sp>Contrarreloj</Sp>
@@ -301,7 +301,7 @@
 		<Ru>Last Man Standing</Ru>
 	</Take>
 	<Take id="2120">
-		<De>Chyť a Drž</De>
+		<De>Chyt a Drž</De>
 		<En>Catch'n Keep</En>
 		<Fr>Catch'n Keep</Fr>
 		<Sp>Catch'n Keep</Sp>
@@ -316,7 +316,7 @@
 		<Ru>LAN Game</Ru>
 	</Take>
 	<Take id="2310">
-		<De>Vytvoriť hru cez LAN</De>
+		<De>Vytvorit hru cez LAN</De>
 		<En>Create LAN Game</En>
 		<Fr>Créer une partie LAN</Fr>
 		<Sp>Crear partida LAN</Sp>
@@ -324,7 +324,7 @@
 		<Ru>Create LAN Game</Ru>
 	</Take>
 	<Take id="2320">
-		<De>Pripojiť sa k LAN hre</De>
+		<De>Pripojit sa k LAN hre</De>
 		<En>Join LAN Game</En>
 		<Fr>Joindre une partie LAN</Fr>
 		<Sp>Unirse a partida LAN</Sp>
@@ -332,7 +332,7 @@
 		<Ru>Join LAN Game</Ru>
 	</Take>
 	<Take id="2340">
-		<De>Napíšte názov hostiteľa alebo IP:</De>
+		<De>Napíste názov hostiteľa alebo IP:</De>
 		<En>Enter host name or IP:</En>
 		<Fr>Entrer le nom ou l'IP de l'hôte :</Fr>
 		<Sp>Introduce el nombre del anfitrión o su IP:</Sp>
@@ -340,7 +340,7 @@
 		<Ru>Enter Hostname or IP:</Ru>
 	</Take>
 	<Take id="2350">
-		<De>Dvaja Hráči</De>
+		<De>Dvaja Hráci</De>
 		<En>Two Players</En>
 		<Fr>Deux joueurs</Fr>
 		<Sp>Dos jugadores</Sp>
@@ -348,7 +348,7 @@
 		<Ru>Two Players</Ru>
 	</Take>
 	<Take id="2400">
-		<De>Najvyššie skóre</De>
+		<De>Najvyssie skóre</De>
 		<En>High-Scores</En>
 		<Fr>Meilleurs scores</Fr>
 		<Sp>Clasificación</Sp>
@@ -364,7 +364,7 @@
 		<Ru>Options</Ru>
 	</Take>
 	<Take id="2510">
-		<De>Rozlíšenie:</De>
+		<De>Rozlísenie:</De>
 		<En>Video mode:</En>
 		<Fr>Mode vidéo :</Fr>
 		<Sp>Modo de vídeo:</Sp>
@@ -428,7 +428,7 @@
 		<Ru>Texture Detail:</Ru>
 	</Take>
 	<Take id="2560">
-		<De>Hráč 1:</De>
+		<De>Hrác 1:</De>
 		<En>Player 1:</En>
 		<Fr>Joueur 1 :</Fr>
 		<Sp>Jugador 1:</Sp>
@@ -436,7 +436,7 @@
 		<Ru>Player 1:</Ru>
 	</Take>
 	<Take id="2570">
-		<De>Hráč 2:</De>
+		<De>Hrác 2:</De>
 		<En>Player 2:</En>
 		<Fr>Joueur 2 :</Fr>
 		<Sp>Jugador 2:</Sp>
@@ -476,7 +476,7 @@
 		<Ru>Французский</Ru>
 	</Take>
 	<Take id="2593">
-		<De>Španielsky</De>
+		<De>Spanielsky</De>
 		<En>Spanish</En>
 		<Fr>Espagnol</Fr>
 		<Sp>Español</Sp>
@@ -532,7 +532,7 @@
 		<Ru>Rank</Ru>
 	</Take>
 	<Take id="2420">
-		<De>Hráč</De>
+		<De>Hrác</De>
 		<En>Player</En>
 		<Fr>Joueur</Fr>
 		<Sp>Jugador</Sp>
@@ -540,7 +540,7 @@
 		<Ru>Player</Ru>
 	</Take>
 	<Take id="2430">
-		<De>Čas</De>
+		<De>Cas</De>
 		<En>Time</En>
 		<Fr>Temps</Fr>
 		<Sp>Tiempo</Sp>
@@ -580,7 +580,7 @@
 		<Ru>Phantom Cart</Ru>
 	</Take>
 	<Take id="2470">
-		<De>Najlepšie Kolo</De>
+		<De>Najlepsie Kolo</De>
 		<En>Best Lap</En>
 		<Fr>Best Lap</Fr>
 		<Sp>Best Lap</Sp>
@@ -668,7 +668,7 @@
 		<Ru>Shlimalaya</Ru>
 	</Take>
 	<Take id="3999">
-		<De>Ako hrať:</De>
+		<De>Ako hrat:</De>
 		<En>How to play:</En>
 		<Fr>Comment jouer ?</Fr>
 		<Sp>Cómo jugar:</Sp>
@@ -684,7 +684,7 @@
 		<Ru>Steuerung und Tastenbelegung</Ru>
 	</Take>
 	<Take id="4001">
-		<De>Režim jedného hráča vám umožňuje vybrať si medzi klávesnicou a gamepadom. Keďže na trhu je približne 523 124 562 364 rôznych gamepadov, nebudeme radšej zachádzať príliš ďaleko priraďovaním tlačidiel. Ak však používate klávesnicu, platia nasledujúce ovládacie prvky:</De>
+		<De>Režim jedného hráca vám umožňuje vybrat si medzi klávesnicou a gamepadom. Keďže na trhu je približne 523 124 562 364 rôznych gamepadov, nebudeme radsej zachádzat prílis ďaleko priraďovaním tlacidiel. Ak vsak používate klávesnicu, platia nasledujúce ovládacie prvky:</De>
 		<En>Single Player Mode allows you to choose between keyboard and gamepad. Since there are about 523,124,562,364 different gamepads on the market, we'd rather not go too far and specify a binding button layout. If you use a keyboard, however, the following controls apply:</En>
 		<Fr>Dans le mode Un joueur, vous pouvez choisir de jouer au clavier ou avec une manette. Dans la mesure où pas moins de 523 124 562 364 manettes différentes sont disponibles sur le marché, nous ne prendrons pas le risque de vous faire des suggestions quant à la disposition des boutons. Par contre, si vous jouez au clavier, vous pouvez vous reporter à cette liste :</Fr>
 		<Sp>El modo Un jugador te permite elegir entre el ratón y el teclado. Al haber unos 523.124.562.364 mandos distintos en el mercado actual, preferimos no arriesgarnos a darte indicaciones concretas sobre la configuración del mando. Si quieres usar el teclado para jugar, se aplican las siguientes reglas:</Sp>
@@ -692,7 +692,7 @@
 		<Ru>Im Einzelspieler-Modus kannst du zwischen Tastatur und Gamepad wählen. Da es mittlerweile ca. 523.124.562.364 verschiedene Gamepads auf dem Markt gibt, lehnen wir uns lieber nicht so weit aus dem Fenster dir eine verbindliche Tastenbelegung zu  nennen. Für ein Spiel über die Tastatur gilt allerdings folgende Tastenbelegung:</Ru>
 	</Take>
 	<Take id="4010">
-		<De>Hráč 1</De>
+		<De>Hrác 1</De>
 		<En>Player 1</En>
 		<Fr>Joueur 1</Fr>
 		<Sp>Jugador 1</Sp>
@@ -708,7 +708,7 @@
 		<Ru>Funktion</Ru>
 	</Take>
 	<Take id="4012">
-		<De>Hráč 2</De>
+		<De>Hrác 2</De>
 		<En>Player 2</En>
 		<Fr>Joueur 2</Fr>
 		<Sp>Jugador 2</Sp>
@@ -724,7 +724,7 @@
 		<Ru>W</Ru>
 	</Take>
 	<Take id="4014">
-		<De>Zrýchliť</De>
+		<De>Zrýchlit</De>
 		<En>Accelerate</En>
 		<Fr>Accélérer</Fr>
 		<Sp>Acelerar</Sp>
@@ -732,7 +732,7 @@
 		<Ru>Beschleunigen</Ru>
 	</Take>
 	<Take id="4015">
-		<De>Šipka HORE</De>
+		<De>Sipka HORE</De>
 		<En>UP arrow</En>
 		<Fr>Flèche HAUT</Fr>
 		<Sp>Cursor hacia arriba</Sp>
@@ -748,7 +748,7 @@
 		<Ru>S</Ru>
 	</Take>
 	<Take id="4017">
-		<De>Brzda / Spiatočka</De>
+		<De>Brzda / Spiatocka</De>
 		<En>Brake / Reverse</En>
 		<Fr>Freiner / Marche arrière</Fr>
 		<Sp>Frenar/Girar</Sp>
@@ -756,7 +756,7 @@
 		<Ru>Bremsen / Rückwärts fahren</Ru>
 	</Take>
 	<Take id="4018">
-		<De>Šípka DOLE</De>
+		<De>Sípka DOLE</De>
 		<En>DOWN arrow</En>
 		<Fr>Flèche BAS</Fr>
 		<Sp>Cursor hacia abajo</Sp>
@@ -772,7 +772,7 @@
 		<Ru>A</Ru>
 	</Take>
 	<Take id="4020">
-		<De>Zatočiť vľavo</De>
+		<De>Zatocit vľavo</De>
 		<En>Move left</En>
 		<Fr>Aller à gauche</Fr>
 		<Sp>Moverte hacia la izquierda</Sp>
@@ -780,7 +780,7 @@
 		<Ru>Nach links lenken</Ru>
 	</Take>
 	<Take id="4021">
-		<De>Šípka VĽAVO</De>
+		<De>Sípka VĽAVO</De>
 		<En>LEFT arrow</En>
 		<Fr>Flèche GAUCHE</Fr>
 		<Sp>Cursor hacia la izquierda</Sp>
@@ -796,7 +796,7 @@
 		<Ru>D</Ru>
 	</Take>
 	<Take id="4023">
-		<De>Zatočiť vpravo</De>
+		<De>Zatocit vpravo</De>
 		<En>Move right</En>
 		<Fr>Aller à droite</Fr>
 		<Sp>Moverte hacia la derecha</Sp>
@@ -804,7 +804,7 @@
 		<Ru>Nach rechts lenken</Ru>
 	</Take>
 	<Take id="4024">
-		<De>Šípka VPRAVO</De>
+		<De>Sípka VPRAVO</De>
 		<En>RIGHT arrow</En>
 		<Fr>Flèche DROITE</Fr>
 		<Sp>Cursor hacia la derecha</Sp>
@@ -820,7 +820,7 @@
 		<Ru>SPACE-Taste</Ru>
 	</Take>
 	<Take id="4026">
-		<De>Použiť bonus</De>
+		<De>Použit bonus</De>
 		<En>Use Power-Up</En>
 		<Fr>Utiliser un bonus</Fr>
 		<Sp>Usar mejora</Sp>
@@ -868,7 +868,7 @@
 		<Ru>Rücktaste</Ru>
 	</Take>
 	<Take id="4032">
-		<De>Resetovať polohu vozidla</De>
+		<De>Resetovat polohu vozidla</De>
 		<En>Reset Vehicle</En>
 		<Fr>Réinitialiser véhicule</Fr>
 		<Sp>Reiniciar vehículo</Sp>
@@ -893,14 +893,14 @@
 	</Take>
 	<Take id="5001">
 		<De>Auf den Rennstrecken findest du einige nützliche Gegenstände, mit denen du deinen Gegnern das Leben schwer machen kannst. Was genau sich in einem der Pakete auf der Fahrbahn befindet, erfährst du immer erst dann, wenn du es eingesammelt hast. Einige PowerUps werden automatisch ausgelöst, andere kannst du aufsparen und durch Drücken der Leertaste im passenden Moment auslösen. Zögere aber nicht zu lange, denn sobald du ein neues PowerUp aufsammelst, wird das vorherige dadurch ersetzt.</De>
-		<En>Pozdĺž tratí nájdete niekoľko užitočných predmetov, ktoré znepríjemnia život vašim súperom. Čo sa nachádza v jednotlivých boxoch zistíte až po ich prevzatí. Bonusy môžete použiť v prípade potreby stlačením MEDZERNÍKA. Nečakajte však príliš dlho, pretože akonáhle zoberiete iný bonus, nahradí ten starý.</En>
+		<En>Pozdĺž tratí nájdete niekoľko užitocných predmetov, ktoré znepríjemnia život vasim súperom. Co sa nachádza v jednotlivých boxoch zistíte až po ich prevzatí. Bonusy môžete použit v prípade potreby stlacením MEDZERNÍKA. Necakajte vsak prílis dlho, pretože akonáhle zoberiete iný bonus, nahradí ten starý.</En>
 		<Fr>Sur les différents circuits, vous pourrez ramasser quelques objets très utiles pour mettre des bâtons dans les roues des autres concurrents. Si vous voyez un paquet sur la piste, vous ne saurez ce qu'il renferme qu'après l'avoir récupéré. Si certains bonus sont automatiquement activés, d'autres peuvent être conservés pour être utilisés plus tard ; vous devez alors appuyer sur la barre d'ESPACE. Mais n'attendez pas trop longtemps : si vous ramassez un nouveau bonus, il remplacera le précédent.</Fr>
 		<Sp>En los circuitos encontrarás diversos objetos de utilidad para complicar la vida a tus rivales. Solo conocerás el contenido de los paquetes del circuito cuando los recojas. Algunas mejoras se activan automáticamente; otras puedes guardártelas para usarlas cuando las necesites pulsando la barra espaciadora. Pero no esperes demasiado porque cuando cojas una nueva mejora reemplazará a la anterior.</Sp>
 		<It>Lungo il tracciato sono seminati dei pacchi estremamente utili per mettere i bastoni tra le ruote ai tuoi avversari. Qualunque cosa vi sia contenuta, lo scoprirai solo dopo averli raccolti. Alcuni potenziamenti si attivano automaticamente, mentre altri li puoi tenere da parte per i momenti di bisogno (premi SPAZIO per attivarli). Ricorda che non sono cumulativi e possono essere utilizzati solo uno alla volta.</It>
 		<Ru>Auf den Rennstrecken findest du einige nützliche Gegenstände, mit denen du deinen Gegnern das Leben schwermachen kannst. Was genau sich in einem der Pakete auf der Fahrbahn befindet, erfährst du immer erst dann, wenn du es eingesammelt hast. Einige PowerUps werden automatisch ausgelöst, andere kannst du aufsparen und durch Drücken der SPACE-Taste im passenden Moment auslösen. Zögere aber nicht zu lange, denn sobald du ein neues PowerUp aufsammelst, wird das vorherige dadurch ersetzt.</Ru>
 	</Take>
 	<Take id="5010">
-		<De>Ochranný Štít</De>
+		<De>Ochranný Stít</De>
 		<En>The Protective Shield</En>
 		<Fr>Bouclier de protection</Fr>
 		<Sp>El escudo protector</Sp>
@@ -908,7 +908,7 @@
 		<Ru>Der Schutzschild</Ru>
 	</Take>
 	<Take id="5011">
-		<De>Ochranný Štít vás ochráni pred útokmi iných hráčov. Avšak, nie nadlho...</De>
+		<De>Ochranný Stít vás ochráni pred útokmi iných hrácov. Avsak, nie nadlho...</De>
 		<En>The protective shield instantly comes into action and grants you protection from attacks by other players. Only for a short time, however ...</En>
 		<Fr>Le bouclier de protection s'active automatiquement. Il vous met à l'abri contre les attaques des autres joueurs. Temporairement...</Fr>
 		<Sp>El escudo protector se activa automáticamente y te protege de los ataques de otros jugadores. Desgraciadamente su efecto es temporal.</Sp>
@@ -924,7 +924,7 @@
 		<Ru>Der Turbolader</Ru>
 	</Take>
 	<Take id="5021">
-		<De>Na krátku dobu zrýchli vaše vozidlo ostošesť, ale sťaží riadenie.</De>
+		<De>Na krátku dobu zrýchli vase vozidlo ostosest, ale staží riadenie.</De>
 		<En>Für kurze Zeit wird dein Kart so schnell wie nur irgendwas, lässt sich dadurch allerdings auch etwas schwerer lenken. Aber das schaffst du schon.</En>
 		<Fr>Für kurze Zeit wird dein Kart so schnell wie nur irgendwas, lässt sich dadurch allerdings auch etwas schwerer lenken. Aber das schaffst du schon.</Fr>
 		<Sp>Für kurze Zeit wird dein Kart so schnell wie nur irgendwas, lässt sich dadurch allerdings auch etwas schwerer lenken. Aber das schaffst du schon.</Sp>
@@ -940,7 +940,7 @@
 		<Ru>Der Magnet</Ru>
 	</Take>
 	<Take id="5031">
-		<De>Ak sa magnet položí, na tomto mieste sa na niekoľko sekúnd vytvorí silné magnetické pole. Neopatrných vodičov priťahuje, až kým nie sú bezmocne prilepení k magnetu.</De>
+		<De>Ak sa magnet položí, na tomto mieste sa na niekoľko sekúnd vytvorí silné magnetické pole. Neopatrných vodicov pritahuje, až kým nie sú bezmocne prilepení k magnetu.</De>
 		<En>Wird der Magnet abgelegt, entsteht an dieser Stelle für einige Sekunden ein starkes Magnetfeld. Unvorsichtige Fahrer werden angezogen, bis sie schließlich hilflos am Magneten kleben.</En>
 		<Fr>Wird der Magnet abgelegt, entsteht an dieser Stelle für einige Sekunden ein starkes Magnetfeld. Unvorsichtige Fahrer werden angezogen, bis sie schließlich hilflos am Magneten kleben.</Fr>
 		<Sp>Wird der Magnet abgelegt, entsteht an dieser Stelle für einige Sekunden ein starkes Magnetfeld. Unvorsichtige Fahrer werden angezogen, bis sie schließlich hilflos am Magneten kleben.</Sp>
@@ -956,7 +956,7 @@
 		<Ru>Das Gewicht</Ru>
 	</Take>
 	<Take id="5041">
-		<De>Sťažuje život vašim súperom. Ani najsilnejšia motokára nevydrží 16 ton!</De>
+		<De>Stažuje život vasim súperom. Ani najsilnejsia motokára nevydrží 16 ton!</De>
 		<En>Macht deinen Gegnern das Leben schwer. 16 Tonnen hält auch das stärkste Kart nicht aus!</En>
 		<Fr>Macht deinen Gegnern das Leben schwer. 16 Tonnen hält auch das stärkste Kart nicht aus!</Fr>
 		<Sp>Macht deinen Gegnern das Leben schwer. 16 Tonnen hält auch das stärkste Kart nicht aus!</Sp>
@@ -964,7 +964,7 @@
 		<Ru>Macht deinen Gegnern das Leben schwer. 16 Tonnen hält auch das stärkste Kart nicht aus!</Ru>
 	</Take>
 	<Take id="5050">
-		<De>Zmrazovač</De>
+		<De>Zmrazovac</De>
 		<En>Der Froster</En>
 		<Fr>Der Froster</Fr>
 		<Sp>Der Froster</Sp>
@@ -980,7 +980,7 @@
 		<Ru>Verwandele deine Gegner in Eisblöcke und lass ihnen das Blut in den Adern gefrieren.</Ru>
 	</Take>
 	<Take id="5060">
-		<De>Omračujúca Zápalná Fľaša</De>
+		<De>Omracujúca Zápalná Fľasa</De>
 		<En>Bang-Flash</En>
 		<Fr>Bang-Flash</Fr>
 		<Sp>Bang-Flash</Sp>
@@ -988,7 +988,7 @@
 		<Ru>Bang-Flash</Ru>
 	</Take>
 	<Take id="5061">
-		<De>Spôsobuje hlasný tresk a jasný záblesk svetla, ktorý nepriateľa na krátky čas oslepí a spomalí.</De>
+		<De>Spôsobuje hlasný tresk a jasný záblesk svetla, ktorý nepriateľa na krátky cas oslepí a spomalí.</De>
 		<En>Verursacht einen lauten Knall und einen grellen Lichtblitz, der den Gegner für kurze Zeit blendet.</En>
 		<Fr>Verursacht einen lauten Knall und einen grellen Lichtblitz, der den Gegner für kurze Zeit blendet.</Fr>
 		<Sp>Verursacht einen lauten Knall und einen grellen Lichtblitz, der den Gegner für kurze Zeit blendet.</Sp>
@@ -1004,7 +1004,7 @@
 		<Ru>Die Mine</Ru>
 	</Take>
 	<Take id="5071">
-		<De>Umiestnite mínu za seba a nastražte pascu pre svojich kolegov. Ak sa s mínou zrazí iné vozidlo, vybuchne - pokiaľ nie je chránené štítom.</De>
+		<De>Umiestnite mínu za seba a nastražte pascu pre svojich kolegov. Ak sa s mínou zrazí iné vozidlo, vybuchne - pokiaľ nie je chránené stítom.</De>
 		<En>Lege die Mine hinter dir ab, um deinen Mitspielern eine Falle zu stellen. Stößt ein anderes Fahrzeug mit der Mine zusammen, explodiert es - es sei denn, es ist durch den Schutzschild geschützt.</En>
 		<Fr>Lege die Mine hinter dir ab, um deinen Mitspielern eine Falle zu stellen. Stößt ein anderes Fahrzeug mit der Mine zusammen, explodiert es - es sei denn, es ist durch den Schutzschild geschützt.</Fr>
 		<Sp>Lege die Mine hinter dir ab, um deinen Mitspielern eine Falle zu stellen. Stößt ein anderes Fahrzeug mit der Mine zusammen, explodiert es - es sei denn, es ist durch den Schutzschild geschützt.</Sp>
@@ -1035,7 +1035,7 @@
 		<Ru>Die Lenkrakete</Ru>
 	</Take>
 	<Take id="5091">
-		<De>Táto malá zbraň cieľavedome nájde a zlikviduje hráča, ktorý je prvý. Takže ak ste sami vo vedení: nerobte to!</De>
+		<De>Táto malá zbraň cieľavedome nájde a zlikviduje hráca, ktorý je prvý. Takže ak ste sami vo vedení: nerobte to!</De>
 		<En>Diese gemeine, kleine Waffe sucht und findet zielstrebig ihren Weg zum Führenden. Wenn du also selber in Führung liegst: Lass es bleiben!</En>
 		<Fr>Diese gemeine, kleine Waffe sucht und findet zielstrebig ihren Weg zum Führenden. Wenn du also selber in Führung liegst: Lass es bleiben!</Fr>
 		<Sp>Diese gemeine, kleine Waffe sucht und findet zielstrebig ihren Weg zum Führenden. Wenn du also selber in Führung liegst: Lass es bleiben!</Sp>
@@ -1051,7 +1051,7 @@
 		<Ru>Die Seifenkanone</Ru>
 	</Take>
 	<Take id="6001">
-		<De>Strieľajte na svojich protivníkov bubliny, aby sa šmýkali.</De>
+		<De>Strieľajte na svojich protivníkov bubliny, aby sa smýkali.</De>
 		<En>Beschieße deine Gegner mit Seifenblasen, so dass sie anfangen zu schlittern.</En>
 		<Fr>Beschieße deine Gegner mit Seifenblasen, so dass sie anfangen zu schlittern.</Fr>
 		<Sp>Beschieße deine Gegner mit Seifenblasen, so dass sie anfangen zu schlittern.</Sp>
@@ -1075,7 +1075,7 @@
 		<Ru>Beschreibung Öl noch nicht vorhanden.</Ru>
 	</Take>	
 	<Take id="6020">
-		<De>Zmenšovač</De>
+		<De>Zmensovac</De>
 		<En>Der Schrumpfer</En>
 		<Fr>Der Schrumpfer</Fr>
 		<Sp>Der Schrumpfer</Sp>
@@ -1083,7 +1083,7 @@
 		<Ru>Der Schrumpfer</Ru>
 	</Take>
 	<Take id="6021">
-		<De>Ak ste svojich protivníkov zmenšili na zvládnuteľný formát pomocou zmenšovača, mali by si dávať pozor aby sa nedostali pod kolesá.</De>
+		<De>Ak ste svojich protivníkov zmensili na zvládnuteľný formát pomocou zmensovaca, mali by si dávat pozor aby sa nedostali pod kolesá.</De>
 		<En>Wenn du deine Widersacher mit dem Schrumpfer auf ein handliches Format zurecht gestutzt hast, sollten sie sich hüten nicht unter die Räder zu kommen.</En>
 		<Fr>Wenn du deine Widersacher mit dem Schrumpfer auf ein handliches Format zurecht gestutzt hast, sollten sie sich hüten nicht unter die Räder zu kommen.</Fr>
 		<Sp>Wenn du deine Widersacher mit dem Schrumpfer auf ein handliches Format zurecht gestutzt hast, sollten sie sich hüten nicht unter die Räder zu kommen.</Sp>
@@ -1091,7 +1091,7 @@
 		<Ru>Wenn du deine Widersacher mit dem Schrumpfer auf ein handliches Format zurecht gestutzt hast, sollten sie sich hüten nicht unter die Räder zu kommen.</Ru>
 	</Take>	
 	<Take id="9000">
-		<De>Spojenie so sieťov bolo stratené.</De>
+		<De>Spojenie so sietov bolo stratené.</De>
 		<En>The connection to the network was lost.</En>
 		<Fr>La connexion au réseau a été perdue.</Fr>
 		<Sp>Se ha perdido la conexión con la red.</Sp>
@@ -1099,7 +1099,7 @@
 		<Ru>Die Netzwerkverbindung wurde getrennt.</Ru>
 	</Take>
 	<Take id="9002">
-		<De>Nepodarilo sa pripojiť na server.</De>
+		<De>Nepodarilo sa pripojit na server.</De>
 		<En>Could not connect to server.</En>
 		<Fr>Connexion au serveur impossible</Fr>
 		<Sp>Imposible conectarse al servidor.</Sp>
@@ -1115,7 +1115,7 @@
 		<Ru>Der Server hat die Teilnahme verweigert.</Ru>
 	</Take>
 	<Take id="9004">
-		<De>Spojenie bolo prerušené serverom.</De>
+		<De>Spojenie bolo prerusené serverom.</De>
 		<En>Connection terminated by server.</En>
 		<Fr>Connexion annulée par le serveur</Fr>
 		<Sp>El servidor ha finalizado la conexión.</Sp>
@@ -1123,7 +1123,7 @@
 		<Ru>Der Server hat die Verbindung beendet.</Ru>
 	</Take>
 	<Take id="9005">
-		<De>Neporadilo sa pripojiť k lokálnemu hostiteľovi.</De>
+		<De>Neporadilo sa pripojit k lokálnemu hostiteľovi.</De>
 		<En>Could not connect to local host.</En>
 		<Fr>Connexion à l'hôte local impossible</Fr>
 		<Sp>Imposible conectarse al anfitrión local.</Sp>
@@ -1139,7 +1139,7 @@
 		<Ru>Готово</Ru>
 	</Take>
 	<Take id="9007">
-		<De>Čakám...</De>
+		<De>Cakám...</De>
 		<En>Waiting...</En>
 		<Fr>Attente...</Fr>
 		<Sp>El esperar...</Sp>
@@ -1147,7 +1147,7 @@
 		<Ru>Ждать...</Ru>
 	</Take>
 	<Take ID="9008">
-		<De>Čakám na hráča...</De>
+		<De>Cakám na hráca...</De>
 		<En>Waiting for Player ...</En>
 		<Fr>En attente d'adversaire ...</Fr>
 		<Sp>Esperando al jugador ...</Sp>
@@ -1155,7 +1155,7 @@
 		<Ru>Ожидание игрока …</Ru>
 	</Take>
 	<Take id="10000">
-		<De>Naozaj chcete ukončiť hru?</De>
+		<De>Naozaj chcete ukoncit hru?</De>
 		<En>Do you really want to quit?</En>
 		<Fr>Voulez-vous vraiment quitter ?</Fr>
 		<Sp>¿Seguro que quieres salir?</Sp>
