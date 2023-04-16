@@ -260,7 +260,7 @@ def compile_all(
 
             if game_mods_root.exists():
                 mod_ids.setdefault(game_id, [])
-                mod_ids[game_id].extend([path for path in game_mods_root.iterdir() if path.is_dir()])
+                mod_ids[game_id].extend([path for path in game_mods_root.iterdir() if path.is_dir() and not path.stem.startswith('.')])
 
             else:
                 rich.print(f"[yellow]Skipping [bright_black]{game_mods_root}[/bright_black] because it doesn't exist...[/yellow]")
@@ -269,7 +269,7 @@ def compile_all(
         game_mods_root = MODS_ROOT / game_id
 
         if game_mods_root.exists():
-            mod_ids[game_id] = [path for path in game_mods_root.iterdir() if path.is_dir()]
+            mod_ids[game_id] = [path for path in game_mods_root.iterdir() if path.is_dir() and not path.stem.startswith('.')]
 
         else:
             rich.print(f"[red]There are no mods for [bright_black]{game_id}[/bright_black]![/red]")
