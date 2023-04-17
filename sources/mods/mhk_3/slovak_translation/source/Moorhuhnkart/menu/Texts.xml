@@ -301,7 +301,7 @@
 		<Ru>Last Man Standing</Ru>
 	</Take>
 	<Take id="2120">
-		<De>Chyt a Drž</De>
+		<De>Chyt a Drz</De>
 		<En>Catch'n Keep</En>
 		<Fr>Catch'n Keep</Fr>
 		<Sp>Catch'n Keep</Sp>
@@ -676,7 +676,7 @@
 		<Ru>So wird gespielt</Ru>
 	</Take>
 	<Take id="4000">
-		<De>Ovládanie a Rozloženie</De>
+		<De>Ovládanie a Rozlozenie</De>
 		<En>Controls and Layout</En>
 		<Fr>Commandes et disposition des boutons</Fr>
 		<Sp>Controles</Sp>
@@ -684,7 +684,7 @@
 		<Ru>Steuerung und Tastenbelegung</Ru>
 	</Take>
 	<Take id="4001">
-		<De>Režim jedného hráca vám umožňuje vybrat si medzi klávesnicou a gamepadom. Keďže na trhu je približne 523 124 562 364 rôznych gamepadov, nebudeme radsej zachádzat prílis ďaleko priraďovaním tlacidiel. Ak vsak používate klávesnicu, platia nasledujúce ovládacie prvky:</De>
+		<De>Rezim jedného hráca vám umozňuje vybrat si medzi klávesnicou a gamepadom. Kedze na trhu je priblizne 523 124 562 364 rôznych gamepadov, nebudeme radsej zachádzat prílis daleko priradovaním tlacidiel. Ak vsak pouzívate klávesnicu, platia nasledujúce ovládacie prvky:</De>
 		<En>Single Player Mode allows you to choose between keyboard and gamepad. Since there are about 523,124,562,364 different gamepads on the market, we'd rather not go too far and specify a binding button layout. If you use a keyboard, however, the following controls apply:</En>
 		<Fr>Dans le mode Un joueur, vous pouvez choisir de jouer au clavier ou avec une manette. Dans la mesure où pas moins de 523 124 562 364 manettes différentes sont disponibles sur le marché, nous ne prendrons pas le risque de vous faire des suggestions quant à la disposition des boutons. Par contre, si vous jouez au clavier, vous pouvez vous reporter à cette liste :</Fr>
 		<Sp>El modo Un jugador te permite elegir entre el ratón y el teclado. Al haber unos 523.124.562.364 mandos distintos en el mercado actual, preferimos no arriesgarnos a darte indicaciones concretas sobre la configuración del mando. Si quieres usar el teclado para jugar, se aplican las siguientes reglas:</Sp>
@@ -820,7 +820,7 @@
 		<Ru>SPACE-Taste</Ru>
 	</Take>
 	<Take id="4026">
-		<De>Použit bonus</De>
+		<De>Pouzit bonus</De>
 		<En>Use Power-Up</En>
 		<Fr>Utiliser un bonus</Fr>
 		<Sp>Usar mejora</Sp>
@@ -893,7 +893,7 @@
 	</Take>
 	<Take id="5001">
 		<De>Auf den Rennstrecken findest du einige nützliche Gegenstände, mit denen du deinen Gegnern das Leben schwer machen kannst. Was genau sich in einem der Pakete auf der Fahrbahn befindet, erfährst du immer erst dann, wenn du es eingesammelt hast. Einige PowerUps werden automatisch ausgelöst, andere kannst du aufsparen und durch Drücken der Leertaste im passenden Moment auslösen. Zögere aber nicht zu lange, denn sobald du ein neues PowerUp aufsammelst, wird das vorherige dadurch ersetzt.</De>
-		<En>Pozdĺž tratí nájdete niekoľko užitocných predmetov, ktoré znepríjemnia život vasim súperom. Co sa nachádza v jednotlivých boxoch zistíte až po ich prevzatí. Bonusy môžete použit v prípade potreby stlacením MEDZERNÍKA. Necakajte vsak prílis dlho, pretože akonáhle zoberiete iný bonus, nahradí ten starý.</En>
+		<En>Pozdĺz tratí nájdete niekoľko uzitocných predmetov, ktoré znepríjemnia zivot vasim súperom. Co sa nachádza v jednotlivých boxoch zistíte az po ich prevzatí. Bonusy môzete pouzit v prípade potreby stlacením MEDZERNÍKA. Necakajte vsak prílis dlho, pretoze akonáhle zoberiete iný bonus, nahradí ten starý.</En>
 		<Fr>Sur les différents circuits, vous pourrez ramasser quelques objets très utiles pour mettre des bâtons dans les roues des autres concurrents. Si vous voyez un paquet sur la piste, vous ne saurez ce qu'il renferme qu'après l'avoir récupéré. Si certains bonus sont automatiquement activés, d'autres peuvent être conservés pour être utilisés plus tard ; vous devez alors appuyer sur la barre d'ESPACE. Mais n'attendez pas trop longtemps : si vous ramassez un nouveau bonus, il remplacera le précédent.</Fr>
 		<Sp>En los circuitos encontrarás diversos objetos de utilidad para complicar la vida a tus rivales. Solo conocerás el contenido de los paquetes del circuito cuando los recojas. Algunas mejoras se activan automáticamente; otras puedes guardártelas para usarlas cuando las necesites pulsando la barra espaciadora. Pero no esperes demasiado porque cuando cojas una nueva mejora reemplazará a la anterior.</Sp>
 		<It>Lungo il tracciato sono seminati dei pacchi estremamente utili per mettere i bastoni tra le ruote ai tuoi avversari. Qualunque cosa vi sia contenuta, lo scoprirai solo dopo averli raccolti. Alcuni potenziamenti si attivano automaticamente, mentre altri li puoi tenere da parte per i momenti di bisogno (premi SPAZIO per attivarli). Ricorda che non sono cumulativi e possono essere utilizzati solo uno alla volta.</It>
@@ -924,7 +924,7 @@
 		<Ru>Der Turbolader</Ru>
 	</Take>
 	<Take id="5021">
-		<De>Na krátku dobu zrýchli vase vozidlo ostosest, ale staží riadenie.</De>
+		<De>Na krátku dobu zrýchli vase vozidlo ostosest, ale stazí riadenie.</De>
 		<En>Für kurze Zeit wird dein Kart so schnell wie nur irgendwas, lässt sich dadurch allerdings auch etwas schwerer lenken. Aber das schaffst du schon.</En>
 		<Fr>Für kurze Zeit wird dein Kart so schnell wie nur irgendwas, lässt sich dadurch allerdings auch etwas schwerer lenken. Aber das schaffst du schon.</Fr>
 		<Sp>Für kurze Zeit wird dein Kart so schnell wie nur irgendwas, lässt sich dadurch allerdings auch etwas schwerer lenken. Aber das schaffst du schon.</Sp>
@@ -940,7 +940,7 @@
 		<Ru>Der Magnet</Ru>
 	</Take>
 	<Take id="5031">
-		<De>Ak sa magnet položí, na tomto mieste sa na niekoľko sekúnd vytvorí silné magnetické pole. Neopatrných vodicov pritahuje, až kým nie sú bezmocne prilepení k magnetu.</De>
+		<De>Ak sa magnet polozí, na tomto mieste sa na niekoľko sekúnd vytvorí silné magnetické pole. Neopatrných vodicov pritahuje, az kým nie sú bezmocne prilepení k magnetu.</De>
 		<En>Wird der Magnet abgelegt, entsteht an dieser Stelle für einige Sekunden ein starkes Magnetfeld. Unvorsichtige Fahrer werden angezogen, bis sie schließlich hilflos am Magneten kleben.</En>
 		<Fr>Wird der Magnet abgelegt, entsteht an dieser Stelle für einige Sekunden ein starkes Magnetfeld. Unvorsichtige Fahrer werden angezogen, bis sie schließlich hilflos am Magneten kleben.</Fr>
 		<Sp>Wird der Magnet abgelegt, entsteht an dieser Stelle für einige Sekunden ein starkes Magnetfeld. Unvorsichtige Fahrer werden angezogen, bis sie schließlich hilflos am Magneten kleben.</Sp>
@@ -948,7 +948,7 @@
 		<Ru>Wird der Magnet abgelegt, entsteht an dieser Stelle für einige Sekunden ein starkes Magnetfeld. Unvorsichtige Fahrer werden angezogen, bis sie schließlich hilflos am Magneten kleben.</Ru>
 	</Take>
 	<Take id="5040">
-		<De>Závažie</De>
+		<De>Závazie</De>
 		<En>Das Gewicht</En>
 		<Fr>Das Gewicht</Fr>
 		<Sp>Das Gewicht</Sp>
@@ -956,7 +956,7 @@
 		<Ru>Das Gewicht</Ru>
 	</Take>
 	<Take id="5041">
-		<De>Stažuje život vasim súperom. Ani najsilnejsia motokára nevydrží 16 ton!</De>
+		<De>Stazuje zivot vasim súperom. Ani najsilnejsia motokára nevydrzí 16 ton!</De>
 		<En>Macht deinen Gegnern das Leben schwer. 16 Tonnen hält auch das stärkste Kart nicht aus!</En>
 		<Fr>Macht deinen Gegnern das Leben schwer. 16 Tonnen hält auch das stärkste Kart nicht aus!</Fr>
 		<Sp>Macht deinen Gegnern das Leben schwer. 16 Tonnen hält auch das stärkste Kart nicht aus!</Sp>
@@ -1004,7 +1004,7 @@
 		<Ru>Die Mine</Ru>
 	</Take>
 	<Take id="5071">
-		<De>Umiestnite mínu za seba a nastražte pascu pre svojich kolegov. Ak sa s mínou zrazí iné vozidlo, vybuchne - pokiaľ nie je chránené stítom.</De>
+		<De>Umiestnite mínu za seba a nastrazte pascu pre svojich kolegov. Ak sa s mínou zrazí iné vozidlo, vybuchne - pokiaľ nie je chránené stítom.</De>
 		<En>Lege die Mine hinter dir ab, um deinen Mitspielern eine Falle zu stellen. Stößt ein anderes Fahrzeug mit der Mine zusammen, explodiert es - es sei denn, es ist durch den Schutzschild geschützt.</En>
 		<Fr>Lege die Mine hinter dir ab, um deinen Mitspielern eine Falle zu stellen. Stößt ein anderes Fahrzeug mit der Mine zusammen, explodiert es - es sei denn, es ist durch den Schutzschild geschützt.</Fr>
 		<Sp>Lege die Mine hinter dir ab, um deinen Mitspielern eine Falle zu stellen. Stößt ein anderes Fahrzeug mit der Mine zusammen, explodiert es - es sei denn, es ist durch den Schutzschild geschützt.</Sp>
@@ -1035,7 +1035,7 @@
 		<Ru>Die Lenkrakete</Ru>
 	</Take>
 	<Take id="5091">
-		<De>Táto malá zbraň cieľavedome nájde a zlikviduje hráca, ktorý je prvý. Takže ak ste sami vo vedení: nerobte to!</De>
+		<De>Táto malá zbraň cieľavedome nájde a zlikviduje hráca, ktorý je prvý. Takze ak ste sami vo vedení: nerobte to!</De>
 		<En>Diese gemeine, kleine Waffe sucht und findet zielstrebig ihren Weg zum Führenden. Wenn du also selber in Führung liegst: Lass es bleiben!</En>
 		<Fr>Diese gemeine, kleine Waffe sucht und findet zielstrebig ihren Weg zum Führenden. Wenn du also selber in Führung liegst: Lass es bleiben!</Fr>
 		<Sp>Diese gemeine, kleine Waffe sucht und findet zielstrebig ihren Weg zum Führenden. Wenn du also selber in Führung liegst: Lass es bleiben!</Sp>
