@@ -1,6 +1,6 @@
 # No Borders for Moorhuhn Kart 2 (en)
 
-> Removes all out of bounds borders.
+> Removes out of bounds borders for Egypt, Mine and Swamp
 
 ## Installation
 
