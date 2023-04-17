@@ -1,6 +1,6 @@
 # Example Mod
 
-> An example Moorhuhn Kart 2 mod that replaces some text with meme language. It also makes glibber balls move more.
+> An example Moorhuhn Kart 2 mod that replaces some text with meme language.
 
 ## Installation
 
