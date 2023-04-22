@@ -6,8 +6,9 @@ if sys.version_info.major < 3 or sys.version_info.minor < 6:
     raise RuntimeError('This script requires Python 3.6 or later.')
 
 try:
-    import typer
-    import rich
+    import typer # type: ignore
+    import rich # type: ignore
+    import jinja2
 except ImportError:
     raise RuntimeError('Please, install required third-party modules via `pip install -r requirements.txt`.')
 
@@ -22,6 +23,7 @@ from dataclasses import dataclass
 
 ROOT_PATH = Path(__file__).parent.absolute()
 
+TEMPLATES_ROOT = ROOT_PATH / 'templates'
 SOURCES_ROOT = ROOT_PATH / 'sources'
 ORIGINAL_SOURCES_ROOT = SOURCES_ROOT / 'original'
 DECOMPILED_SOURCES_ROOT = SOURCES_ROOT / 'decompiled'
@@ -87,6 +89,18 @@ def new(
     mod_id: str = typer.Argument(help="The ID of the mod (must be unique).", default=...)
 ):
 
+    def _copy_template(source_path: Path, destination_root: Path):
+        shutil.copytree(source_path, destination_root)
+        jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(destination_root), keep_trailing_newline=True)
+
+        for path in destination_root.rglob('*.*'):
+            rich.print(f"Copying `{path}`...")
+            template = jinja_env.get_template(str(path.relative_to(destination_root).as_posix()))
+            rendered = template.render({'mod_title': mod_id.replace('_', ' ').title(), 'game': game})
+
+            path.write_text(rendered)
+
+
     is_valid_mod_id(mod_id)
 
     try:
@@ -99,19 +113,14 @@ def new(
 
 
     # Create directory structure:
-    try:
-        rich.print(f"[orange3]Creating directory structure for [yellow]{game.id}[/yellow]...[/orange3]")
-        (mod_root_path / 'source').mkdir(parents=True, exist_ok=False)
+    rich.print(f"[orange3]Creating directory structure for [yellow]{game.id}[/yellow]...[/orange3]")
 
-    except FileExistsError:
-        rich.print(f"[red]The structure for [yellow]{mod_id}[/yellow] already exists [bright_black]({mod_root_path})[/bright_black], aborting![/red]")
+    if mod_root_path.exists():
+        rich.print(f"[red]The [yellow]{mod_id}[/yellow] mod already exists [bright_black]({mod_root_path})[/bright_black], aborting![/red]")
         raise typer.Exit(1)
 
 
-    # Create README.md files:
-    rich.print(f"[orange3]Creating [yellow]README[/yellow] files...[/orange3]")
-    (mod_root_path / 'source' / 'README.md').write_text("# Copy modified game assets from `./sources/decompiled` here. Make sure the directory structure stays the same! It is good practice to only include modified files here. Remove this file when you are done\n")
-    (mod_root_path / 'README.md').write_text(f"# {mod_id.replace('_', ' ').title()} for {game.name}\n\n> A short description? Insert here!\n\n## Installation\n\nReplace original data file in game's installation directory with modified `{game.data_filename}`\n")
+    _copy_template(TEMPLATES_ROOT / 'new_mod', mod_root_path)
 
 
     rich.print(f"[bright_green]Done! Make sure to run [bright_black]python cli.py compile {game.id} {mod_id}[/bright_black] after you are done![/bright_green]")

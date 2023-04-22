@@ -25,12 +25,35 @@ Because of the big file size of data files, the modded ones are not included in 
     - It is a good practice to back up the original data file for your target Moorhuhn Kart game (renaming it is enough)
     - If you screwed up the original, you can download it again from this repo in the `./sources/original` directory
 
+#### Valid game IDs
+
+- `mhk_extra` - Moorhuhn Kart: Extra (XXL version, German);
+- `mhk_2_en` - Moorhuhn Kart 2 (English version)
+  - Has most bugs from German version patched;
+  - Introduces the OoB* glitch in Egypt;
+- `mhk_2_de` - Moorhuhn Kart 2 (German version)
+  - Unpatched Island "under the water" OoB bug;
+  - Unpatched Castle OoB;
+- `mhk_3` - Moorhuhn Kart 3 (German);
+
+**\*OoB:** out-of-bounds (when you go outside of the intended track boundaries without being respawned)
+
 ### To create new mods
 
 0. Decompile a MHK `.dat`/`.sar` file. Because there weren't any new updates for the original MHK games in ages, this repository already includes the decompiled assets in the `./sources/decompiled` directory. Therefore, it is safe to skip this step.
 1. Create a directory structure for the new mod (`python cli.py new <ID of MHK game> <mod ID>`).
 2. Add modified files to `./sources/mods/<ID of MHK game>/<mod ID>/sources`.
 3. `python cli.py compile <ID of MHK game> <mod ID>`.
+
+#### Valid mod IDs
+
+A mod ID must satisfy the following RegEx: `[a-zA-Z0-9_\.]{1,260}`, that is:
+
+- It must be an alphanumerical string;
+- It may contain underscores or dots;
+- It must be between 1 and 260 characters long;
+
+You can rename the mod later on by renaming the mod source directory.
 
 ## Questions and Answers
 
