@@ -45,6 +45,10 @@ Because of the big file size of data files, the modded ones are not included in 
 2. Add modified files to `./sources/mods/<ID of MHK game>/<mod ID>/sources`.
 3. `python cli.py compile <ID of MHK game> <mod ID>`.
 
+This will copy the original data file of the game into the mod root's directory and compile it there.
+
+Please, do not commit modified data files to source control! There is a [webserver](https://github.com/SKevo18/mhk_mods/tree/main/webserver) for this purpose: [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac)
+
 #### Valid mod IDs
 
 A mod ID must satisfy the following RegEx: `[a-zA-Z0-9_\.]{1,260}`, that is:
@@ -75,4 +79,4 @@ Yes, the tool will automatically determine if you're running on Windows or other
 Modifying the game in this way is like breaking your computer apart and then trying to put it back together and praying that it works.
 
 Since MHK games do not have an official modding tool, this repository is more of an experiment rather than a fully-fleshed out mod manager.
-Please, be aware that oopsies and ouchies may happen. If you have no idea what you are doing, then it is a better idea to try out the existing mods instead.
+If you have no idea what you are doing, then it is a better idea to try out the existing mods instead by downloading them from the [official website](https://mhk-mods.svit.ac).
