@@ -61,6 +61,12 @@ You can rename the mod later on by renaming the mod source directory.
 
 ## Questions and Answers
 
+### Do you plan to mod other Moorhuhn games?
+
+Modding other Moorhuhn games is definitely possible, but since GitHub LFS storage is limited for free accounts (to store original data files in the source control), it limits my focus on just Moorhuhn Kart mods at the moment.
+
+In the future, I might tweak and expand this repository so that the data files are not stored directly in the git repo, but only present locally on the webserver. So, this repository would only contain the mods' sources, but the webserver could still compile them.
+
 ### Where is MHK 4 (Moorhuhn Kart: Thunder)?
 
 As of right now (1st April 2023), there is no known script (at least I haven't found any?) that decompiles MHK 4 assets.
@@ -68,7 +74,7 @@ If you are aware of any, please create a PR (add the script to `./quickbms/bms_s
 
 ### Is this tool compatible with Linux?
 
-Yes, the tool will automatically determine if you're running on Windows or other machine (useful in cases where you, for example, use this tool for an automated webserver that serves the modded data files). The Linux `quickbms` executable can be found in the `quickbms/` directory in this repo (as well as the Windows version).
+Yes, the tool will automatically determine if you're running on Windows or other machine (useful in cases where you, for example, use this tool for an [automated webserver](https://github.com/SKevo18/mhk_mods/tree/main/webserver) that serves the modded data files). The Linux `quickbms` executable can be found in the `quickbms/` directory in this repo (as well as the Windows version).
 
 ### Which QuickBMS version is used in this repository?
 
@@ -80,3 +86,9 @@ Modifying the game in this way is like breaking your computer apart and then try
 
 Since MHK games do not have an official modding tool, this repository is more of an experiment rather than a fully-fleshed out mod manager.
 If you have no idea what you are doing, then it is a better idea to try out the existing mods instead by downloading them from the [official website](https://mhk-mods.svit.ac).
+
+## Donate
+
+Like what I do? Consider [sponsoring me](https://github.com/sponsors/SKevo18) here at GitHub!
+
+The money will go towards paying for server fees required to run the [mhk-mods](https://mhk-mods.svit.ac) website and towards developing new mods.
