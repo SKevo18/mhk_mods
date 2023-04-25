@@ -47,7 +47,11 @@ Because of the big file size of data files, the modded ones are not included in 
 
 This will copy the original data file of the game into the mod root's directory and compile it there.
 
-Please, do not commit modified data files to source control! There is a [webserver](https://github.com/SKevo18/mhk_mods/tree/main/webserver) for this purpose: [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac)
+Please, do not commit modified data files to source control! There is a [webserver](https://github.com/SKevo18/mhk_mods/tree/main/webserver) for this purpose: [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac).
+
+You can check modding notes/guides for specific game, as well as mod sources, by visiting its mod directory:
+
+- [Moorhuhn Kart 3](https://github.com/SKevo18/mhk_mods/tree/main/sources/mods/mhk_3)
 
 #### Valid mod IDs
 
