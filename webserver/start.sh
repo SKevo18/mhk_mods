@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 cd "$(dirname "$0")"
 
+set -a; source .envrc; set +a
+
 
 handle_sigint() {
   echo "Killing both processes"

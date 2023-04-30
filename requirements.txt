@@ -1,3 +1,5 @@
 typer
 rich
 jinja2
+
+GitPython

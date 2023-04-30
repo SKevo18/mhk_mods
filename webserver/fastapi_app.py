@@ -1,18 +1,25 @@
 import typing as t
 
+import git
+import hashlib
+import hmac
 import aiofiles
 import shutil
 
-from fastapi import FastAPI, HTTPException, Query
+from pathlib import Path
+from os import environ
+
+from fastapi import FastAPI, HTTPException, Request, Header, Query
 from fastapi.responses import StreamingResponse
 from starlette.background import BackgroundTask
 
-from pathlib import Path
-from cli import MHK_GAMES, MHK_GAME, compile, merge
+from cli import ROOT_PATH, MHK_GAMES, MHK_GAME, compile, compile_all, merge
 
 
 MHKM_FASTAPI_APP = FastAPI(root_path='/api', docs_url='/')
+
 GITHUB_ROOT = 'https://github.com/SKevo18/mhk_mods/tree/main/sources/mods'
+GITHUB_TOKEN = environ['GITHUB_TOKEN']
 
 
 def _get_game(game_id: str) -> MHK_GAME:
@@ -143,3 +150,29 @@ async def merge_mods(game_id: str, mod_ids: t.List[str] = Query(alias='mod_id'))
 
 
     return await _async_download(merged_mod_file, background=BackgroundTask(rm_mod_dir))
+
+
+def verify_signature(payload_body, request_signature, secret_token):
+    if request_signature is None:
+        return False
+
+    signature = 'sha256=' + hmac.new(secret_token.encode(), payload_body, hashlib.sha256).hexdigest()
+
+    return hmac.compare_digest(signature, request_signature)
+
+
+
+@MHKM_FASTAPI_APP.post("/github_webhook")
+async def github_webhook(request: Request, x_hub_signature_256: str = Header(None)):
+    payload_body = await request.body()
+
+    if not verify_signature(payload_body, x_hub_signature_256, GITHUB_TOKEN):
+        raise HTTPException(status_code=400, detail="Invalid GitHub secret.")
+
+    repo = git.Repo(ROOT_PATH) # type: ignore
+    origin = repo.remote('origin')
+    origin.pull()
+
+    compile_all()
+
+    return {"status": "success"}
