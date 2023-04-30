@@ -252,10 +252,10 @@ def compile(
 
 @CLI.command(help="Compiles all mods from their source.")
 def compile_all(
-        game_id: str = typer.Argument(help=f"The ID of the game to compile all mods for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=None),
+        game_id: t.Optional[str] = typer.Argument(help=f"The ID of the game to compile all mods for. Can be one of: {', '.join(MHK_GAMES.keys())}", default=None),
         force: bool = typer.Option(help="Overwrites the mod file, if it already exists.", default=False)
     ):
-    if game_id is not None and game_id not in MHK_GAMES.keys():
+    if game_id not in MHK_GAMES.keys():
         rich.print(f"[red][yellow]{game_id}[/yellow] must be one of: [bright_black]{', '.join(MHK_GAMES.keys())}[/bright_black][/red]")
         raise typer.Exit(1)
 

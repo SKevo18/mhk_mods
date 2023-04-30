@@ -1,6 +1,5 @@
 import typing as t
 
-import git
 import aiofiles
 import shutil
 
