@@ -19,7 +19,7 @@ from cli import ROOT_PATH, MHK_GAMES, MHK_GAME, compile, compile_all, merge
 MHKM_FASTAPI_APP = FastAPI(root_path='/api', docs_url='/')
 
 GITHUB_ROOT = 'https://github.com/SKevo18/mhk_mods/tree/main/sources/mods'
-GITHUB_TOKEN = environ['GITHUB_TOKEN']
+GITHUB_TOKEN = environ['GITHUB_SECRET']
 
 
 def _get_game(game_id: str) -> MHK_GAME:
