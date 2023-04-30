@@ -1,5 +1,6 @@
 import typing as t
 
+import subprocess
 import aiofiles
 import shutil
 
@@ -156,7 +157,16 @@ async def github_webhook(request: Request, background_tasks: BackgroundTasks):
         raise HTTPException(200, f"Not main branch.")
 
 
-    background_tasks.add_task(run_command, ['git', 'pull', 'origin', 'main'], cwd=ROOT_PATH)
-    background_tasks.add_task(compile_all, game_id=None, force=True)
+    def pull():
+        try:
+            subprocess.run('git pull origin main', cwd=ROOT_PATH, shell=True, capture_output=True, check=True)
 
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(e.returncode, ROOT_PATH, e.stderr) from e
+            return
+
+        return compile_all(game_id=None, force=True)
+
+
+    background_tasks.add_task(pull)
     return {"status": "success"}
