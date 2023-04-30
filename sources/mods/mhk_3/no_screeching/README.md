@@ -1,6 +1,6 @@
 # No Screeching for Moorhuhn Kart 3
 
-> Makes background FX (e. g. birds screeching, horse) less frequent.
+> Makes background sound FX (e. g. birds screeching, horse) less frequent.
 
 ## Installation instructions
 
