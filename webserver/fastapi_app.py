@@ -152,13 +152,14 @@ async def merge_mods(game_id: str, mod_ids: t.List[str] = Query(alias='mod_id'))
     return await _async_download(merged_mod_file, background=BackgroundTask(rm_mod_dir))
 
 
-def verify_signature(payload_body, request_signature, secret_token):
+def verify_signature(payload_body: bytes, request_signature: t.Optional[str]=None, secret_token: str=GITHUB_TOKEN):
     if request_signature is None:
         return False
 
-    signature = 'sha256=' + hmac.new(secret_token.encode(), payload_body, hashlib.sha256).hexdigest()
+    hash_object = hmac.new(secret_token.encode('utf-8'), msg=payload_body, digestmod=hashlib.sha256)
+    expected_signature = "sha256=" + hash_object.hexdigest()
 
-    return hmac.compare_digest(signature, request_signature)
+    return hmac.compare_digest(expected_signature, request_signature)
 
 
 
@@ -166,7 +167,7 @@ def verify_signature(payload_body, request_signature, secret_token):
 async def github_webhook(request: Request, x_hub_signature_256: str = Header(None)):
     payload_body = await request.body()
 
-    if not verify_signature(payload_body, x_hub_signature_256, GITHUB_TOKEN):
+    if not verify_signature(payload_body, x_hub_signature_256):
         raise HTTPException(status_code=400, detail="Invalid GitHub secret.")
 
     repo = git.Repo(ROOT_PATH) # type: ignore
