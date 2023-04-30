@@ -163,7 +163,6 @@ async def github_webhook(request: Request, background_tasks: BackgroundTasks):
 
         except subprocess.CalledProcessError as e:
             raise RuntimeError(e.returncode, ROOT_PATH, e.stderr) from e
-            return
 
         return compile_all(game_id=None, force=True)
 
