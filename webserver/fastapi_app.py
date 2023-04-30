@@ -1,25 +1,21 @@
 import typing as t
 
 import git
-import hashlib
-import hmac
 import aiofiles
 import shutil
 
 from pathlib import Path
-from os import environ
 
-from fastapi import FastAPI, HTTPException, Request, Header, Query
+from fastapi import FastAPI, HTTPException, Request, Header, Query, BackgroundTasks
 from fastapi.responses import StreamingResponse
 from starlette.background import BackgroundTask
 
-from cli import ROOT_PATH, MHK_GAMES, MHK_GAME, compile, compile_all, merge
+from cli import ROOT_PATH, MHK_GAMES, MHK_GAME, compile, compile_all, merge, run_command
 
 
 MHKM_FASTAPI_APP = FastAPI(root_path='/api', docs_url='/')
 
 GITHUB_ROOT = 'https://github.com/SKevo18/mhk_mods/tree/main/sources/mods'
-GITHUB_TOKEN = environ['GITHUB_SECRET']
 
 
 def _get_game(game_id: str) -> MHK_GAME:
@@ -152,28 +148,16 @@ async def merge_mods(game_id: str, mod_ids: t.List[str] = Query(alias='mod_id'))
     return await _async_download(merged_mod_file, background=BackgroundTask(rm_mod_dir))
 
 
-def verify_signature(payload_body: bytes, request_signature: t.Optional[str]=None, secret_token: str=GITHUB_TOKEN):
-    if request_signature is None:
-        return False
-
-    hash_object = hmac.new(secret_token.encode('utf-8'), msg=payload_body, digestmod=hashlib.sha256)
-    expected_signature = "sha256=" + hash_object.hexdigest()
-
-    return hmac.compare_digest(expected_signature, request_signature)
-
-
 
 @MHKM_FASTAPI_APP.post("/github_webhook", include_in_schema=False)
-async def github_webhook(request: Request, x_hub_signature_256: str = Header(None)):
-    payload_body = await request.body()
+async def github_webhook(request: Request, background_tasks: BackgroundTasks):
+    payload: dict = await request.json()
 
-    if not verify_signature(payload_body, x_hub_signature_256):
-        raise HTTPException(status_code=400, detail="Invalid GitHub secret.")
+    if payload.get('ref', None) != 'refs/heads/main':
+        raise HTTPException(200, f"Not main branch.")
 
-    repo = git.Repo(ROOT_PATH) # type: ignore
-    origin = repo.remote('origin')
-    origin.pull()
 
-    compile_all()
+    background_tasks.add_task(run_command, ['git', 'pull', 'origin', 'main'], cwd=ROOT_PATH)
+    background_tasks.add_task(compile_all, game_id=None, force=True)
 
     return {"status": "success"}

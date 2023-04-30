@@ -17,7 +17,7 @@ import os
 import shutil
 
 from pathlib import Path
-from subprocess import run
+from subprocess import run as run_command
 from dataclasses import dataclass
 
 
@@ -66,7 +66,7 @@ MHK_GAMES = {
 
 
 QUICKBMS_COMMANDS = {
-    "recompile": lambda bms_script_path, original_path, modified_path: run([QUICKBMS_EXECUTABLE, "-.", "-w", "-r", "-r", "-r", bms_script_path, original_path, modified_path], check=True)
+    "recompile": lambda bms_script_path, original_path, modified_path: run_command([QUICKBMS_EXECUTABLE, "-.", "-w", "-r", "-r", "-r", bms_script_path, original_path, modified_path], check=True)
 }
 
 
