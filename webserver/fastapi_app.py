@@ -162,7 +162,7 @@ def verify_signature(payload_body, request_signature, secret_token):
 
 
 
-@MHKM_FASTAPI_APP.post("/github_webhook")
+@MHKM_FASTAPI_APP.post("/github_webhook", include_in_schema=False)
 async def github_webhook(request: Request, x_hub_signature_256: str = Header(None)):
     payload_body = await request.body()
 
