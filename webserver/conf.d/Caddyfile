@@ -1,15 +1,15 @@
 # Update with your paths
 domain.tld {
-    encode zstd gzip
-    root * ./webserver
+	encode zstd gzip
+	root * ./webserver
 
-    handle_path /api* {
-        reverse_proxy unix/mhk_mods_fastapi.sock
-    }
+	handle_path /api* {
+		reverse_proxy unix/mhk_mods_fastapi.sock
+	}
 
-    reverse_proxy unix/mhk_mods_flask.sock
+	reverse_proxy unix/mhk_mods_flask.sock
 
-    file_server browse {
-        hide .*
-    }
+	file_server browse {
+		hide .
+	}
 }
