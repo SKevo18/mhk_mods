@@ -4,7 +4,7 @@ This is the (very simple) FastAPI + Flask MHK mods webserver.
 
 You can access it live at [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac).
 
-API documentation is available at [https://mhk-mods.svit.ac/api/docs](https://mhk-mods.svit.ac/api/docs).
+API documentation is available at [https://mhk-mods.svit.ac/api/docs](https://mhk-mods.svit.ac/api).
 
 > **Note:** Mod folders starting with dot (`.`) are marked as WIP/temporary, and will be excluded from the webpage's mod list.
 
