@@ -13,9 +13,13 @@ The workflow is a bit tricky due to limitations on how the game archives work (e
 
 ## Tutorial
 
+### Prerequisites
+
 The script is compatible with Python 3.6+ (latest version is always recommended due to performance improvements). You can download Python from their [official website](https://www.python.org/).
 
-### To compile mods
+In addition, this repository also uses Git LFS to store the original data files. You can download it from [the official Git LFS website](https://git-lfs.github.com/). Or `apt install git-lfs` on Linux, `brew install git-lfs` on macOS, etc...
+
+### How to compile mods
 
 Because of the big file size of data files, the modded ones are not included in the repository's source code. You can visit [https://mhk-mods.svit.ac](https://mhk-mods.svit.ac), or compile them locally by yourself:
 
