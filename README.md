@@ -78,7 +78,48 @@ If you are aware of any, please create a PR (add the script to `./quickbms/bms_s
 
 ### Is this tool compatible with Linux?
 
-Yes, the tool will automatically determine if you're running on Windows or other machine (useful in cases where you, for example, use this tool for an [automated webserver](https://github.com/SKevo18/mhk_mods/tree/main/webserver) that serves the modded data files). The Linux `quickbms` executable can be found in the `quickbms/` directory in this repo (as well as the Windows version).
+Yes, the tool will automatically determine if you're running on Windows or other machine (useful in cases where you, for example, use this tool for an [automated webserver](https://github.com/SKevo18/mhk_mods/tree/main/webserver) that serves the modded data files). The Linux `quickbms` executable can be found in the `quickbms/` directory in this repo (as well as the Windows `quickbms.exe` version).
+
+### Is there a version for aarch64 (ARM64) machines?
+
+QuickBMS itself is not compatible with `aarch64`, and since the original author had abandoned the project, it is unlikely that it will be implemented in the foreseeable future. However, since I have migrated to a new server that is `aarch64`, I had the need to run the tool on it (and I did not want to spend additional money to buy a server where QuickBMS can be run natively, just to host the mods website). Here is a comprehensive guide on how to do it on an Ubuntu machine:
+
+1. **Install QEMU**: QEMU is an open-source machine emulator and virtualizer. It can emulate different processor architectures, allowing binaries compiled for one architecture to run on another.
+
+   First, update your package list and install QEMU user emulation:
+
+   ```bash
+   sudo apt update
+   sudo apt install qemu-user-static
+   ```
+
+2. **Set Up the Emulation for x86**: You need to configure the system to use QEMU for x86 binary emulation.
+
+   This can be automatically handled by the `binfmt-support` package which is usually installed with `qemu-user-static`. If not, you can install it manually:
+
+   ```bash
+   sudo apt install binfmt-support
+   ```
+
+   This should set up your system to automatically use QEMU when an x86 binary is executed.
+
+3. **Install Necessary Libraries**: Your 32-bit application may require certain libraries to run. Since you're on an ARM64 system, you'll need to install the ARM64 versions of these libraries. However, if the application requires specific x86 libraries, you might have to set up a chroot environment with these libraries.
+
+   For basic libraries, you can try installing `libc6:i386`, `libncurses5:i386`, `libstdc++6:i386`, and others depending on your application's requirements:
+
+   ```bash
+   sudo dpkg --add-architecture i386
+   sudo apt update
+   sudo apt install libc6:i386 libncurses5:i386 libstdc++6:i386
+   ```
+
+4. **Ready to go**: After setting up QEMU and installing necessary libraries, you can try compiling all mods to see if everything works as expected:
+
+   ```bash
+   python cli.py compile-all
+   ```
+
+   If it doesn't run as expected, you might need additional libraries or there could be other compatibility issues.
 
 ### Which QuickBMS version is used in this repository?
 
