@@ -32,7 +32,7 @@ ORIGINAL_SOURCES_ROOT = SOURCES_ROOT / "original"
 DECOMPILED_SOURCES_ROOT = SOURCES_ROOT / "decompiled"
 MODS_ROOT = SOURCES_ROOT / "mods"
 
-TOOLS_ROOT = SOURCES_ROOT / "tools"
+TOOLS_ROOT = ROOT_PATH / "tools"
 QUICKBMS_ROOT = TOOLS_ROOT / "quickbms"
 QUICKBMS_EXECUTABLE = QUICKBMS_ROOT / (
     "quickbms.exe" if os.name == "nt" else "quickbms"
