@@ -32,7 +32,8 @@ ORIGINAL_SOURCES_ROOT = SOURCES_ROOT / "original"
 DECOMPILED_SOURCES_ROOT = SOURCES_ROOT / "decompiled"
 MODS_ROOT = SOURCES_ROOT / "mods"
 
-QUICKBMS_ROOT = ROOT_PATH / "quickbms"
+TOOLS_ROOT = SOURCES_ROOT / "tools"
+QUICKBMS_ROOT = TOOLS_ROOT / "quickbms"
 QUICKBMS_EXECUTABLE = QUICKBMS_ROOT / (
     "quickbms.exe" if os.name == "nt" else "quickbms"
 )
@@ -109,7 +110,7 @@ CLI = typer.Typer(
     name="MHK-MODS CLI",
     help="A CLI for creating and compiling mods for the Moorhuhn Kart games.",
     epilog="MHK-MODS is an open-source project: https://github.com/SKevo18/mhk-mods",
-    no_args_is_help=True
+    no_args_is_help=True,
 )
 
 
@@ -311,7 +312,10 @@ def compile(
 
     # Run QuickBMS:
     rich.print("[orange3]Injecting game assets back via QuickBMS...[/orange3]")
-    QUICKBMS_COMMANDS["recompile"](game.bms_script_path, temp_data_file, source_root)
+    if game.id in ("mhk_2_en", "mhk_2_de"):
+        run_command([TOOLS_ROOT / "phenomediapacker" / "phenomediapacker", source_root, temp_data_file], check=True)
+    else:
+        QUICKBMS_COMMANDS["recompile"](game.bms_script_path, temp_data_file, source_root)
 
     # Rename temp mod:
     temp_data_file.rename(modded_data_file)
