@@ -312,10 +312,13 @@ def compile(
 
     # Run QuickBMS:
     rich.print("[orange3]Injecting game assets back via QuickBMS...[/orange3]")
-    if game.id in ("mhk_2_en", "mhk_2_de"):
-        run_command([TOOLS_ROOT / "phenomediapacker" / "phenomediapacker", source_root, temp_data_file], check=True)
-    else:
-        QUICKBMS_COMMANDS["recompile"](game.bms_script_path, temp_data_file, source_root)
+
+    # TODO: handle this better:
+    # FIXME: requires all decompiled files to be present
+    #if game.id in ("mhk_2_en", "mhk_2_de"):
+    #    run_command([TOOLS_ROOT / "phenomediapacker" / "phenomediapacker", source_root, temp_data_file], check=True)
+    #else:
+    QUICKBMS_COMMANDS["recompile"](game.bms_script_path, temp_data_file, source_root)
 
     # Rename temp mod:
     temp_data_file.rename(modded_data_file)
