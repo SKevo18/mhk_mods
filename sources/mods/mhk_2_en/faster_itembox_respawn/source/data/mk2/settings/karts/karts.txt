@@ -6,13 +6,13 @@ class type: "class GameSettings"
     class type: "class GameSettings::PowerUpInfo"
     [PowerUpInfo] "power up"
     {
-        "respawn delay" 3.000000
-        "homing missile speed" 40.000000
+        "respawn delay" 0.750000
+        "homing missile speed" 70.000000
         "homing missile arm delay" 2.000000
-        "homing missile life time" 500.000000
+        "homing missile life time" 15.000000
         "homing missile activation distance" 100.000000
         "homing missile lock distance" 20.000000
-        "homing missile locked speed" 20.000000
+        "homing missile locked speed" 90.000000
         "glibber ball move time" 5.000000
         "glibber ball timeout" 20.000000
         "blue light time" 8.000000
