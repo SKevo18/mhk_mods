@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 )
 
 type FileEntry struct {
@@ -50,6 +51,7 @@ func main() {
 		if err != nil {
 			return err
 		}
+
 		if !info.IsDir() {
 			files = append(files, FileEntry{Filename: path, Filesize: info.Size()})
 		}
@@ -73,7 +75,9 @@ func main() {
 	offset := int64(0x40 + len(files)*0x80)
 	for _, file := range files {
 		fileEntry := make([]byte, 0x80)
-		copy(fileEntry, file.Filename)
+		relativePath, _ := filepath.Rel(inputFolder, file.Filename)
+		copy(fileEntry, "data\\" + strings.ReplaceAll(relativePath, "/", "\\"))
+
 		binary.LittleEndian.PutUint64(fileEntry[0x68:], uint64(offset))
 		binary.LittleEndian.PutUint64(fileEntry[0x6C:], uint64(file.Filesize))
 		offset += file.Filesize + (file.Filesize % 0x100)

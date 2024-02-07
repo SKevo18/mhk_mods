@@ -325,16 +325,16 @@ def compile(
 def _repack(game: MHK_GAME, temp_data_file: Path, source_root: Path):
     if game.id in ("mhk_2_en", "mhk_2_de"):
         # need to create temporary path with all assets:
-        temp_mod_path = source_root / "data.temp"
-        shutil.copytree(DECOMPILED_SOURCES_ROOT / game.id / "data", temp_mod_path)
-        shutil.copytree(source_root / "data", temp_mod_path, dirs_exist_ok=True)
+        temp_mod_path = source_root.parent / ".temp" # FIXME: random name
+        shutil.copytree(DECOMPILED_SOURCES_ROOT / game.id, temp_mod_path)
+        shutil.copytree(source_root, temp_mod_path, dirs_exist_ok=True)
 
         rich.print(f"Running phenomediapacker on {temp_mod_path}...")
         run_command(
             [
                 TOOLS_ROOT / "phenomediapacker" / "build" / "phenomediapacker",
                 "-input",
-                temp_mod_path,
+                temp_mod_path / "data",
                 "-output",
                 temp_data_file,
             ],
