@@ -317,6 +317,9 @@ def compile(
 
     # Rename temp mod:
     temp_data_file.rename(modded_data_file)
+    rich.print(
+        f"[bright_green]Done! Find the modded data file at [bright_black]{modded_data_file}[/bright_black]![/bright_green]"
+    )
 
 
 def _repack(game: MHK_GAME, temp_data_file: Path, source_root: Path):
@@ -327,10 +330,19 @@ def _repack(game: MHK_GAME, temp_data_file: Path, source_root: Path):
         shutil.copytree(source_root / "data", temp_mod_path, dirs_exist_ok=True)
 
         rich.print(f"Running phenomediapacker on {temp_mod_path}...")
-        run_command([TOOLS_ROOT / "phenomediapacker" / "phenomediapacker", source_root / "data", temp_data_file], check=True)
+        run_command(
+            [
+                TOOLS_ROOT / "phenomediapacker" / "phenomediapacker",
+                temp_mod_path,
+                temp_data_file,
+            ],
+            check=True,
+        )
         shutil.rmtree(temp_mod_path)
     else:
-        QUICKBMS_COMMANDS["recompile"](game.bms_script_path, temp_data_file, source_root)
+        QUICKBMS_COMMANDS["recompile"](
+            game.bms_script_path, temp_data_file, source_root
+        )
 
 
 @CLI.command(help="Compiles all mods from their source.")
