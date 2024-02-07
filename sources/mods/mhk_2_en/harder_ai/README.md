@@ -1,6 +1,6 @@
-# Bounds Xray for Moorhuhn Kart 2 (en)
+# Harder AI for Moorhuhn Kart 2 (en)
 
-> Allows you to see the bounds of the track (reset boundaries + fall boundaries).
+> Makes 150cc AI opponents more aggressive and harder to beat.
 
 ## Installation instructions
 
