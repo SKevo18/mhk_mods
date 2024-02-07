@@ -311,17 +311,26 @@ def compile(
             raise typer.Exit(1)
 
     # Run QuickBMS:
-    rich.print("[orange3]Injecting game assets back via QuickBMS...[/orange3]")
+    rich.print("[orange3]Repacking game...[/orange3]")
 
-    # TODO: handle this better:
-    # FIXME: requires all decompiled files to be present
-    #if game.id in ("mhk_2_en", "mhk_2_de"):
-    #    run_command([TOOLS_ROOT / "phenomediapacker" / "phenomediapacker", source_root, temp_data_file], check=True)
-    #else:
-    QUICKBMS_COMMANDS["recompile"](game.bms_script_path, temp_data_file, source_root)
+    _repack(game, temp_data_file, source_root)
 
     # Rename temp mod:
     temp_data_file.rename(modded_data_file)
+
+
+def _repack(game: MHK_GAME, temp_data_file: Path, source_root: Path):
+    if game.id in ("mhk_2_en", "mhk_2_de"):
+        # need to create temporary path with all assets:
+        temp_mod_path = source_root / "data.temp"
+        shutil.copytree(DECOMPILED_SOURCES_ROOT / game.id / "data", temp_mod_path)
+        shutil.copytree(source_root / "data", temp_mod_path, dirs_exist_ok=True)
+
+        rich.print(f"Running phenomediapacker on {temp_mod_path}...")
+        run_command([TOOLS_ROOT / "phenomediapacker" / "phenomediapacker", source_root / "data", temp_data_file], check=True)
+        shutil.rmtree(temp_mod_path)
+    else:
+        QUICKBMS_COMMANDS["recompile"](game.bms_script_path, temp_data_file, source_root)
 
 
 @CLI.command(help="Compiles all mods from their source.")
