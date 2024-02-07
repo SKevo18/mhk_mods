@@ -333,7 +333,9 @@ def _repack(game: MHK_GAME, temp_data_file: Path, source_root: Path):
         run_command(
             [
                 TOOLS_ROOT / "phenomediapacker" / "build" / "phenomediapacker",
+                "-input",
                 temp_mod_path,
+                "-output",
                 temp_data_file,
             ],
             check=True,
