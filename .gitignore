@@ -9,7 +9,7 @@ __pycache__/
 *.sock
 
 # binaries:
-phenomediapacker
+build/
 
 sources/mods/*/.*/
 !sources/decompiled/**

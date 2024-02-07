@@ -332,7 +332,7 @@ def _repack(game: MHK_GAME, temp_data_file: Path, source_root: Path):
         rich.print(f"Running phenomediapacker on {temp_mod_path}...")
         run_command(
             [
-                TOOLS_ROOT / "phenomediapacker" / "phenomediapacker",
+                TOOLS_ROOT / "phenomediapacker" / "build" / "phenomediapacker",
                 temp_mod_path,
                 temp_data_file,
             ],
