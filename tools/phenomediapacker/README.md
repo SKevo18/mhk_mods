@@ -5,7 +5,7 @@ This tool is used to pack data file for MHK 2, including configuration files (Qu
 ## Build
 
 ```bash
-go build -o build/phenomediapacker
+go build -o build/
 ```
 
 ## Credit

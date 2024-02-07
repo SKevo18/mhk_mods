@@ -2,26 +2,26 @@ package main
 
 import (
 	"encoding/binary"
+	"flag"
 	"fmt"
 	"os"
 	"path/filepath"
-	"strings"
 )
 
 type FileEntry struct {
 	Filename string
-	FileSize uint32
+	Filesize int64
 }
 
 func encryptConfig(data []byte) {
-	key := uint32(0x1234)
+	key := uint(0x1234)
 	for i := range data {
 		uVar2 := data[i] & 0x55
 		cVar1 := data[i] & 0xAA
 		cVar1 >>= 1
 		uVar2 <<= 1
 		data[i] = (uVar2 ^ cVar1) ^ byte(key&0xFF)
-		key = (key*3 + 2) & 0xffff
+		key = key*3 + 2 & 0xffff
 	}
 }
 
@@ -34,84 +34,64 @@ func generateHeader(name string, numFiles uint32) []byte {
 }
 
 func main() {
-	fmt.Println("Phenomedia packer by pyramidensurfer")
+	var inputFolder, outputPath string
+	flag.StringVar(&inputFolder, "input", "", "Path to the input folder containing data files")
+	flag.StringVar(&outputPath, "output", "packed.dat", "Output path for the resulting .dat file")
+	flag.Parse()
 
-	if len(os.Args) < 3 {
-		fmt.Println("Usage: phenomediapacker <input path> <output path>")
-		os.Exit(1)
-	}
-
-	inputPath := os.Args[1]
-	outputPath := os.Args[2]
-
-	if _, err := os.Stat(inputPath); os.IsNotExist(err) {
-		fmt.Printf("Input path %s does not exist\n", inputPath)
+	if inputFolder == "" {
+		fmt.Println("Input folder is required")
+		flag.Usage()
 		os.Exit(1)
 	}
 
 	var files []FileEntry
-	filepath.Walk(inputPath, func(path string, info os.FileInfo, err error) error {
+	err := filepath.Walk(inputFolder, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
-			fmt.Printf("Error accessing path %q: %v\n", path, err)
-			os.Exit(1)
+			return err
 		}
 		if !info.IsDir() {
-			files = append(files, FileEntry{Filename: path, FileSize: uint32(info.Size())})
+			files = append(files, FileEntry{Filename: path, Filesize: info.Size()})
 		}
 		return nil
 	})
-
-	gameID := "Moorhuhn"
-	outFileName := outputPath
-	if len(os.Args) > 1 {
-		inputFile, err := os.Open(os.Args[1])
-		if err == nil {
-			defer inputFile.Close()
-			var oheadername [0x20]byte
-			inputFile.Read(oheadername[:])
-			gameID = string(oheadername[:])
-		} else {
-			fmt.Printf("Error opening %s\n", os.Args[1])
-			outFileName = outputPath
-			gameID = "Moorhuhn"
-		}
-	}
-
-	fmt.Printf("Packing for %s\n", gameID)
-
-	outfile, err := os.Create(outFileName)
 	if err != nil {
-		fmt.Printf("Error creating output file: %v\n", err)
+		fmt.Printf("Error walking through input folder: %s\n", err)
 		return
 	}
-	defer outfile.Close()
 
-	header := generateHeader(gameID, uint32(len(files)))
-	outfile.Write(header)
+	outFile, err := os.Create(outputPath)
+	if err != nil {
+		fmt.Printf("Error creating output file: %s\n", err)
+		return
+	}
+	defer outFile.Close()
 
-	offset := uint32(0x40 + len(files)*0x80)
+	header := generateHeader("Moorhuhn", uint32(len(files)))
+	outFile.Write(header)
 
-	for _, f := range files {
+	offset := int64(0x40 + len(files)*0x80)
+	for _, file := range files {
 		fileEntry := make([]byte, 0x80)
-		copy(fileEntry, f.Filename)
-		binary.LittleEndian.PutUint32(fileEntry[0x68:], offset)
-		binary.LittleEndian.PutUint32(fileEntry[0x6C:], f.FileSize)
-		offset += f.FileSize + (f.FileSize % 0x100)
-		outfile.Write(fileEntry)
+		copy(fileEntry, file.Filename)
+		binary.LittleEndian.PutUint64(fileEntry[0x68:], uint64(offset))
+		binary.LittleEndian.PutUint64(fileEntry[0x6C:], uint64(file.Filesize))
+		offset += file.Filesize + (file.Filesize % 0x100)
+		outFile.Write(fileEntry)
 	}
 
-	for _, f := range files {
-		fileData, err := os.ReadFile(f.Filename)
+	for _, file := range files {
+		data, err := os.ReadFile(file.Filename)
 		if err != nil {
-			fmt.Printf("Error reading file %s: %v\n", f.Filename, err)
+			fmt.Printf("Error reading file %s: %s\n", file.Filename, err)
 			continue
 		}
-
-		fmt.Printf("Packing %s\n", f.Filename)
-		if strings.HasSuffix(f.Filename, ".txt") {
-			encryptConfig(fileData)
+		if filepath.Ext(file.Filename) == ".txt" {
+			encryptConfig(data)
 		}
-		padding := make([]byte, f.FileSize%0x100)
-		outfile.Write(append(fileData, padding...))
+		padding := make([]byte, file.Filesize%0x100)
+		outFile.Write(append(data, padding...))
 	}
+
+	fmt.Println("Packing completed successfully.")
 }
