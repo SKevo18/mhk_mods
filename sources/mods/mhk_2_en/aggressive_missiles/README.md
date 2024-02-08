@@ -1,6 +1,6 @@
 # Dangerous Missiles for Moorhuhn Kart 2 (en)
 
-> Makes missiles instantly home towards the first place.
+> Makes missiles instantly home towards the first place, but their homing speed is 2 times slower.
 
 ## Installation instructions
 
