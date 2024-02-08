@@ -115,7 +115,7 @@ class type: "class Car"
         "max steering angle" 40.000000
         "acceleration speed" 10.000000
         "brake speed" 100.000000
-        "friction equalizer" 0.800000
+        "friction equalizer" 0.100000
         "angular vel. damping" 2.000000
         "angular vel. collision limit" 2.000000
         "angular vel. collision damping" 12.000000
@@ -212,7 +212,7 @@ class type: "class Car"
         "max steering angle" 40.000000
         "acceleration speed" 10.000000
         "brake speed" 100.000000
-        "friction equalizer" 0.800000
+        "friction equalizer" 0.100000
         "angular vel. damping" 2.000000
         "angular vel. collision limit" 2.000000
         "angular vel. collision damping" 12.000000
@@ -309,7 +309,7 @@ class type: "class Car"
         "max steering angle" 40.000000
         "acceleration speed" 10.000000
         "brake speed" 100.000000
-        "friction equalizer" 0.800000
+        "friction equalizer" 0.100000
         "angular vel. damping" 2.000000
         "angular vel. collision limit" 2.000000
         "angular vel. collision damping" 12.000000
@@ -406,7 +406,7 @@ class type: "class Car"
         "max steering angle" 40.000000
         "acceleration speed" 10.000000
         "brake speed" 100.000000
-        "friction equalizer" 0.800000
+        "friction equalizer" 0.100000
         "angular vel. damping" 2.000000
         "angular vel. collision limit" 2.000000
         "angular vel. collision damping" 12.000000
@@ -503,7 +503,7 @@ class type: "class Car"
         "max steering angle" 40.000000
         "acceleration speed" 10.000000
         "brake speed" 100.000000
-        "friction equalizer" 0.800000
+        "friction equalizer" 0.100000
         "angular vel. damping" 2.000000
         "angular vel. collision limit" 2.000000
         "angular vel. collision damping" 12.000000
@@ -600,7 +600,7 @@ class type: "class Car"
         "max steering angle" 40.000000
         "acceleration speed" 10.000000
         "brake speed" 100.000000
-        "friction equalizer" 0.800000
+        "friction equalizer" 0.100000
         "angular vel. damping" 2.000000
         "angular vel. collision limit" 2.000000
         "angular vel. collision damping" 12.000000
@@ -697,7 +697,7 @@ class type: "class Car"
         "max steering angle" 40.000000
         "acceleration speed" 10.000000
         "brake speed" 100.000000
-        "friction equalizer" 0.800000
+        "friction equalizer" 0.100000
         "angular vel. damping" 2.000000
         "angular vel. collision limit" 2.000000
         "angular vel. collision damping" 12.000000
