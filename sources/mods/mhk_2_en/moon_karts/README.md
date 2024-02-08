@@ -1,6 +1,6 @@
 # Moon Karts for Moorhuhn Kart 2 (en)
 
-> Applies moon-like gravity to all karts.
+> Applies moon-like gravity to all karts. This makes steering more difficult.
 
 ## Installation instructions
 

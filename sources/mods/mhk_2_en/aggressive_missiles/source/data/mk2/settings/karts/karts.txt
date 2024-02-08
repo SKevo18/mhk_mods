@@ -10,9 +10,9 @@ class type: "class GameSettings"
         "homing missile speed" 70.000000
         "homing missile arm delay" 2.000000
         "homing missile life time" 15.000000
-        "homing missile activation distance" 100.000000
+        "homing missile activation distance" 0.000000
         "homing missile lock distance" 10000.000000
-        "homing missile locked speed" 45.000000
+        "homing missile locked speed" 30.000000
         "glibber ball move time" 5.000000
         "glibber ball timeout" 20.000000
         "blue light time" 8.000000
